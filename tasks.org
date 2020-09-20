@@ -1,4 +1,20 @@
 * TASKS
-  [X] Essentials
-  [X] Python
-  [X] Ansible
+  [-] Starship
+      [ ] Transfer config
+  [ ] Autocomplete for make. List only tasks, not files
+  [ ] ZSH
+      [ ] Investigate Config
+
+  [ ] Recipes
+      [ ] Common
+          [ ] zsh
+          [ ] git
+      [-] Tools
+          [X] starship
+          [ ] tmux
+          [ ] fzf
+          [ ] vim
+      [-] Pentesting
+          [X] SQLMap
+          [X] nmap
+          [ ] mitmproxy
