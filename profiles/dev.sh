@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 function run {
-  source $HOME/.shewill/main.sh
+  source files/shewill/main.sh
+  bash recipes/bash.sh config
+  bash recipes/shewill.sh
 }
 
 run

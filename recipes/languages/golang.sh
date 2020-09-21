@@ -7,7 +7,7 @@ function run {
 }
 
 function install_debian {
-  sudo apt -y install golang
+  sudo snap install go
 }
 
 run

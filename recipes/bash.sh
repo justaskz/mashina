@@ -29,4 +29,4 @@ function install_debian {
   ln -s $LOCAL_OPT/$VERSION/bash $LOCAL_BIN/bash
 }
 
-run
+$@

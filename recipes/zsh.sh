@@ -8,7 +8,6 @@ function run {
   install
 }
 
-
 function config {
   cp files/zsh/config/zsh.sh $LOCAL_CONFIG
   cp files/zsh/.zshrc $HOME
@@ -48,4 +47,4 @@ function install_debian {
 #   make -j && make install
 # }
 
-run
+$@
