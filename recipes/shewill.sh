@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 function run {
-  cp -r files/shewill $HOME/.shewill
+  mkdir -p $HOME/.shewill
+  cp -ar files/shewill/* $HOME/.shewill/
 }
 
 run

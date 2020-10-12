@@ -6,15 +6,13 @@
       [ ] Investigate Config
 
   [ ] Recipes
-      [ ] Common
-          [ ] zsh
-          [ ] git
-      [-] Tools
-          [X] starship
-          [ ] tmux
-          [ ] fzf
-          [ ] vim
-          [ ] docker
+        [ ] python
+        [ ] zsh
+        [ ] vim
+        [ ] git
+        [ ] tmux
+        [ ] ruby
+        [ ] docker
       [-] Pentesting
           [X] SQLMap
           [X] nmap

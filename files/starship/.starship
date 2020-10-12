@@ -1,4 +1,4 @@
-prompt_order=[
+format=[
   "username",
   "directory",
   "git_branch",
