@@ -5,8 +5,32 @@ function run {
 }
 
 function debian_install {
-  # git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-  apt install python-pip
+  PYTHON_VERSION="3.9.1"
+  install_dependencies
+  git clone --depth 1 https://github.com/pyenv/pyenv.git $LOCAL_OPT/pyenv
+  ln -s $LOCAL_OPT/pyenv/bin/pyenv $LOCAL_BIN/pyenv
+  pyenv global $PYTHON_VERSION
+}
+
+function install_dependencies {
+  sudo apt install make \
+    build-essential \
+    libssl-dev \
+    zlib1g-dev \
+    libbz2-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    wget \
+    curl \
+    llvm \
+    libncurses5-dev \
+    libncursesw5-dev \
+    xz-utils \
+    tk-dev \
+    libffi-dev \
+    liblzma-dev \
+    python-openssl \
+    git
 }
 
 run

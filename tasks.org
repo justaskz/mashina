@@ -1,4 +1,7 @@
 * TASKS
+  [ ] Implement version check as install helper. Use in python and bash recipes
+
+
   [-] Starship
       [ ] Transfer config
   [ ] Autocomplete for make. List only tasks, not files

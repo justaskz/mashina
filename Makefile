@@ -3,6 +3,3 @@ dev:
 
 common:
 	@ bash profiles/common.sh
-
-pentest:
-	@ bash profiles/pentest.sh
