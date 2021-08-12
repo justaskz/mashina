@@ -1,18 +1,20 @@
 ### Installation
 ```
-git clone https://github.com/justaskz/mashina
-cd mashina
-make common
+git clone https://github.com/justaskz/mashina $HOME/.mashina
+cd .mashina
+make install
 ```
 
 ### Development
 From Vagrant instance:
 ```
-ln -s /vagrant/ $HOME/mashina
-ln -s /vagrant/files/shewill $HOME/.shewill
-cd $HOME/mashina
-source files/shewill/main.sh
-bash recipes/common/build_tools.sh
-bash recipes/bash.sh
+ln -s /vagrant/ $HOME/.mashina
+cd $HOME/.mashina
+make install
+```
 
+### Uninstall
+```
+cd $HOME/.mashina
+make uninstall
 ```

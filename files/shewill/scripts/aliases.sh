@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-alias src="source $HOME/.shewill/main.sh"
+alias src="source $HOME/.mashina/files/shewill/main.sh"

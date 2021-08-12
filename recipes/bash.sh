@@ -30,7 +30,7 @@ function install_debian {
   make
   cd
   ln -s $LOCAL_OPT/$FOLDER_NAME/bash $LOCAL_BIN/bash
-  # find how to replace original bash. smlink is not enough
+  # find how to replace original bash. symlink is not enough
 }
 
 $@

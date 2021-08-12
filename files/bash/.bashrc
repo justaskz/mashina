@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-source "$HOME/.shewill/main.sh"
+if [ -a "$HOME/.mashina/files/shewill/main.sh" ]; then
+  source "$HOME/.mashina/files/shewill/main.sh"
+fi

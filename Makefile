@@ -1,5 +1,5 @@
-dev:
-	@ bash profiles/dev.sh
+install:
+	@ bash commands.sh install
 
-common:
-	@ bash profiles/common.sh
+uninstall:
+	@ bash commands.sh uninstall
