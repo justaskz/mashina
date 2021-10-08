@@ -3,12 +3,12 @@
 source recipes/helpers/install.sh
 
 function run {
-  config
+  update_config
   exit_if_installed zsh
   install
 }
 
-function config {
+function update_config {
   cp files/zsh/config/zsh.sh $LOCAL_CONFIG
   cp files/zsh/.zshrc $HOME
 }

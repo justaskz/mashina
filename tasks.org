@@ -1,12 +1,7 @@
 * TASKS
   [ ] Implement version check as install helper. Use in python and bash recipes
+  [ ] Add tmux config
 
-
-  [-] Starship
-      [ ] Transfer config
-  [ ] Autocomplete for make. List only tasks, not files
-  [ ] ZSH
-      [ ] Investigate Config
 
   [ ] Recipes
         [ ] python
