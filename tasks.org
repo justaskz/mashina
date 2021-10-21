@@ -1,17 +1,9 @@
 * TASKS
-  [ ] Implement version check as install helper. Use in python and bash recipes
-  [ ] Add tmux config
-
-
-  [ ] Recipes
-        [ ] python
-        [ ] zsh
-        [ ] vim
-        [ ] git
-        [ ] tmux
-        [ ] ruby
-        [ ] docker
-      [-] Pentesting
-          [X] SQLMap
-          [X] nmap
-          [ ] mitmproxy
+  [ ] zsh shell
+  [ ] zsh plugins
+  [ ] zsh config
+  [ ] python
+  [ ] vim
+  [ ] git
+  [ ] ruby
+  [ ] docker

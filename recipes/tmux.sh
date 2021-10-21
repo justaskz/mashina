@@ -11,7 +11,7 @@ function run {
 }
 
 function update_config {
-  cp files/tmux/.tmux.conf $HOME
+  cp files/tmux/.linux-tmux.conf $HOME/.tmux.conf
 }
 
 function install_debian {
@@ -19,17 +19,13 @@ function install_debian {
   TMUX_PATH="$LOCAL_OPT/tmux"
   rm -rf $TMUX_PATH
 
-  sudo apt-get -y install pkg-config libevent-dev libncurses5-dev libncursesw5-dev autotools-dev automake
+  sudo apt-get -y install pkg-config libevent-dev libncurses5-dev libncursesw5-dev autotools-dev automake bison byacc
   git clone --depth 1 --branch "$VERSION" https://github.com/tmux/tmux.git "$TMUX_PATH"
   cd "$TMUX_PATH"
 
   sh autogen.sh
   sh configure && make
   cp tmux $LOCAL_BIN
-}
-
-function install_osx {
-  # installation commands
 }
 
 function dependencies_osx {

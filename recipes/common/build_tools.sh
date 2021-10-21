@@ -6,8 +6,9 @@ function run {
 
 function install_debian {
   sudo apt update
-  sudo apt -y install software-properties-common
-  sudo apt -y install build-essential
+  sudo apt -y install software-properties-common \
+    build-essential \
+    apt-transport-https
 }
 
 run

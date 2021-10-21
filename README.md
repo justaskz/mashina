@@ -18,3 +18,9 @@ make install
 cd $HOME/.mashina
 make uninstall
 ```
+
+### Recipes
+```
+bash recipes/bash.sh config
+bash recipes/starship.sh
+```
