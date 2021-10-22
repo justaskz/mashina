@@ -1,5 +1,5 @@
 * TASKS
-  [ ] fzf functions
+  [ ] git and git config
   [ ] zsh shell
   [ ] zsh plugins
   [ ] zsh config

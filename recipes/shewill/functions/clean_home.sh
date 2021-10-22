@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-function run {
+function clean_home {
   rm $HOME/.lesshst
 }

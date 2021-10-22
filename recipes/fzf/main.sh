@@ -18,6 +18,7 @@ function install_debian {
 
 function update_config {
   cp -ar recipes/fzf/init/fzf.sh $LOCAL_INIT
+  cp recipes/fzf/functions/fzf.sh $LOCAL_FUNCTIONS
 }
 
 run

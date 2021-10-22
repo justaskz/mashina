@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 source recipes/helpers/install.sh
 
 function run {
@@ -11,7 +9,7 @@ function run {
 }
 
 function update_config {
-  cp files/tmux/.linux-tmux.conf $HOME/.tmux.conf
+  cp recipes/tmux/dotfiles/.tmux.conf $HOME
 }
 
 function install_debian {
