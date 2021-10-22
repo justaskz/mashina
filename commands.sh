@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 function install {
-  source files/shewill/main.sh
-  bash recipes/bash.sh config
+  bash recipes/shewill/main.sh
+  bash recipes/bash/main.sh config
   bash recipes/common/build_tools.sh
-  source $HOME/.bashrc
 }
 
 function uninstall {

@@ -17,7 +17,7 @@ function install_debian {
 }
 
 function update_config {
-  cp -ar files/fzf/fzf.sh $LOCAL_CONFIG
+  cp -ar recipes/fzf/init/fzf.sh $LOCAL_INIT
 }
 
 run

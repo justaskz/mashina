@@ -9,7 +9,7 @@ function debian_install {
   install_dependencies
   git clone --depth 1 https://github.com/pyenv/pyenv.git $LOCAL_OPT/pyenv
   ln -s $LOCAL_OPT/pyenv/bin/pyenv $LOCAL_BIN/pyenv
-  cp files/pyenv/config/pyenv.sh $LOCAL_CONFIG
+  cp files/pyenv/config/pyenv.sh $LOCAL_INIT
   pyenv install $PYTHON_VERSION
   pyenv global $PYTHON_VERSION
 }

@@ -3,4 +3,3 @@
 function run {
   rm $HOME/.lesshst
 }
-

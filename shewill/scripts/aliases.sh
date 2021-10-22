@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 unalias -a
-alias src="source $HOME/.mashina/files/shewill/main.sh"
+alias src="source $HOME/.mashina/shewill/main.sh"
 
 #################################################
 ## TMUX
@@ -34,10 +34,7 @@ alias bin="cd ~/bin"
 alias opt="cd ~/opt"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
-alias dot="cd ~/repos/dotfiles-mac"
-alias dropbox_home="cd ~/Dropbox"
 alias sublime_home="cd \"$HOME/Library/Application Support/Sublime Text 3\""
-alias code="$VSCODE_HOME/code"
 
 #################################################
 ## TOOLS

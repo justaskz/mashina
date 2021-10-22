@@ -7,11 +7,6 @@ function run {
   install
 }
 
-function config {
-  cp files/bash/config/bash.sh $LOCAL_CONFIG
-  cp files/bash/.bashrc $HOME
-}
-
 function install_debian {
   VERSION="4.4"
   # VERSION="5.1"
@@ -31,6 +26,10 @@ function install_debian {
   cd
   ln -s $LOCAL_OPT/$FOLDER_NAME/bash $LOCAL_BIN/bash
   # find how to replace original bash. symlink is not enough
+}
+
+function config {
+  cp recipes/bash/dotfiles/.bashrc $LOCAL_INIT
 }
 
 $@

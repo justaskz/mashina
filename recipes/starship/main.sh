@@ -15,8 +15,8 @@ function install_debian {
 }
 
 function update_config {
-  cp files/starship/.starship $HOME
-  cp files/starship/config/starship.sh $LOCAL_CONFIG
+  cp recipes/starship/dotfiles/.starship $HOME
+  cp recipes/starship/init/starship.sh $LOCAL_INIT
 }
 
 run

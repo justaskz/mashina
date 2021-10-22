@@ -1,4 +1,5 @@
 * TASKS
+  [ ] fzf functions
   [ ] zsh shell
   [ ] zsh plugins
   [ ] zsh config

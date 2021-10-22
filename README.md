@@ -10,7 +10,11 @@ From Vagrant instance:
 ```
 ln -s /vagrant/ $HOME/.mashina
 cd $HOME/.mashina
-make install
+
+bash recipes/shewill/main.sh
+bash recipes/bash/main.sh config
+
+# make install
 ```
 
 ### Uninstall
@@ -21,6 +25,7 @@ make uninstall
 
 ### Recipes
 ```
-bash recipes/bash.sh config
-bash recipes/starship.sh
+bash recipes/bash/main.sh config
+bash recipes/starship/main.sh
+bash recipes/fzf/main.sh
 ```

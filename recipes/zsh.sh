@@ -9,7 +9,7 @@ function run {
 }
 
 function update_config {
-  cp files/zsh/config/zsh.sh $LOCAL_CONFIG
+  cp files/zsh/config/zsh.sh $LOCAL_INIT
   cp files/zsh/.zshrc $HOME
 }
 
