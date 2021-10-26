@@ -34,4 +34,5 @@ source $HOME/.profile
 bash recipes/starship/main.sh
 bash recipes/fzf/main.sh
 bash recipes/tmux/main.sh
+bash recipes/ssh/main.sh
 ```
