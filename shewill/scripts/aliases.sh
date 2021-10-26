@@ -42,6 +42,7 @@ alias sublime_home="cd \"$HOME/Library/Application Support/Sublime Text 3\""
 alias ..="cd .."
 alias s="subl"
 alias add="subl -a"
+alias a="cd $HOME/repos/ansible"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"

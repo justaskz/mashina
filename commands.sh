@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 function install {
+  source shewill/main.sh
   bash recipes/shewill/main.sh
   bash recipes/bash/main.sh config
   bash recipes/common/build_tools.sh

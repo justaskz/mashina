@@ -23,7 +23,7 @@ function install_debian {
 
   sh autogen.sh
   sh configure && make
-  cp tmux $LOCAL_BIN
+  ln -s "$TMUX_PATH/tmux" $LOCAL_BIN
 }
 
 function dependencies_osx {

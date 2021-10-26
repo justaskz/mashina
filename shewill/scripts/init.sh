@@ -9,7 +9,7 @@ export LOCAL_OPT="$LOCAL/opt"
 export LOCAL_FUNCTIONS="$LOCAL/functions"
 export LOCAL_TMP="$LOCAL/tmp"
 
-PATH="$BASE_PATH:$LOCAL_BIN"
+PATH="$LOCAL_BIN:$BASE_PATH"
 
 mkdir -p $LOCAL
 mkdir -p $LOCAL_BIN
