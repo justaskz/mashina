@@ -10,11 +10,9 @@ From Vagrant instance:
 ```
 ln -s /vagrant/ $HOME/.mashina
 cd $HOME/.mashina
-
+source shewill/main.sh
 bash recipes/shewill/main.sh
 bash recipes/bash/main.sh config
-
-# make install
 ```
 
 ### Uninstall

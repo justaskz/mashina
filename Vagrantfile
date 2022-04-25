@@ -8,5 +8,11 @@ Vagrant.configure('2') do |config|
   # config.vm.box_version = '1.0.0'
 
   config.vm.hostname = :mashina
-  config.vm.network :private_network, ip: '192.168.33.150'
+
+  config.vm.provider :virtualbox do |v|
+    v.cpus = 4
+    v.memory = 4096
+  end
+
+  config.vm.network :private_network, ip: '192.168.56.150'
 end
