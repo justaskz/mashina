@@ -10,7 +10,7 @@ function run {
 
 function install_debian {
   wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $LOCAL_TMP
-  bash $LOCAL_TMP/install.sh --yes --bin-dir $LOCAL_BIN
+  sh $LOCAL_TMP/install.sh --yes --bin-dir $LOCAL_BIN
   rm $LOCAL_TMP/install.sh
 }
 

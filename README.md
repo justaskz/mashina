@@ -1,6 +1,7 @@
 ### Installation
 ```
 git clone https://github.com/justaskz/mashina $HOME/.mashina
+git clone git@github.com:justaskz/mashina.git $HOME/.mashina
 cd .mashina
 make install
 ```
