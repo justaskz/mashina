@@ -16,20 +16,20 @@ function install_debian {
   FOLDER_NAME="bash-$VERSION"
   FILE_NAME="$FOLDER_NAME.tar.gz"
   LINK="http://ftp.gnu.org/gnu/bash/$FILE_NAME"
-  wget $LINK -P $LOCAL_OPT
-  cd $LOCAL_OPT
+  wget $LINK -P $MASHINA_OPT
+  cd $MASHINA_OPT
   tar xf $FILE_NAME
   rm $FILE_NAME
   cd $FOLDER_NAME
   ./configure
   make
   cd
-  ln -s $LOCAL_OPT/$FOLDER_NAME/bash $LOCAL_BIN/bash
+  ln -s $MASHINA_OPT/$FOLDER_NAME/bash $MASHINA_BIN/bash
   # find how to replace original bash. symlink is not enough
 }
 
 function config {
-  cp recipes/bash/dotfiles/.bashrc $LOCAL_INIT
+  cp recipes/bash/dotfiles/.bashrc $MASHINA_INIT
 }
 
 $@

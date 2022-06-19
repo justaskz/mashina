@@ -9,16 +9,16 @@ function run {
 }
 
 function install_debian {
-  FZF_HOME="$LOCAL_OPT/fzf"
+  FZF_HOME="$MASHINA_OPT/fzf"
   git clone --depth 1 https://github.com/junegunn/fzf.git $FZF_HOME
   bash $FZF_HOME/install --bin
 
-  ln -s $FZF_HOME/bin/fzf $LOCAL_BIN
+  ln -s $FZF_HOME/bin/fzf $MASHINA_BIN
 }
 
 function update_config {
-  cp -ar recipes/fzf/init/fzf.sh $LOCAL_INIT
-  cp recipes/fzf/functions/fzf.sh $LOCAL_FUNCTIONS
+  cp -ar recipes/fzf/init/fzf.sh $MASHINA_INIT
+  cp recipes/fzf/functions/fzf.sh $MASHINA_FUNCTIONS
 }
 
 run

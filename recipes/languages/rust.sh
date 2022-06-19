@@ -13,7 +13,7 @@ function install_debian {
 }
 
 function update_config {
-  ln -s $HOME/.cargo/bin/* $LOCAL_BIN
+  ln -s $HOME/.cargo/bin/cargo $MASHINA_BIN
 }
 
 run

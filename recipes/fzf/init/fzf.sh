@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FZF_HOME="$LOCAL_OPT/fzf"
+FZF_HOME="$MASHINA_OPT/fzf"
 
 if [ -n "$BASH_VERSION" ]; then
   source "$FZF_HOME/shell/completion.bash"

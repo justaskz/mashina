@@ -6,7 +6,7 @@ function install {
   fi
 
   if [[ "$OSTYPE" == "darwin"* ]]; then
-    install_osx
+    install_macos
   fi
 }
 

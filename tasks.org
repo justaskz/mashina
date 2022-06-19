@@ -1,4 +1,8 @@
 * TASKS
+  [ ] brew
+  [ ] iterm
+  [ ] sublime
+
   [ ] git and git config
   [ ] zsh shell
   [ ] zsh plugins

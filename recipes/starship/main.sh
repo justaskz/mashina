@@ -9,14 +9,14 @@ function run {
 }
 
 function install_debian {
-  wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $LOCAL_TMP
-  sh $LOCAL_TMP/install.sh --yes --bin-dir $LOCAL_BIN
-  rm $LOCAL_TMP/install.sh
+  wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $MASHINA_TMP
+  sh $MASHINA_TMP/install.sh --yes --bin-dir $MASHINA_BIN
+  rm $MASHINA_TMP/install.sh
 }
 
 function update_config {
   cp recipes/starship/dotfiles/.starship $HOME
-  cp recipes/starship/init/starship.sh $LOCAL_INIT
+  cp recipes/starship/init/starship.sh $MASHINA_INIT
 }
 
 run

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 unalias -a
-alias src="source $HOME/.mashina/shewill/main.sh"
+alias src="source $MASHINA_ROOT/main.sh"
 
 #################################################
 ## TMUX
