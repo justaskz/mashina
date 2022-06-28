@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 source recipes/helpers/install.sh
 
 function run {
@@ -8,7 +6,7 @@ function run {
   install
 }
 
-function install_debian {
+function install {
   wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $MASHINA_TMP
   sh $MASHINA_TMP/install.sh --yes --bin-dir $MASHINA_BIN
   rm $MASHINA_TMP/install.sh

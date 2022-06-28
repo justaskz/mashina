@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 function run {
   install_debian
 }

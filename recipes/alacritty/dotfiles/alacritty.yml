@@ -1,0 +1,63 @@
+---
+window:
+  title: ''
+  dynamic_title: false
+  decorations: full
+  padding:
+    x: 20
+    y: 10
+  dynamic_padding: true
+font:
+  size: 15
+  normal:
+    family: Source Code Pro for Powerline
+    style: Regular
+  bold:
+    family: Source Code Pro for Powerline
+    style: Regular
+  italic:
+    family: Source Code Pro for Powerline
+    style: Italic
+  bold_italic:
+    family: Source Code Pro for Powerline
+    style: Regular Italic
+  offset:
+    x: 0
+    y: 0
+  use_thin_strokes: true
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  blink_interval: 400
+colors:
+  primary:
+    background: '#ffffff'
+    foreground: '#000000'
+  normal:
+     black:   '#000000'
+     red:     '#e44329'
+     green:   '#00ad64'
+     yellow:  '#ffa701'
+     blue:    '#00b0e9'
+     magenta: '#ee00ff'
+     cyan:    '#00bad3'
+     white:   '#00bad3'
+  bright:
+     black:   '#000000'
+     red:     '#e44329'
+     green:   '#00ad64'
+     yellow:  '#ffa701'
+     blue:    '#00b0e9'
+     magenta: '#ee00ff'
+     cyan:    '#00bad3'
+     white:   '#00bad3'
+# https://donsnotes.com/tech/charsets/ascii.html
+key_bindings:
+  - { key: C, mods: Command, action: Copy }
+  - { key: V, mods: Command, action: Paste }
+  - { key: L, mods: Command, chars: "\x0c" }
+  - { key: U, mods: Command, chars: "\x15" }
+debug:
+  log_level: Debug
+  print_events: false

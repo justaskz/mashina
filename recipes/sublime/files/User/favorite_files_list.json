@@ -1,0 +1,88 @@
+{
+  "files": [
+    //-----------------------------------------------
+    // CONFIG FILES
+    //-----------------------------------------------
+    {
+      "alias": ".env",
+      "file": "/Users/justas/.env"
+    },
+    {
+      "alias": ".aliases",
+      "file": "/Users/justas/.aliases"
+    },
+    {
+      "alias": "favorite_files_list.json",
+      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/favorite_files_list.json"
+    },
+    {
+      "alias": "Default (OSX).sublime-keymap",
+      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+    },
+    {
+      "alias": ".vimrc",
+      "file": "/Users/justas/.vimrc"
+    },
+    {
+      "alias": ".tmux.conf",
+      "file": "/Users/justas/.tmux.conf"
+    },
+    {
+      "alias": ".zshrc",
+      "file": "/Users/justas/.zshrc"
+    },
+    {
+      "alias": "Preferences.sublime-settings",
+      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+    },
+    {
+      "alias": ".gitignore",
+      "file": "/Users/justas/.gitignore"
+    },
+
+    //-----------------------------------------------
+    // WORK
+    //-----------------------------------------------
+    {
+      "alias": "work tasks.org",
+      "file": "/Users/justas/repos/notes/work/nordsec/tasks.org"
+    },
+    {
+      "alias": "snippets.sh",
+      "file": "/Users/justas/repos/notes/work/nordsec/snippets.sh"
+    },
+    //-----------------------------------------------
+    // NOTES
+    //-----------------------------------------------
+    {
+      "alias": "unix",
+      "file": "/Users/justas/repos/notes/dev/unix"
+    },
+    {
+      "alias": "bash",
+      "file": "/Users/justas/repos/notes/dev/bash"
+    },
+    {
+      "alias": "apt",
+      "file": "/Users/justas/repos/notes/dev/apt"
+    },
+    {
+      "alias": "regex",
+      "file": "/Users/justas/repos/notes/dev/regex",
+    },
+    {
+      "alias": "mysql",
+      "file": "/Users/justas/repos/notes/dev/mysql",
+    },
+    {
+      "alias": "mysql_admin",
+      "file": "/Users/justas/repos/notes/dev/mysql_admin",
+    },
+    {
+      "alias": "galera",
+      "file": "/Users/justas/repos/notes/dev/galera",
+    },
+  ],
+  "groups": {},
+  "version": 2
+}

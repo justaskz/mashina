@@ -1,15 +1,35 @@
-#!/usr/bin/env bash
-
-function install {
+function install_dev {
   bash recipes/mashina/main.sh
+
+  bash recipes/zsh/main.sh
+  bash recipes/homebrew/main.sh
+  bash recipes/ruby/main.sh
+  bash recipes/starship/main.sh
+
+  # bash recipes/common/build_tools.sh
+  # bash recipes/tmux/main.sh
+
   # bash recipes/bash/main.sh config
   # bash recipes/common/build_tools.sh
-  source $HOME/.profile
+  # source $HOME/.zshrc
+}
+
+function install_macos {
+  bash recipes/mashina/main.sh
+
+  bash recipes/homebrew/main.sh
+  bash recipes/common/build_tools.sh
+  bash recipes/tmux/main.sh
+  bash recipes/starship/main.sh
+  bash recipes/zsh/main.sh
 }
 
 function uninstall {
-  rm -r $MASHINA_ROOT
+  rm -r $HOME/mashina
   rm -r $HOME/.profile
+  rm -r $HOME/.zprofile
+  rm -r $HOME/.bashrc
+  rm -r $HOME/.zshrc
 }
 
 $@

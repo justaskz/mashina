@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 function refresh_inventory {
   find $HOME/repos/ansible/inventory* -type f -exec cat {} \; | \
     grep -Po ".*ansible_host=[\d\.]*" | \

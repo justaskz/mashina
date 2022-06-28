@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 function install {
   if [ -f "/etc/debian_version" ]; then
      install_debian

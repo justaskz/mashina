@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 FZF_HOME="$MASHINA_OPT/fzf"
 
 if [ -n "$BASH_VERSION" ]; then

@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 source recipes/helpers/install.sh
 
 function run {

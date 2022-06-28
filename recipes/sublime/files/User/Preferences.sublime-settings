@@ -1,0 +1,93 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.pngs",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.deb",
+		"core/db/migrates/*.rb"
+	],
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
+	"copy_with_empty_selection": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.log",
+		".DS_Store",
+		"*.pyc",
+		"*.cache",
+		".tags*",
+		"*.js.map",
+		"*.scssc",
+		"*.rdb",
+		"*.svg",
+		"*package-lock.json*"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules",
+		"bower_components",
+		"project",
+		".sass-cache",
+		"__pycache__",
+		".crystal",
+		".shards",
+		"tmp/cache",
+		"webpack",
+		"libs",
+		"certs",
+		"Package Control.cache",
+		"public/ckeditor",
+		".vagrant",
+		"_history"
+	],
+	"font_face": "Courier New",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"TypeScript Syntax",
+		"Vintage",
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		".gitkeep",
+		"node_modules",
+		"bower_components",
+		"tmp/"
+	],
+	"index_files": true,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"mini_diff": false,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		99
+	],
+	"save_on_focus_lost": true,
+	"show_definitions": false,
+	"show_git_status": false,
+	"show_panel_on_build": false,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
+	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?",
+}

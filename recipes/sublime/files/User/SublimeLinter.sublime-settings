@@ -1,0 +1,35 @@
+// SublimeLinter Settings - User
+{
+  "debug": false,
+  "show_hover_line_report": true,
+  "show_hover_region_report": false,
+  "gutter_theme": "Default",
+  "paths":{
+    "osx": ["~/.rbenv/shims", "~/.pyenv/shims"]
+  },
+  "styles": [
+    {
+      "mark_style": "solid_underline",
+      "priority": 0,
+      "scope": "region.purplish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "icon": "pointer",
+      "types": [
+          "warning"
+      ]
+    },
+    {
+      "mark_style": "solid_underline",
+      "priority": 0,
+      "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+      "icon": "pointer",
+      "types": [
+          "error"
+      ]
+    }
+  ],
+  "linters": {
+    "rubocop": {
+      "excludes": ["*.cnf", "*Vagrantfile"]
+    }
+  }
+}

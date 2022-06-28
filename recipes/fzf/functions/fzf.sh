@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # CTRL+P show files and directories in current folder only
 # __fsel_mod() {
 #   local cmd="${FZF_CTRL_P_COMMAND:-"command find -L . -maxdepth 1 \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune \

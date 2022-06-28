@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+source recipes/helpers/install.sh
 
 function run {
-  install_debian
+  install
 }
 
 function install_debian {
@@ -9,6 +9,10 @@ function install_debian {
   sudo apt -y install software-properties-common \
     build-essential \
     apt-transport-https
+}
+
+function install_macos {
+  brew install wget
 }
 
 run
