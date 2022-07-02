@@ -7,7 +7,8 @@ function run {
 }
 
 function update_config {
-  cp recipes/tmux/dotfiles/.tmux.conf $HOME/.tmux.conf
+  # cp recipes/tmux/dotfiles/.tmux.conf $HOME/.tmux.conf
+  cp recipes/tmux/dotfiles/.tmux-macos.conf $HOME/.tmux.conf
 }
 
 function install_debian {

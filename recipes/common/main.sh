@@ -1,13 +1,12 @@
-source recipes/helpers/install.sh
-
 function run {
   install
 }
 
 function install_debian {
-  sudo apt update
-  sudo apt -y install software-properties-common \
+  apt update
+  apt -y install \
     build-essential \
+    software-properties-common \
     apt-transport-https
 }
 

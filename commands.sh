@@ -18,7 +18,7 @@ function install_macos {
   bash recipes/mashina/main.sh
 
   bash recipes/homebrew/main.sh
-  bash recipes/common/build_tools.sh
+  bash recipes/common/main.sh
   bash recipes/tmux/main.sh
   bash recipes/starship/main.sh
   bash recipes/zsh/main.sh
