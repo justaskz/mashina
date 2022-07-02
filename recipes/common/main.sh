@@ -1,3 +1,5 @@
+source recipes/helpers/install.sh
+
 function run {
   install
 }
