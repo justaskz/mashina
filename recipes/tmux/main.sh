@@ -2,8 +2,8 @@ source recipes/helpers/install.sh
 
 function run {
   update_config
-  # exit_if_installed tmux
-  # install
+  exit_if_installed tmux
+  install
 }
 
 function update_config {

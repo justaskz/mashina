@@ -14,6 +14,15 @@ function install_dev {
   # source $HOME/.zshrc
 }
 
+function install_debian {
+  bash recipes/mashina/main.sh
+  bash recipes/tmux/main.sh
+  bash recipes/fzf/main.sh
+  bash recipes/ssh/main.sh
+  bash recipes/starship/main.sh
+
+}
+
 function install_macos {
   bash recipes/mashina/main.sh
 
