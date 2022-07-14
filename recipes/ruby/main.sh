@@ -28,4 +28,9 @@ function install_macos {
   rbenv rehash
 }
 
+function install_dependencies_macos {
+  brew install libffi
+  # gem install ffi sassc
+}
+
 run
