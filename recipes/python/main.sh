@@ -40,7 +40,6 @@ function install_debian_dependencies {
     tk-dev \
     libffi-dev \
     liblzma-dev \
-    python-openssl \
     git
 }
 

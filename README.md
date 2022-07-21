@@ -8,6 +8,13 @@ make install
 ```
 
 ### Development
+Docker
+```
+cd /mashina
+bash recipes/mashina/main.sh
+bash recipes/common/main.sh
+```
+
 From Vagrant instance:
 ```
 mkdir -p $HOME/repos/

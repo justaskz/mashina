@@ -6,4 +6,8 @@ function mashina_debug {
   echo "MASHINA_IS_BASH: $MASHINA_IS_BASH"
   echo "MASHINA_IS_ZSH: $MASHINA_IS_ZSH"
   echo "PATH: $PATH"
+  echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
+  echo "SSH_KEYS: $(ssh-add -l)"
+  echo "INVENTORY: $INVENTORY"
+  echo "GROUP: $GROUP"
 }
