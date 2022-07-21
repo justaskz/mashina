@@ -13,7 +13,10 @@ function install_debian {
 }
 
 function install_macos {
-  brew install wget
+  brew install wget grep gnu-sed
+
+  ln -s /opt/homebrew/opt/grep/libexec/gnubin/grep $MASHINA_BIN/grep
+  ln -s /opt/homebrew/opt/gnu-sed/libexec/gnubin/sed $MASHINA_BIN/sed
 }
 
 run

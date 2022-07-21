@@ -6,8 +6,8 @@ function run {
 }
 
 function install_debian {
-  apt-add-repository --yes --update ppa:ansible/ansible
-  apt -y install ansible
+  pip install --user ansible==2.10.7
+  ln -s $HOME/.local/bin/* $MASHINA_BIN
 }
 
 function install_macos {
