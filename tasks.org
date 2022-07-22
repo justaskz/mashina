@@ -13,8 +13,6 @@
   [ ] zsh shell
   [ ] zsh plugins
   [ ] zsh config
-  [ ] python
   [ ] vim
   [ ] git
-  [ ] ruby
   [ ] docker
