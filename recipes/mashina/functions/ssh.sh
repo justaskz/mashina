@@ -25,3 +25,7 @@ function ssh-ansible-eu {
 function ssha {
   ssh-ansible-aws
 }
+
+function sshb {
+  ssh-ansible-eu
+}

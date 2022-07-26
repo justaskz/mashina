@@ -6,8 +6,8 @@ function run {
 }
 
 function install_debian {
-  VERSION="4.4"
-  # VERSION="5.1"
+  # VERSION="4.4"
+  VERSION="5.1"
   IS_LATEST_VERSION=$(echo $BASH_VERSION | grep "$VERSION")
   if [ -n "$IS_LATEST_VERSION" ]; then exit 0; fi
   echo "Installing Bash $VERSION..."
@@ -23,7 +23,7 @@ function install_debian {
   make
   cd
   ln -s $MASHINA_OPT/$FOLDER_NAME/bash $MASHINA_BIN/bash
-  # find how to replace original bash. symlink is not enough
+  chsh -s $MASHINA_BIN/bash
 }
 
 function config {
