@@ -9,6 +9,3 @@ for FILE in $MASHINA_INIT/*.sh; do
 done
 
 source "$MASHINA_ROOT/init/aliases.sh"
-
-if $MASHINA_IS_BASH && [[ -a "$MASHINA_INIT/.bashrc" ]]; then source "$MASHINA_INIT/.bashrc"; fi
-if $MASHINA_IS_ZSH && [[ -a "$MASHINA_INIT/zsh" ]]; then source "$MASHINA_INIT/zsh.sh"; fi

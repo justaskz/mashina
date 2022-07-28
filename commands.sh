@@ -1,10 +1,11 @@
 function install_dev {
   bash recipes/mashina/main.sh
 
-  bash recipes/zsh/main.sh
-  bash recipes/homebrew/main.sh
-  bash recipes/ruby/main.sh
-  bash recipes/starship/main.sh
+  # bash recipes/zsh/main.sh
+  # bash recipes/homebrew/main.sh
+  # bash recipes/ruby/main.sh
+  # bash recipes/fzf/main.sh
+  # bash recipes/starship/main.sh
 
   # bash recipes/common/build_tools.sh
   # bash recipes/tmux/main.sh
