@@ -24,7 +24,7 @@ function install_plugins {
 
   # git completions
   wget -O $MASHINA_FUNCTIONS/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-  wget -O $MASHINA_FUNCTIONS/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+  wget -O $MASHINA_FUNCTIONS/git-completion.zsh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 }
 
 function install_ohmyzsh {

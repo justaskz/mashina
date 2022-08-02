@@ -1,8 +1,13 @@
 source recipes/helpers/install.sh
 
 function run {
+  update_config
   exit_if_installed subl
   install
+}
+
+function update_config {
+  ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$MASHINA_BIN/subl"
 }
 
 function install_macos {

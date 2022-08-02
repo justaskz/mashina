@@ -39,7 +39,7 @@ if ! $(mashina_is_zsh); then return 1; fi
 source $MASHINA_OPT/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # git autocomplete
-zstyle ':completion:*:*:git:*' script $MASHINA_FUNCTIONS/git-completion.bash
+zstyle ':completion:*:*:git:*' script $MASHINA_FUNCTIONS/git-completion.zsh
 fpath=($MASHINA_FUNCTIONS $fpath)
 autoload -Uz compinit && compinit
 
