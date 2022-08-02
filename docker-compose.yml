@@ -2,8 +2,8 @@
 services:
   mashina:
     container_name: mashina
-    hostname: mashina
     image: mashina
+    hostname: mashina
     build:
       context: .
     tty: true

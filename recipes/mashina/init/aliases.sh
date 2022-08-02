@@ -26,6 +26,15 @@ alias gifp="git push -f origin HEAD"
 alias gisave="git add .; git commit -m wip"
 
 #################################################
+## DOCKER
+#################################################
+alias dci="docker images"
+alias dcc="docker ps -a"
+# alias dcir="docker rmi $(docker images -a -q)"
+# alias dccs="docker stop $(docker ps -a -q)"
+alias dccr="docker system prune -f"
+
+#################################################
 ## BOOKMARKS
 #################################################
 alias bin="cd ~/bin"
