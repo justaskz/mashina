@@ -17,12 +17,16 @@ function install_dev {
 
 function install_debian {
   bash recipes/mashina/main.sh
+  source $HOME/.profile
   bash recipes/common/main.sh
   # bash recipes/bash/main.sh
   bash recipes/tmux/main.sh
   bash recipes/fzf/main.sh
   bash recipes/ssh/main.sh
   bash recipes/starship/main.sh
+
+  bash recipes/python/main.sh
+  bash recipes/ansible/main.sh
 }
 
 function install_macos {

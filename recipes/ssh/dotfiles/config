@@ -1,0 +1,30 @@
+Host github.com
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/github_rsa
+
+Host kubilas.tesonet.lt
+  Hostname kubilas.tesonet.lt
+  User git
+  IdentityFile ~/.ssh/kubilas_rsa
+
+# Host ansible.mountaininfra.net
+#    Hostname ansible.mountaininfra.net
+#    IdentityFile ~/.ssh/tesonet_rsa
+
+# Host *
+#  ForwardAgent yes
+
+Host *
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+  LogLevel ERROR
+# IdentityFile ~/.ssh/id_rsa
+
+Host nsp-prod-*
+  Port 3022
+  ForwardAgent yes
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  IdentityFile ~/.tsh/keys/prod-teleport.mountaininfra-payments.com/juka
+  ProxyCommand ssh -i ~/.tsh/keys/prod-teleport.mountaininfra-payments.com/juka -p 3023 %r@prod-teleport.mountaininfra-payments.com -s proxy:%h:%p

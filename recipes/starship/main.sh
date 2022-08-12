@@ -8,6 +8,7 @@ function run {
 
 function install {
   wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $MASHINA_TMP
+  # curl https://raw.githubusercontent.com/starship/starship/master/install/install.sh > $MASHINA_TMP/install.sh
   sh $MASHINA_TMP/install.sh --yes --bin-dir $MASHINA_BIN
   rm $MASHINA_TMP/install.sh
 }

@@ -2,12 +2,16 @@ function ssh-add-nordsec {
   ssh-add ~/.ssh/nordsec_rsa
 }
 
+function ssh-add-nordsec-gitlab {
+  ssh-add ~/.ssh/nordsec_gitlab_rsa
+}
+
 function ssh-add-github {
   ssh-add ~/.ssh/github_rsa
 }
 
-function ssh-add-nordsec-gitlab {
-  ssh-add ~/.ssh/nordsec_gitlab_rsa
+function ssh-add-dev {
+  ssh-add ~/.ssh/dev_rsa
 }
 
 function ssh-ansible-aws {
@@ -28,4 +32,8 @@ function ssha {
 
 function sshb {
   ssh-ansible-eu
+}
+
+function ssht {
+  ssh -A juka@65.21.225.249
 }
