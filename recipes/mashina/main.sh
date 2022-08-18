@@ -5,7 +5,7 @@ function run {
 }
 
 function install {
-  source recipes/mashina/init/mashina_env.sh
+  source recipes/mashina/lib/mashina_env.sh
 
   mkdir -p $MASHINA_ROOT
   mkdir -p $MASHINA_BIN
@@ -18,8 +18,8 @@ function install {
   cp recipes/mashina/dotfiles/.profile $HOME
   cp recipes/mashina/dotfiles/.zshrc $HOME
   cp recipes/mashina/lib/main.sh $MASHINA_ROOT/main.sh
-  cp recipes/mashina/init/mashina_env.sh $MASHINA_INIT/mashina_env.sh
-  cp recipes/mashina/init/aliases.sh $MASHINA_INIT/aliases.sh
+  cp recipes/mashina/lib/mashina_env.sh $MASHINA_ROOT/mashina_env.sh
+  cp recipes/mashina/lib/aliases.sh $MASHINA_ROOT/aliases.sh
 
   for FILE in recipes/mashina/functions/*.sh; do
     if [[ -a $FILE ]]; then cp $FILE $MASHINA_FUNCTIONS; fi

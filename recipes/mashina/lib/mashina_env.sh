@@ -71,6 +71,4 @@ export MASHINA_TMP="$MASHINA_ROOT/tmp"
 # TODO: make path for macos
 # export BASE_PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 export BASE_PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-PATH="$MASHINA_BIN:$BASE_PATH"
-PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
-PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$MASHINA_BIN:$BASE_PATH"

@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
 
-source $HOME/mashina/init/aliases.sh
+source $HOME/mashina/aliases.sh
 
 starship init fish | source

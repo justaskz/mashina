@@ -2,6 +2,7 @@ if hash rbenv 2>/dev/null; then
   rbenv rehash
 fi
 
+export PATH="$HOME/.rbenv/shims:$PATH"
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
