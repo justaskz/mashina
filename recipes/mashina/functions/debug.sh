@@ -10,16 +10,4 @@ function mashina_debug {
   echo "SSH_KEYS: $(ssh-add -l)"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"
-
-  # echo "MASHINA_IS_LOADED: $MASHINA_IS_LOADED"
-  # echo "MASHINA_IS_DEBIAN: $MASHINA_IS_DEBIAN"
-  # echo "MASHINA_IS_MACOS: $MASHINA_IS_MACOS"
-  # echo "MASHINA_IS_BASH: $MASHINA_IS_BASH"
-  # echo "MASHINA_IS_ZSH: $MASHINA_IS_ZSH"
-  # echo "MASHINA_IS_SHELL_INTERACTIVE: $MASHINA_IS_SHELL_INTERACTIVE"
-  # echo "PATH: $PATH"
-  # echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
-  # echo "SSH_KEYS: $(ssh-add -l)"
-  # echo "INVENTORY: $INVENTORY"
-  # echo "GROUP: $GROUP"
 }

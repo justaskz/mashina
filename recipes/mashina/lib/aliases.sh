@@ -10,8 +10,6 @@ alias tmd="tmux detach"
 alias tmk="tmux kill-session -t"
 alias tml="tmux list-sessions"
 alias tms="tmux source-file ~/.tmux.conf"
-alias tme="tmux show-environment"
-alias tff="eval $(tmux showenv -s SSH_AUTH_SOCK)"
 
 #################################################
 ## GIT
@@ -32,8 +30,8 @@ alias gisave="git add .; git commit -m wip"
 #################################################
 alias dci="docker images"
 alias dcc="docker ps -a"
-# alias dcir="docker rmi $(docker images -a -q)"
 # alias dccs="docker stop $(docker ps -a -q)"
+# alias dcir="docker rmi $(docker images -a -q)"
 alias dccr="docker system prune -f"
 
 #################################################

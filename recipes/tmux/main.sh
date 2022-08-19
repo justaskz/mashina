@@ -6,8 +6,11 @@ function run {
   install
 }
 
-function update_config {
-  # cp recipes/tmux/dotfiles/.tmux.conf $HOME/.tmux.conf
+function update_config_debian {
+  cp recipes/tmux/dotfiles/.tmux-linux.conf $HOME/.tmux.conf
+}
+
+function update_config_macos {
   cp recipes/tmux/dotfiles/.tmux-macos.conf $HOME/.tmux.conf
 }
 
