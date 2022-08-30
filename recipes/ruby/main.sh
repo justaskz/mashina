@@ -1,6 +1,6 @@
 source recipes/helpers/install.sh
 
-VERSION=2.7.6
+RUBY_VERSION=2.7.6
 
 function run {
   update_config
@@ -21,8 +21,8 @@ function install_debian {
   mkdir -p "$(rbenv root)"/plugins
   git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-  rbenv install -s $VERSION
-  rbenv global $VERSION
+  rbenv install -s $RUBY_VERSION
+  rbenv global $RUBY_VERSION
   rbenv rehash
 }
 
@@ -31,19 +31,18 @@ function install_macos {
   git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
   ln -s $MASHINA_OPT/rbenv/bin/rbenv $MASHINA_BIN
 
-  rbenv install -s $VERSION
-  rbenv global $VERSION
+  rbenv install -s $RUBY_VERSION
+  rbenv global $RUBY_VERSION
   rbenv rehash
 }
 
 function install_dependencies_macos {
-  brew install libffi
-  brew install mysql
+  brew install libffi mysql
   # gem install ffi sassc
 }
 
 function install_dependencies_debian {
-  apt-get install libmysqlclient-dev
+  sudo apt install -y libmysqlclient-dev
 }
 
 run

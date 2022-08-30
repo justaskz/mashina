@@ -1,8 +1,10 @@
 source recipes/helpers/install.sh
 
+PYTHON_VERSION="3.9.6"
+
 function run {
   update_config
-  exit_if_installed python
+  exit_if_installed pyenv
   install
 }
 
@@ -11,8 +13,7 @@ function update_config {
 }
 
 function install_debian {
-  PYTHON_VERSION="3.9.6"
-  install_debian_dependencies
+  install_dependencies_debian
   git clone --depth 1 https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
   ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
   pyenv install $PYTHON_VERSION
@@ -23,8 +24,8 @@ function install_macos {
   exit 0
 }
 
-function install_debian_dependencies {
-  apt install -y make \
+function install_dependencies_debian {
+  sudo apt install -y make \
     build-essential \
     libssl-dev \
     zlib1g-dev \
