@@ -1,6 +1,6 @@
 source recipes/helpers/install.sh
 
-PYTHON_VERSION="3.9.6"
+PYTHON_VERSION="3.10.7"
 
 function run {
   update_config
@@ -21,7 +21,10 @@ function install_debian {
 }
 
 function install_macos {
-  exit 0
+  git clone --depth 1 https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
+  ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
+  pyenv install $PYTHON_VERSION
+  pyenv global $PYTHON_VERSION
 }
 
 function install_dependencies_debian {

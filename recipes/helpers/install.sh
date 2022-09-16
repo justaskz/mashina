@@ -1,4 +1,4 @@
-source recipes/mashina/lib/mashina_env.sh
+source recipes/mashina/lib/main.sh
 
 function install {
   if [ -f "/etc/debian_version" ]; then
