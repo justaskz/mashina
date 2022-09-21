@@ -1,4 +1,4 @@
-source recipes/helpers/install.sh
+source recipes/helpers/main.sh
 
 VAGRANT_VERSION="2.2.19"
 
