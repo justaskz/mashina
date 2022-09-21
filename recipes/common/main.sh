@@ -1,4 +1,4 @@
-source recipes/helpers/install.sh
+source recipes/helpers/main.sh
 
 function run {
   install

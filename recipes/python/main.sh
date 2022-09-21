@@ -1,4 +1,4 @@
-source recipes/helpers/install.sh
+source recipes/helpers/main.sh
 
 PYTHON_VERSION="3.10.7"
 
