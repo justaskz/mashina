@@ -24,3 +24,11 @@ function update_config {
     update_config_debian
   fi
 }
+
+function exec_custom_or_run {
+  if [[ "$(type $@ 2> /dev/null)" ]]; then
+    $@
+  else
+    run
+  fi
+}

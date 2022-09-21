@@ -41,4 +41,4 @@ function backup_macos {
   cp -r "$SUBLIME_PACKAGES/User" $SUBLIME_BACKUP_FOLDER
 }
 
-run
+exec_custom_or_run $@
