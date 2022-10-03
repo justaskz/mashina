@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+for ${1:index}, ${2:item} := range ${3:array} {
+  ${4:// code}
+}
+]]></content>
+  <tabTrigger>qfor</tabTrigger>
+  <scope>source.go</scope>
+  <description>go for loop</description>
+</snippet>

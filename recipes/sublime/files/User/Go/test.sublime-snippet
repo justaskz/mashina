@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+package ${1:package_name}
+
+import (
+	"testing"
+	"github.com/stretchr/testify/assert"
+)
+
+func Test${2:Name}(t *testing.T) {
+	assert.Equal(t, ${3:expected}, ${4:actual})${5:}
+}
+]]></content>
+	<tabTrigger>qtest</tabTrigger>
+	<scope>source.go</scope>
+	<description>go test boilerplate</description>
+</snippet>

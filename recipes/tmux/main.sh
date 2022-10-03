@@ -24,7 +24,8 @@ function install_debian {
   cd "$TMUX_PATH"
 
   sh autogen.sh
-  sh configure && make
+  sh configure
+  make
   ln -s "$TMUX_PATH/tmux" $MASHINA_BIN
 }
 

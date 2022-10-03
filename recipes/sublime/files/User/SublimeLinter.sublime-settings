@@ -5,7 +5,12 @@
   "show_hover_region_report": false,
   "gutter_theme": "Default",
   "paths":{
-    "osx": ["~/.rbenv/shims", "~/.pyenv/shims"]
+    "linux": [],
+    "osx": [
+      "~/.rbenv/shims",
+      "~/.pyenv/shims",
+      "/opt/homebrew/bin"
+    ]
   },
   "styles": [
     {
@@ -30,6 +35,14 @@
   "linters": {
     "rubocop": {
       "excludes": ["*.cnf", "*Vagrantfile"]
+    },
+    "golangcilint": {
+      "env": {
+        "PATH": "/opt/homebrew/bin",
+      },
+      "executable": "golangci-lint",
+      "args": "presets style",
+      "selector": "source.go",
     }
   }
 }

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+FactoryBot.define do
+  factory :${1:name} do
+    ${2:key} { ${3:value} }
+
+    initialize_with { new(attributes) }
+  end
+end
+]]></content>
+  <tabTrigger>qfactory</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>ruby factory bot</description>
+</snippet>

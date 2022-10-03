@@ -37,6 +37,7 @@
 		"SublimeLinter",
 		"SublimeLinter-eslint",
 		"SublimeLinter-flow",
+		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
 		"Terraform",
 		"Text Pastry",
@@ -45,6 +46,6 @@
 		"TypeScript Syntax",
 		"VimL",
 		"Vue Syntax Highlight",
-		"WordHighlight"
+		"WordHighlight",
 	],
 }

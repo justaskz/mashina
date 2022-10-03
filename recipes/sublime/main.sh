@@ -25,6 +25,9 @@ function install_macos {
 
   # make sublime default editor
   defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.4;}'
+
+  # go to macos keyboard shortcut settings and create custom shortcut for sublime
+  # Quit Sublime Text => ^=
 }
 
 function backup_macos {

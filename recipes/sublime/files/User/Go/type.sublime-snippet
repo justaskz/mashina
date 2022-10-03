@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+type ${1:name} ${2:struct}
+]]></content>
+  <tabTrigger>qtype</tabTrigger>
+  <scope>source.go</scope>
+  <description>go type</description>
+</snippet>

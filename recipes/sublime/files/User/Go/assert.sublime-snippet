@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.Equal(t, ${1:expected}, ${2:actual})
+]]></content>
+  <tabTrigger>qassert</tabTrigger>
+  <scope>source.go</scope>
+  <description>go assert</description>
+</snippet>

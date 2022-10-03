@@ -1,3 +1,12 @@
 {
-	"prog": "iterm"
+	"prog": "tmux",
+	"tmux": "/opt/homebrew/bin/tmux",
+	"python": {
+		"prog": "tmux",
+		"bracketed_paste_mode": true,
+	},
+	"r" : {
+    "prog": "tmux",
+    "bracketed_paste_mode": false
+  },
 }

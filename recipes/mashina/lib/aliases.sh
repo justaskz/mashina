@@ -42,7 +42,7 @@ alias bin="cd ~/bin"
 alias opt="cd ~/opt"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
-alias sublime_home="cd \"$HOME/Library/Application Support/Sublime Text 3\""
+alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
 
 #################################################
 ## TOOLS

@@ -147,13 +147,13 @@
   //-----------------------------------------------
 
   // disable open file
-  { "keys": ["super+o"], "command": "false" },
+  { "keys": ["super+o"], "command": "noop" },
   // disable quiting
   { "keys": ["super+q"], "command": "false" },
   // disable font size
-  { "keys": ["super+equals"], "command": "false" },
-  { "keys": ["super+plus"], "command": "false" },
-  { "keys": ["super+minus"], "command": "false" },
+  { "keys": ["super+equals"], "command": "noop" },
+  { "keys": ["super+plus"], "command": "noop" },
+  { "keys": ["super+minus"], "command": "noop" },
 
   //-----------------------------------------------
   // SIDEBAR
