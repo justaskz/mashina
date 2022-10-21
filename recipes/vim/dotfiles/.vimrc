@@ -10,43 +10,23 @@ call vundle#begin()
 
 " Plugins to install
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'arcticicestudio/nord-vim'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'elixir-editors/vim-elixir'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'scrooloose/nerdcommenter'
 " Plugin 'junegunn/fzf'
 " Plugin 'junegunn/fzf.vim'
 
+" THEMES
+Plugin 'morhetz/gruvbox'
+Plugin 'arcticicestudio/nord-vim'
+
 call vundle#end()
 filetype plugin indent on
 
 "-----------------------------------------------
-" MISC
-"-----------------------------------------------
-
-" Make backspace work
-set backspace=indent,eol,start
-
-" show command in bottom bar (powerline)
-set showcmd
-
-" visual autocomplete for command menu
-set wildmenu
-
-" redraw only when we need to.
-set lazyredraw
-
-" auto refresh file
-" set autoread
-
-" no backuping file on every file save
-" set nobackup
-
-"-----------------------------------------------
 " LOOKS
 "-----------------------------------------------
-
 " set true colors
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -55,7 +35,10 @@ if exists('+termguicolors')
 endif
 
 " set colorscheme
-colorscheme default
+colorscheme gruvbox
+
+" enable dark theme
+set background=dark
 
 " let g:rehash256 = 1
 
@@ -69,7 +52,41 @@ set number
 set ruler
 
 " line numbers gutter width
-set numberwidth=7
+set numberwidth=4
+
+"-----------------------------------------------
+" KEYBINDINGS
+"-----------------------------------------------
+
+" reload vimrc file
+nnoremap <C-m> :source $MYVIMRC<CR>
+
+map <leader>tn :tabnew<cr>
+
+"-----------------------------------------------
+" MISC
+"-----------------------------------------------
+
+" enable mouse
+set mouse=a
+
+" Make backspace work
+" set backspace=indent,eol,start
+
+" show command in bottom bar (powerline)
+" set showcmd
+
+" visual autocomplete for command menu
+" set wildmenu
+
+" redraw only when we need to
+" set lazyredraw
+
+" auto refresh file
+" set autoread
+
+" no backuping file on every file save
+" set nobackup
 
 "-----------------------------------------------
 " LINES
@@ -105,10 +122,10 @@ set hlsearch
 " let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "-------------------------------------------------
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-map <C-n> :NERDTreeToggle<CR>
-map <C-f> :NERDTreeFocus<CR>
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+" map <C-n> :NERDTreeToggle<CR>
+" map <C-f> :NERDTreeFocus<CR>
 
 "------------------------------------------------
 " Navigation

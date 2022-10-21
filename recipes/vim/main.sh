@@ -2,7 +2,7 @@ source recipes/helpers/main.sh
 
 function run {
   update_config
-  exit_if_installed nvim
+  exit_if_installed vim
   install
 }
 
@@ -15,6 +15,7 @@ function install_debian {
 }
 
 function install_macos {
+  VIM
   brew install vim
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 }

@@ -1,12 +1,15 @@
 {
-	"prog": "tmux",
-	"tmux": "/opt/homebrew/bin/tmux",
+	"prog": "kitty",
 	"python": {
-		"prog": "tmux",
+		"prog": "kitty",
 		"bracketed_paste_mode": true,
 	},
 	"r" : {
-    "prog": "tmux",
-    "bracketed_paste_mode": false
+    "prog": "kitty",
+    "bracketed_paste_mode": false,
+  },
+	"kitty": {
+		"path": "/opt/homebrew/bin/kitty",
+    "socket": "unix:/tmp/mykitty",
   },
 }

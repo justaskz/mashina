@@ -2,7 +2,7 @@
 window:
   title: ''
   dynamic_title: false
-  decorations: full
+  decorations: transparent
   padding:
     x: 20
     y: 10
@@ -32,10 +32,10 @@ cursor:
   blink_interval: 400
 colors:
   primary:
-    background: '#ffffff'
-    foreground: '#000000'
+    background: '#251621'
+    foreground: '#DAD0CE'
   normal:
-    black:   '#000000'
+    black:   '#251621'
     red:     '#e44329'
     green:   '#00ad64'
     yellow:  '#ffa701'

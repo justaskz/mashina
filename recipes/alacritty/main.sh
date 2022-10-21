@@ -2,8 +2,8 @@ source recipes/helpers/main.sh
 
 function run {
   update_config
-  exit_if_installed alacritty
-  install
+  # exit_if_installed alacritty
+  # install
 }
 
 function install_debian {
@@ -16,14 +16,15 @@ function update_config {
 }
 
 function install_macos {
-  git clone --depth 1 https://github.com/alacritty/alacritty.git $MASHINA_OPT/alacritty
+  VERSION="v0.10.1"
+  git clone --depth 1 --branch $VERSION https://github.com/alacritty/alacritty.git $MASHINA_OPT/alacritty
   cd $MASHINA_OPT/alacritty
   rustup override set stable
   rustup update stable
-
   make app
+
   cp -r $MASHINA_OPT/alacritty/target/release/osx/Alacritty.app /Applications/
-  ln -s /Applications/Alacritty.app/Contents/MacOS/alacritty $MASCHINA_BIN
+  ln -s "/Applications/Alacritty.app/Contents/MacOS/alacritty" $MASCHINA_BIN/alacritty
 }
 
 run

@@ -1,4 +1,5 @@
 unalias -a
+
 alias src="source $MASHINA_ROOT/main.sh"
 
 #################################################
@@ -43,6 +44,7 @@ alias opt="cd ~/opt"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
+alias gohome="cd $GOPATH/src/github.com/justaskz"
 
 #################################################
 ## TOOLS
@@ -51,6 +53,8 @@ alias ..="cd .."
 alias s="subl"
 alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
+alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
+alias vim="nvim"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"

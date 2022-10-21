@@ -6,12 +6,27 @@ function run {
 
 function install_macos {
   brew install iterm2
+
+  # SETUP
+  # Pref > Appearance > Theme > Minimal
+  # Pref > Appearance > Windows > Show window number in title bar > Unselect
+  # Pref > Appearance > Windows > Hide scrollbars
+  # Pref > Appearance > Panes > 0 12
+  # Pref > Advanced > Search pinch > disable
 }
 
 function fonts {
   git clone "https://github.com/powerline/fonts.git" --depth=1 $MASHINA_TMP/fonts
   bash $MASHINA_TMP/fonts/install.sh
   rm -rf $MASHINA_TMP/fonts
+}
+
+function uninstall {
+  brew uninstall iterm2
+
+  rm $HOME/Library/Preferences/com.googlecode.iterm2.plist
+  rm $HOME/Library/Caches/com.googlecode.iterm2
+  rm -rf "$HOME/Library/Saved Application State/com.googlecode.iterm2.savedState"
 }
 
 run

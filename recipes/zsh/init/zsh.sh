@@ -37,6 +37,7 @@ if ! $(mashina_is_zsh); then return 1; fi
 
 # syntax highlighting
 source $MASHINA_OPT/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_STYLES[path]='fg=none'
 
 # git autocomplete
 zstyle ':completion:*:*:git:*' script $MASHINA_FUNCTIONS/git-completion.zsh
