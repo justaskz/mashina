@@ -13,6 +13,10 @@ function install_macos {
   # Pref > Appearance > Windows > Hide scrollbars
   # Pref > Appearance > Panes > 0 12
   # Pref > Advanced > Search pinch > disable
+  # Pref > General > Selection > Application in terminal may access clipboard > Enabled
+
+  # Pref > Keys: ^§ > Next Window
+  # Pref > Keys: ^v > Paste: Convertpunctiation
 }
 
 function fonts {
