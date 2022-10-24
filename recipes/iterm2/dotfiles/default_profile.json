@@ -1,12 +1,6 @@
 {
   "Badge Text" : "",
-  "Ansi 5 Color" : {
-    "Red Component" : 0.62685638666152954,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.45103743672370911,
-    "Alpha Component" : 1,
-    "Green Component" : 0.29604318737983704
-  },
+  "ASCII Ligatures" : false,
   "Working Directory" : "\/Users\/t1028",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -108,7 +102,7 @@
     "0x69-0x100000-0x22" : {
       "Version" : 1,
       "Action" : 11,
-      "Text" : "0x11",
+      "Text" : "0x09",
       "Label" : ""
     },
     "0x65-0x100000-0xe" : {
@@ -126,13 +120,13 @@
     "0x6f-0x100000-0x1f" : {
       "Version" : 1,
       "Action" : 11,
-      "Text" : "0x09",
+      "Text" : "0x0F",
       "Label" : ""
     },
     "0x79-0x100000-0x10" : {
       "Version" : 1,
       "Action" : 11,
-      "Text" : "0x31",
+      "Text" : "0x19",
       "Label" : ""
     },
     "0x74-0x100000-0x11" : {
@@ -177,12 +171,6 @@
       "Text" : "0x02",
       "Label" : ""
     },
-    "0x76-0x100000-0x9" : {
-      "Version" : 1,
-      "Action" : 11,
-      "Text" : "0x16",
-      "Label" : ""
-    },
     "0x66-0x100000-0x3" : {
       "Version" : 1,
       "Action" : 11,
@@ -213,16 +201,16 @@
       "Text" : "0x18",
       "Label" : ""
     },
-    "0x70-0x100000-0x23" : {
-      "Version" : 1,
-      "Action" : 11,
-      "Text" : "0x10",
-      "Label" : ""
-    },
     "0x61-0x100000-0x0" : {
       "Version" : 1,
       "Action" : 11,
       "Text" : "0x01",
+      "Label" : ""
+    },
+    "0x70-0x100000-0x23" : {
+      "Version" : 1,
+      "Action" : 11,
+      "Text" : "0x10",
       "Label" : ""
     },
     "0x75-0x100000-0x20" : {
@@ -266,7 +254,7 @@
   "Ansi 2 Color" : {
     "Red Component" : 0.52591603994369507,
     "Color Space" : "Calibrated",
-    "Blue Component" : 0.082894742488861084,
+    "Blue Component" : 0.082894742488861112,
     "Alpha Component" : 1,
     "Green Component" : 0.53061914443969727
   },
@@ -311,7 +299,7 @@
   "Ansi 1 Color" : {
     "Red Component" : 0.74529051780700684,
     "Color Space" : "Calibrated",
-    "Blue Component" : 0.090684391558170319,
+    "Blue Component" : 0.090684391558170346,
     "Alpha Component" : 1,
     "Green Component" : 0.05879192054271698
   },
@@ -351,8 +339,8 @@
     "Green Component" : 0.11759573966264725
   },
   "Blur" : false,
-  "Vertical Spacing" : 1,
   "Normal Font" : "SourceCodePro-Regular 14.4",
+  "Vertical Spacing" : 1,
   "Use Underline Color" : false,
   "Ansi 7 Color" : {
     "Red Component" : 0.5926094651222229,
@@ -404,6 +392,12 @@
   "Use Tab Color" : false,
   "Visual Bell" : false,
   "Custom Directory" : "No",
-  "Thin Strokes" : 3,
-  "ASCII Ligatures" : false
+  "Ansi 5 Color" : {
+    "Red Component" : 0.62685638666152954,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.45103743672370911,
+    "Alpha Component" : 1,
+    "Green Component" : 0.29604318737983704
+  },
+  "Thin Strokes" : 3
 }
