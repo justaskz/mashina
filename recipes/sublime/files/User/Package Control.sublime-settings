@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"TypeScript Syntax",
 	],
 	"installed_packages":
 	[
@@ -19,11 +18,16 @@
 		"FavoriteFiles",
 		"Git",
 		"Github Color Theme",
+		"Gofmt",
 		"GotoTab",
+		"gruvbox",
 		"Haproxy",
+		"INI",
 		"IPython Notebook",
 		"Jinja2",
 		"LoremIpsum",
+		"LSP",
+		"LSP-gopls",
 		"orgmode",
 		"Package Control",
 		"Pretty JSON",
@@ -36,7 +40,6 @@
 		"Spec Finder",
 		"SublimeERB",
 		"SublimeLinter",
-		"SublimeLinter-eslint",
 		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
@@ -44,7 +47,6 @@
 		"Text Pastry",
 		"Theme - Soda",
 		"Tmux Syntax Highlight",
-		"TypeScript Syntax",
 		"VimL",
 		"Vue Syntax Highlight",
 		"WordHighlight",

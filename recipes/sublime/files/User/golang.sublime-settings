@@ -1,8 +1,10 @@
 {
   "env": {
     "GOPATH": "/Users/t1028/go",
+    "PATH": "/Users/t1028/go/bin",
   },
   "GOPATH": "/Users/t1028/go",
+  "PATH": "/Users/t1028/go/bin",
   "tab_size": 2,
   "translate_tabs_to_spaces": false
 }

@@ -1,15 +1,11 @@
 {
-	"prog": "kitty",
+	"prog": "iterm",
 	"python": {
-		"prog": "kitty",
+		"prog": "iterm",
 		"bracketed_paste_mode": true,
 	},
 	"r" : {
-    "prog": "kitty",
+    "prog": "iterm",
     "bracketed_paste_mode": false,
-  },
-	"kitty": {
-		"path": "/opt/homebrew/bin/kitty",
-    "socket": "unix:/tmp/mykitty",
   },
 }

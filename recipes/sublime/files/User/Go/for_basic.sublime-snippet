@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+for i := 0; i < ${1:max}; i++ {
+  ${2:// code}
+}
+]]></content>
+  <tabTrigger>qfor_basic</tabTrigger>
+  <scope>source.go</scope>
+  <description>go for loop</description>
+</snippet>

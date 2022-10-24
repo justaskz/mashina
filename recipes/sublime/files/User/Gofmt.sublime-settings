@@ -1,0 +1,6 @@
+{
+  "cmds": [
+    ["/Users/t1028/go/bin/goimports", "."]
+  ],
+  "format_on_save": true
+}

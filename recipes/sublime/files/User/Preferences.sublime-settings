@@ -20,7 +20,7 @@
 		"core/db/migrates/*.rb"
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -59,7 +59,8 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"TypeScript Syntax",
+		"Gofmt",
+		"SublimeLinter-golangcilint",
 		"Vintage",
 	],
 	"index_exclude_patterns":

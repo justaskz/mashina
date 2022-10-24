@@ -57,47 +57,48 @@
   //-----------------------------------------------
 
   // move cursor
-  { "keys": ["ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false }},
-  { "keys": ["ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true }},
-  { "keys": ["ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false }},
-  { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true }},
+  { "keys": ["super+k"], "command": "move", "args": { "by": "lines", "forward": false }},
+  { "keys": ["super+j"], "command": "move", "args": { "by": "lines", "forward": true }},
+  { "keys": ["super+h"], "command": "move", "args": { "by": "characters", "forward": false }},
+  { "keys": ["super+l"], "command": "move", "args": { "by": "characters", "forward": true }},
 
   // scroll up and down
-  { "keys": ["super+ctrl+k"], "command": "scroll_lines", "args": { "amount": 1.0 }},
-  { "keys": ["super+ctrl+j"], "command": "scroll_lines", "args": { "amount": -1.0 }},
+  // { "keys": ["super+ctrl+k"], "command": "scroll_lines", "args": { "amount": 1.0 }},
+  // { "keys": ["super+ctrl+j"], "command": "scroll_lines", "args": { "amount": -1.0 }},
 
   // jump through words
-  { "keys": ["super+ctrl+h"], "command": "move", "args": { "by": "subwords", "forward": false }},
-  { "keys": ["super+ctrl+l"], "command": "move", "args": { "by": "subwords", "forward": true }},
+  { "keys": ["super+i"], "command": "move", "args": { "by": "subwords", "forward": false }},
+  { "keys": ["super+o"], "command": "move", "args": { "by": "subwords", "forward": true }},
 
   // move lines up and down
-  { "keys": ["alt+ctrl+k"], "command": "swap_line_up" },
-  { "keys": ["alt+ctrl+j"], "command": "swap_line_down" },
+  { "keys": ["alt+k"], "command": "swap_line_up" },
+  { "keys": ["alt+j"], "command": "swap_line_down" },
 
   // move cursor to start or end of the line
-  { "keys": ["alt+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": false }},
-  { "keys": ["alt+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": false }},
+  { "keys": ["alt+h"], "command": "move_to", "args": { "to": "bol", "extend": false }},
+  { "keys": ["alt+l"], "command": "move_to", "args": { "to": "eol", "extend": false }},
 
   // select a line
-  { "keys": ["shift+ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false, "extend": true }},
-  { "keys": ["shift+ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true, "extend": true }},
+  // { "keys": ["shift+ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false, "extend": true }},
+  // { "keys": ["shift+ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true, "extend": true }},
 
   // select character
-  { "keys": ["shift+ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false, "extend": true }},
-  { "keys": ["shift+ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true, "extend": true }},
+  // { "keys": ["shift+h"], "command": "move", "args": { "by": "characters", "forward": false, "extend": true }},
+  // { "keys": ["shift+l"], "command": "move", "args": { "by": "characters", "forward": true, "extend": true }},
 
   // select between brackets
-  { "keys": ["super+shift+ctrl+k"], "command": "expand_selection", "args": { "to": "brackets" }},
+  // { "keys": ["super+shift+ctrl+k"], "command": "expand_selection", "args": { "to": "brackets" }},
+
   // Select between commas
-  { "keys": ["super+shift+ctrl+j"], "command": "select_quoted" },
+  // { "keys": ["super+shift+ctrl+j"], "command": "select_quoted" },
 
   // expand multiple cursors up and down
-  { "keys": ["alt+shift+ctrl+k"], "command": "select_lines", "args": { "forward": false }},
-  { "keys": ["alt+shift+ctrl+j"], "command": "select_lines", "args": { "forward": true }},
+  // { "keys": ["alt+shift+ctrl+k"], "command": "select_lines", "args": { "forward": false }},
+  // { "keys": ["alt+shift+ctrl+j"], "command": "select_lines", "args": { "forward": true }},
 
   // select whole line
-  { "keys": ["alt+shift+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": true }},
-  { "keys": ["alt+shift+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": true }},
+  // { "keys": ["alt+shift+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": true }},
+  // { "keys": ["alt+shift+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": true }},
 
   //-----------------------------------------------
   // OTHER
@@ -106,23 +107,31 @@
   // new line
   { "keys": ["super+enter"], "command": "run_macro_file",
     "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
+
   // copy file path to clipboard
   { "keys": ["super+space", "super+c"], "command": "copy_path" },
+
   // select a line
   { "keys": ["super+e"], "command": "expand_selection", "args": { "to": "line" }},
 
   // go to document start
   { "keys": ["super+space", "super+up"], "command": "move_to", "args": { "to": "bof", "extend": false }},
+
   // go to document end
   { "keys": ["super+space", "super+down"], "command": "move_to", "args": { "to": "eof", "extend": false }},
+
   // go to line
   { "keys": ["super+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }},
+
   // right delete
   { "keys": ["ctrl+backspace"], "command": "right_delete" },
+
   // right delete word
   { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+
   // go to definition
   { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
+
   // go to search result
   { "keys": ["super+space", "super+g"], "command": "prev_result" },
 
@@ -134,8 +143,10 @@
 
   // open favorite files list
   { "keys": ["super+space", "super+f"], "command": "favorite_files_open" },
+
   // send to Terminal
   { "keys": ["super+\\"], "command": "send_code" },
+
   // show in sidebar
   { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
 
@@ -147,9 +158,11 @@
   //-----------------------------------------------
 
   // disable open file
-  { "keys": ["super+o"], "command": "noop" },
+  // { "keys": ["super+o"], "command": "noop" },
+
   // disable quiting
   { "keys": ["super+q"], "command": "false" },
+
   // disable font size
   { "keys": ["super+equals"], "command": "noop" },
   { "keys": ["super+plus"], "command": "noop" },
@@ -161,18 +174,25 @@
 
   // toogle sidebar
   { "keys": ["super+space", "super+o"], "command": "toggle_side_bar" },
+
   // focus sidebar
   { "keys": ["super+space", "super+d"], "command": "focus_side_bar" },
+
   // focus text
   { "keys": ["super+space", "super+d", "super+f"], "command": "focus_group", "args": { "group": 0 }},
+
   // clear sidebar
   { "keys": ["super+space", "super+s", "super+c"], "command": "close_folder_list" },
+
   // create new directory
   { "keys": ["super+space", "super+n", "super+d"], "command": "side_bar_new_directory" },
+
   // create new file
   { "keys": ["super+space", "super+n", "super+f"], "command": "side_bar_new_file" },
+
   // move
   { "keys": ["super+space", "super+r", "super+e"], "command": "side_bar_move" },
+
   // delete file or directory
   { "keys": ["super+space", "super+r", "super+r"], "command": "side_bar_delete" },
 ]

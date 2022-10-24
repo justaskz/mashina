@@ -1,0 +1,8 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+  "gopls": {
+    "env": {
+      "PATH": "/opt/homebrew/bin"
+    }
+  }
+}
