@@ -43,22 +43,20 @@ function mashina_is_debian {
 }
 
 function mashina_is_bash {
-  # echo "$(mashina_is_string_present $SHELL bash)"
   echo "$(mashina_is_variable_defined $BASH_VERSION)"
 }
 
 function mashina_is_zsh {
-  # echo "$(mashina_is_string_present $SHELL zsh)"
   echo "$(mashina_is_variable_defined $ZSH_VERSION)"
 }
 
-export LC_ALL="en_US.UTF-8"
 export MASHINA_ROOT="$HOME/mashina"
 export MASHINA_INIT="$MASHINA_ROOT/init"
 export MASHINA_BIN="$MASHINA_ROOT/bin"
 export MASHINA_OPT="$MASHINA_ROOT/opt"
 export MASHINA_FUNCTIONS="$MASHINA_ROOT/functions"
 export MASHINA_TMP="$MASHINA_ROOT/tmp"
+# export LC_ALL="en_US.UTF-8"
 
 # export MASHINA_IS_LOADED="$(mashina_is_mashina_loaded)"
 # export MASHINA_IS_FRESH="$(is_mashina_fresh)"

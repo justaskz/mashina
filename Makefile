@@ -13,5 +13,5 @@ up:
 down:
 	@ docker-compose down
 
-connect_mashina:
+connect:
 	@ docker-compose exec mashina bash

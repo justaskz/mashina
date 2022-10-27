@@ -9,7 +9,8 @@ function install_debian {
   apt -y install \
     build-essential \
     software-properties-common \
-    apt-transport-https
+    apt-transport-https \
+    wget
 }
 
 function install_macos {

@@ -54,7 +54,7 @@ alias s="subl"
 alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
-alias vim="nvim"
+alias vim="nvim || /usr/bin/vim"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
