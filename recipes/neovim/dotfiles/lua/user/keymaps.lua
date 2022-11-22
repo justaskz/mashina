@@ -14,8 +14,8 @@ keymap("n", "<C-q>", "<NOP>", opts)
 keymap("n", "<C-p>", ":Files<cr>", opts)
 
 -- cmd + P => commands palette
--- keymap("n", "<A-j>", ":Commands<cr>", opts)
--- keymap("n", "<A-o>", "i", opts)
+-- keymap("n", "<M-j>", ":Commands<cr>", opts)
+-- keymap("n", "<A-o>", ":Commands<cr>", opts)
 
 -- Leader + t => open nvim tree
 keymap("n", "<C-t>", ":NvimTreeToggle<cr>", opts)

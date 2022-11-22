@@ -48,3 +48,6 @@ autoload -Uz compinit && compinit
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
+
+# add empty line before comamnd
+precmd() { precmd() { echo "" } }

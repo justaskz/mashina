@@ -12,10 +12,10 @@ function update_config {
   cp recipes/kitty/dotfiles/kitty.conf $KITTY_HOME
   cp recipes/kitty/dotfiles/macos-launch-services-cmdline $KITTY_HOME
 
-  cp recipes/kitty/dotfiles/theme_light.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/theme_dark.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/theme_dev.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/theme_gruvbox.conf $KITTY_HOME
+  cp recipes/kitty/dotfiles/themes/theme_light.conf $KITTY_HOME
+  cp recipes/kitty/dotfiles/themes/theme_dark.conf $KITTY_HOME
+  cp recipes/kitty/dotfiles/themes/theme_dev.conf $KITTY_HOME
+  cp recipes/kitty/dotfiles/themes/theme_gruvbox.conf $KITTY_HOME
 }
 
 function install_debian {
@@ -23,11 +23,19 @@ function install_debian {
 }
 
 function install_macos {
-  brew install kitty
+  # brew install kitty
+  brew install pkg-config
+  brew install harfbuzz
+  brew install zlib
+  brew install libpng
+  brew install lcms2
+  brew install librsync
+  brew install openssl
 
-  # CUSTOM INSTALL
-  # curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-  # ln -s /Applications/kitty.app/Contents/MacOS/kitty $MASCHINA_BIN
+  git clone --depth=1 git@github.com:kovidgoyal/kitty.git $MASHINA_OPT/kitty
+  cd $MASHINA_OPT/kitty
+  python3 -m pip install -r docs/requirements.txt && make docs
+  LDFLAGS=-L/opt/homebrew/lib make app
 
   # REMOVE MACOS KEYMAPS
   # go to macos keyboard shortcut settings and create custom shortcut for kitty
@@ -36,10 +44,10 @@ function install_macos {
   # Minimize => <Ctrl+Shift+F12>
 
   # INSTALL FONT
-  brew tap homebrew/cask-fonts
-  brew install --cask font-source-code-pro-for-powerline
+  # brew tap homebrew/cask-fonts
+  # brew install --cask font-source-code-pro-for-powerline
 
-  https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/NerdFontsSymbolsOnly.zip
+  # https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/NerdFontsSymbolsOnly.zip
 
   # CHANGE ICON
   # https://github.com/k0nserv/kitty-icon/blob/main/README.md

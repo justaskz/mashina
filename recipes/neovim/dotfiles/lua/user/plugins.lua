@@ -58,18 +58,25 @@ return packer.startup(function(use)
     end
   }
 
+  -- use { 'numToStr/Comment.nvim', config = function()
+  --   require('Comment').setup()
+  --   end
+  -- }
+
   -- use "nvim-tree/nvim-tree.lua"
   -- use "nvim-tree/nvim-web-devicons"
 
-  use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- optional, for file icons
-    },
-  }
+  -- use {
+  --   'nvim-tree/nvim-tree.lua',
+  --   requires = {
+  --     'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  --   },
+  -- }
 
   -- use { 'romgrk/barbar.nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+  -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+
+  -- use "nvim-treesitter/nvim-treesitter"
 
   -- THEMES
   use "morhetz/gruvbox"
