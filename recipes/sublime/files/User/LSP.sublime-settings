@@ -1,8 +1,46 @@
-// Settings in here override those in "LSP/LSP.sublime-settings"
 {
-  "gopls": {
-    "env": {
-      "PATH": "/opt/homebrew/bin"
+  "lsp_code_actions_on_save": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+  },
+
+  "document_highlight_style": "",
+  "hover_highlight_style": "",
+  "link_highlight_style": "disabled",
+  "inhibit_snippet_completions": true,
+
+  "diagnostics_highlight_style": {
+    "error": "underline",
+    "warning": "underline",
+    "info": "underline",
+    "hint": "underline",
+  },
+
+  "clients": {
+    "gopls": {
+      "enabled": false,
+      "command": ["gopls"],
+      "selector": "source.go",
+      "env": { "PATH": "/opt/homebrew/bin" },
+      "disabled_capabilities": {
+        "completionProvider": true,
+        "hover": true,
+      },
+    },
+    "sorbet": {
+      "enabled": false,
+      "command": ["srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman"],
+      "selector": "source.ruby | text.html.ruby",
+      "env": { "PATH": "/Users/t1028/.rbenv/shims" },
+    },
+    "ruby": {
+      "enabled": true,
+      "command": ["solargraph", "stdio"],
+      "selector": "source.ruby | text.html.ruby",
+      "env": { "PATH": "/Users/t1028/.rbenv/shims" },
+      "initializationOptions": {
+          "diagnostics": false
+      }
     }
   }
 }

@@ -1,0 +1,60 @@
+{
+  "name": "flow",
+  "variables": {
+    "background": "#232323",
+    "foreground": "#ebdbb2",
+    "black": "#282828",
+    "red": "#cc241d",
+    "green": "#98971a#",
+    "yellow": "#d79921",
+    "blue": "#458588",
+    "magenta": "#b16286",
+    "cyan": "#689d6a",
+    "white": "#a89984",
+  },
+  "globals": {
+    "background": "var(background)",
+    "foreground": "var(foreground)",
+
+    "caret": "var(foreground)",
+
+    "gutter": "var(background)",
+    "gutter_foreground": "var(foreground)",
+    "gutter_foreground_highlight": "var(foreground)",
+    "line_highlight": "var(background)",
+
+    "selection": "var(background)",
+    "selection_foreground": "var(foreground)",
+    "selection_border": "white",
+
+
+    "accent": "var(foreground)",
+  },
+  "rules": [
+    {
+      "name": "Strings",
+      "scope": "string",
+      "foreground": "var(foreground)",
+    },
+    {
+      "name": "Numbers",
+      "scope": "constant.numeric",
+      "foreground": "var(blue)",
+    },
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "var(cyan)",
+    },
+    {
+      "name": "Class",
+      "scope": "entity.other.inherited-class",
+      "foreground": "var(red)",
+    },
+    {
+      "name": "Function parameters",
+      "scope": "meta.function.parameters",
+      "foreground": "var(blue)",
+    },
+  ],
+}

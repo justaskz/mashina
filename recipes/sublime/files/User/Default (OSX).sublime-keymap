@@ -195,4 +195,10 @@
 
   // delete file or directory
   { "keys": ["super+space", "super+r", "super+r"], "command": "side_bar_delete" },
+
+
+  // { "keys": ["super+o"], "command": "lsp_format_document" },
+  { "keys": ["super+space", "super+o"], "command": "lsp_hover" },
+  { "keys": ["super+space", "super+t"], "command": "lsp_symbol_definition" },
+  { "keys": ["super+space", "super+e"], "command": "lsp_goto_diagnostic" },
 ]

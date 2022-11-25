@@ -1,8 +1,61 @@
 {
 	"always_show_minimap_viewport": true,
+	"caret_style": "phase",
+	"caret_extra_top": 2,
+	"caret_extra_bottom": 2,
+	"caret_extra_width": 1,
+	"close_windows_when_empty": false,
+	"copy_with_empty_selection": true,
+	"fold_buttons": false,
+	"index_files": true,
+	"mini_diff": false,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"rulers": [99],
+	"save_on_focus_lost": true,
+	"show_definitions": false,
+	"show_git_status": false,
+	"show_panel_on_build": false,
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
+	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?",
+	"margin": 8,
+	"indent_guide_options": [],
+
+	//-----------------------------------------------
+	// UI
+	//-----------------------------------------------
+	"color_scheme": "Packages/Themes/Bliss.tmTheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_face": "Courier New",
+	"font_size": 13,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+
+	//-----------------------------------------------
+	// AUTOCOMPLETE
+	//-----------------------------------------------
 	"auto_complete": true,
-	"binary_file_patterns":
-	[
+	"tab_completion": true,
+	"auto_complete_cycle": true,
+	"auto_complete_use_index": false,
+
+	// "auto_complete_commit_on_tab": true,
+	// "auto_complete_include_snippets": true,
+	// "auto_complete_with_fields": false,
+	"ignored_snippets": ["ruby/*"],
+
+	//-----------------------------------------------
+	// FORMAT
+	//-----------------------------------------------
+	"translate_tabs_to_spaces": true,
+	"tab_size": 2,
+	"ensure_newline_at_eof_on_save": true,
+
+	//-----------------------------------------------
+	// PATTERNS
+	//-----------------------------------------------
+	"binary_file_patterns": [
 		"*.jpg",
 		"*.jpeg",
 		"*.pngs",
@@ -19,12 +72,7 @@
 		"*.deb",
 		"core/db/migrates/*.rb"
 	],
-	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
-	"copy_with_empty_selection": true,
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
+	"file_exclude_patterns": [
 		"*.log",
 		".DS_Store",
 		"*.pyc",
@@ -36,8 +84,7 @@
 		"*.svg",
 		"*package-lock.json*"
 	],
-	"folder_exclude_patterns":
-	[
+	"folder_exclude_patterns": [
 		".git",
 		"node_modules",
 		"bower_components",
@@ -55,40 +102,16 @@
 		".vagrant",
 		"_history"
 	],
-	"font_face": "Courier New",
-	"font_size": 13,
-	"ignored_packages":
-	[
+	"ignored_packages": [
 		"Gofmt",
 		"SublimeLinter-golangcilint",
 		"Vintage",
 	],
-	"index_exclude_patterns":
-	[
+	"index_exclude_patterns": [
 		"*.log",
 		".gitkeep",
 		"node_modules",
 		"bower_components",
 		"tmp/"
 	],
-	"index_files": true,
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
-	"mini_diff": false,
-	"open_files_in_new_window": false,
-	"overlay_scroll_bars": "enabled",
-	"rulers":
-	[
-		99
-	],
-	"save_on_focus_lost": true,
-	"show_definitions": false,
-	"show_git_status": false,
-	"show_panel_on_build": false,
-	"tab_size": 2,
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"update_check": false,
-	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?",
 }

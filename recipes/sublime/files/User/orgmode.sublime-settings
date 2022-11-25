@@ -1,7 +1,8 @@
 {
     // Global
-    // "color_scheme": "Packages/orgmode/Color Scheme/orgmode.tmTheme",
-    "color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
+    // "color_scheme": "Packages/orgmode/Color Scheme/light-orgmode.tmTheme",
+    "color_scheme": "Packages/orgmode/Color Scheme/orgmode.tmTheme",
+    // "color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
     // "color_scheme": "Packages/Themes/Bliss.tmTheme",
     "word_wrap": true,
     "translate_tabs_to_spaces": true,

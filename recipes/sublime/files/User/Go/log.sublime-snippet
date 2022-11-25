@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+log.Printf(${1:"%s", name})
+]]></content>
+  <tabTrigger>qlog</tabTrigger>
+  <scope>source.go</scope>
+  <description>go log</description>
+</snippet>
