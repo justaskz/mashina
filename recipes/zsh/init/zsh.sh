@@ -50,4 +50,4 @@ compinit
 zstyle ':completion:*' menu select
 
 # add empty line before comamnd
-precmd() { precmd() { echo "" } }
+# precmd() { precmd() { echo "" } }

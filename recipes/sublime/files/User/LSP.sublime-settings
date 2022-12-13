@@ -1,4 +1,5 @@
 {
+  "log_debug": true,
   "lsp_code_actions_on_save": {
     "source.fixAll": true,
     "source.organizeImports": true,
@@ -41,6 +42,6 @@
       "initializationOptions": {
           "diagnostics": false
       }
-    }
+    },
   }
 }

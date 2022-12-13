@@ -56,7 +56,7 @@ alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
 alias vim="nvim"
 alias vi="/usr/bin/vim"
-alias sublime_backup="$HOME/repos/mashina/recipes/sublime/main.sh backup_macos"
+alias sublime_backup="bash $HOME/repos/mashina/recipes/sublime/main.sh backup_macos"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"

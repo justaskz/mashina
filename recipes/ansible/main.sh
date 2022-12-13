@@ -6,7 +6,13 @@ function run {
 }
 
 function install {
-  pip install --user ansible==2.10.7
+  pip install --user ansible==6.6.0
+
+  # nord
+  pip install -r collections/ansible_collections/nordsec/team_password_manager/requirements.txt --upgrade --user
+  pip install request influxdb boto3
+
+  rm -rf $MASHINA_BIN/ansible*
   ln -s $HOME/.local/bin/* $MASHINA_BIN
 }
 

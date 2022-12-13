@@ -14,7 +14,7 @@ function update_config {
 
 function install_debian {
   install_dependencies_debian
-  git clone --depth 1 https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
+  git clone https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
   ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
   pyenv install $PYTHON_VERSION
   pyenv global $PYTHON_VERSION

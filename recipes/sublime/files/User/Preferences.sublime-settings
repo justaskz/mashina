@@ -25,12 +25,12 @@
 	//-----------------------------------------------
 	// UI
 	//-----------------------------------------------
-	"color_scheme": "Packages/Themes/Bliss.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"theme": "Adaptive.sublime-theme",
-	"font_face": "Courier New",
+	"font_face": "Source Code Pro",
 	"font_size": 13,
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 1,
+	"line_padding_top": 0,
 
 	//-----------------------------------------------
 	// AUTOCOMPLETE
@@ -43,7 +43,10 @@
 	// "auto_complete_commit_on_tab": true,
 	// "auto_complete_include_snippets": true,
 	// "auto_complete_with_fields": false,
-	"ignored_snippets": ["ruby/*"],
+	"ignored_snippets": [
+		"ruby/*",
+		"go/*",
+	],
 
 	//-----------------------------------------------
 	// FORMAT
@@ -104,6 +107,7 @@
 	],
 	"ignored_packages": [
 		"Gofmt",
+		"orgmode",
 		"SublimeLinter-golangcilint",
 		"Vintage",
 	],
