@@ -32,3 +32,19 @@ function exec_custom_or_run {
     run
   fi
 }
+
+function download_and_install {
+  NAME=$1
+  URL=$2
+
+  TMP_FILE="$MASHINA_TMP/$NAME.tgz"
+  OPT_PATH="$MASHINA_OPT/$NAME"
+
+  rm -rf $TMP_FILE
+  rm -rf $OPT_PATH
+
+  wget $URL -O $TMP_FILE
+  mkdir -p $OPT_PATH
+  tar -xf $TMP_FILE --directory $OPT_PATH --strip-components=1
+  rm -rf $TMP_FILE
+}

@@ -1,6 +1,7 @@
 source recipes/helpers/main.sh
 
-PYTHON_VERSION="3.11.0"
+# PYTHON_VERSION="3.7.3"
+PYTHON_VERSION="3.11.2"
 
 function run {
   update_config
@@ -25,6 +26,7 @@ function install_macos {
   ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
   pyenv install $PYTHON_VERSION
   pyenv global $PYTHON_VERSION
+  pip install --upgrade pip
 }
 
 function install_dependencies_debian {
