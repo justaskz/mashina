@@ -6,7 +6,7 @@ function run {
 }
 
 function install {
-  ANSIBLE_VERSION=2.14.0
+  ANSIBLE_VERSION=6.4.0 # Used in nord
 
   pip install --user ansible==$ANSIBLE_VERSION
 
@@ -19,8 +19,9 @@ function nord {
   sudo touch /srv/ansible/.ansible_vault_password
 
   # from ansible dir
+  cd ~/repos/ansible/
   pip install --upgrade --user -r collections/ansible_collections/nordsec/team_password_manager/requirements.txt
-  pip install --user boto3 influxdb
+  pip install --user boto3 influxdb netaddr
 }
 
 run

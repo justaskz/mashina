@@ -37,6 +37,15 @@ alias dcc="docker ps -a"
 alias dccr="docker system prune -f"
 
 #################################################
+## TERRAFORM
+#################################################
+alias tf="terraform"
+alias tg="terragrunt"
+alias tgv="terragrunt validate-inputs"
+alias tgp="terragrunt plan -input=false"
+alias tga="terragrunt apply -input=false"
+
+#################################################
 ## BOOKMARKS
 #################################################
 alias bin="cd ~/bin"
@@ -54,7 +63,7 @@ alias s="subl"
 alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
-alias vim="nvim"
+alias vim="command -v nvim >/dev/null 2>&1 && nvim || vim"
 alias vi="/usr/bin/vim"
 alias sublime_backup="bash $HOME/repos/mashina/recipes/sublime/main.sh backup_macos"
 
@@ -65,6 +74,3 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 alias ls="/bin/ls -lah --color"
 alias python_server="python3 -m http.server"
-alias tf="terraform"
-alias tg="terragrunt"
-alias tgv="terragrunt validate-inputs"
