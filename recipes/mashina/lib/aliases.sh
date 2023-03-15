@@ -63,9 +63,9 @@ alias s="subl"
 alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
-alias vim="command -v nvim >/dev/null 2>&1 && nvim || vim"
 alias vi="/usr/bin/vim"
 alias sublime_backup="bash $HOME/repos/mashina/recipes/sublime/main.sh backup_macos"
+alias sc="syncros"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
@@ -74,3 +74,9 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 alias ls="/bin/ls -lah --color"
 alias python_server="python3 -m http.server"
+
+if command -v nvim >/dev/null 2>&1; then
+  alias vim='nvim'
+else
+  alias vim='vim'
+fi
