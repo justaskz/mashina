@@ -11,7 +11,6 @@ alias tmd="tmux detach"
 alias tmk="tmux kill-session -t"
 alias tml="tmux list-sessions"
 alias tms="tmux source-file ~/.tmux.conf"
-alias fix_ssh="ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock"
 
 #################################################
 ## GIT
@@ -54,6 +53,7 @@ alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
 alias gohome="cd $GOPATH/src/github.com/justaskz"
+alias rds="cd ~/repos/terraform-aws-services/rds/clusters"
 
 #################################################
 ## TOOLS

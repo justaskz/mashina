@@ -1,6 +1,6 @@
 source recipes/helpers/main.sh
 
-VAGRANT_VERSION="2.2.19"
+VAGRANT_VERSION="2.3.4"
 
 function run {
   exit_if_installed vagrant
@@ -8,9 +8,10 @@ function run {
 }
 
 function install_debian {
-  URL="https://releases.hashicorp.com/vagrant/$VAGRANT_VERSION/vagrant_${VAGRANT_VERSION}_x86_64.deb"
+  URL="https://releases.hashicorp.com/vagrant/$VAGRANT_VERSION/vagrant_2.3.4-1_amd64.deb"
   wget -O $MASHINA_TMP/vagrant.deb $URL
   apt install -y $MASHINA_TMP/vagrant.deb
+  rm $MASHINA_TMP/vagrant*.deb
 }
 
 function install_macos {

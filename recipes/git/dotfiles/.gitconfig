@@ -10,6 +10,8 @@
   excludesfile = /Users/t1028/.gitignore
 [includeIf "gitdir:/Users/t1028/repos/ansible/"]
   path = ~/.gitconfig-nordsec
+[includeIf "gitdir:/Users/t1028/repos/nord/terraform-aws-services/"]
+  path = ~/.gitconfig-nordsec
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
