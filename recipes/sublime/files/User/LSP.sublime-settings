@@ -1,10 +1,10 @@
 {
   "log_debug": true,
   "lsp_code_actions_on_save": {
-    "source.fixAll": true,
-    "source.organizeImports": true,
+    // "source.fixAll": true,
+    // "source.orgaarklnizeImports": true,
   },
-
+ "show_diagnostics_panel_on_save": 1,
   "document_highlight_style": "",
   "hover_highlight_style": "",
   "link_highlight_style": "disabled",
@@ -18,30 +18,40 @@
   },
 
   "clients": {
-    "gopls": {
-      "enabled": false,
-      "command": ["gopls"],
-      "selector": "source.go",
-      "env": { "PATH": "/opt/homebrew/bin" },
-      "disabled_capabilities": {
-        "completionProvider": true,
-        "hover": true,
-      },
-    },
-    "sorbet": {
-      "enabled": false,
-      "command": ["srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman"],
-      "selector": "source.ruby | text.html.ruby",
-      "env": { "PATH": "/Users/t1028/.rbenv/shims" },
-    },
+    // "gopls": {
+    //   "enabled": false,
+    //   "command": ["gopls"],
+    //   "selector": "source.go",
+    //   "env": { "PATH": "/opt/homebrew/bin" },
+    //   "disabled_capabilities": {
+    //     "completionProvider": true,
+    //     "hover": true,
+    //   },
+    // },
+    // "sorbet": {
+    //   "enabled": true,
+    //   "command": ["srb", "tc", "--typed", "true", "--lsp", "--disable-watchman", "--dir", "."],
+    //   "selector": "source.ruby",
+    //   "env": { "PATH": "/Users/t1028/.rbenv/shims" },
+    // },
     "ruby": {
       "enabled": true,
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby | text.html.ruby",
       "env": { "PATH": "/Users/t1028/.rbenv/shims" },
       "initializationOptions": {
-          "diagnostics": false
+        // "format": "json",
+        // "provideHover": true,
+        "diagnostics": false
       }
     },
+    // "terraform-lsp": {
+    //   "enabled": true,
+    //   "command": ["terraform-ls", "serve"],
+    //   "scopes": ["source.terraform"],
+    //   "initializationOptions": {
+    //     "diagnostics": true
+    //   }
+    // },
   }
 }

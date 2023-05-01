@@ -43,6 +43,6 @@
       "executable": "golangci-lint",
       "args": "presets style",
       "selector": "source.go",
-    }
+    },
   }
 }

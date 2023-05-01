@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+- name: ${1:Task name}
+  template:
+    src: ${2:src}
+    dest: ${3:dest}
+    owner: ${4:owner}
+    group: ${5:group}
+
+]]></content>
+  <tabTrigger>qtemplate</tabTrigger>
+  <scope>source.ansible</scope>
+</snippet>

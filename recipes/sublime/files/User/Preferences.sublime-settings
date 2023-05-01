@@ -54,10 +54,6 @@
 	"translate_tabs_to_spaces": true,
 	"tab_size": 2,
 	"ensure_newline_at_eof_on_save": true,
-
-	//-----------------------------------------------
-	// PATTERNS
-	//-----------------------------------------------
 	"binary_file_patterns": [
 		"*.jpg",
 		"*.jpeg",
@@ -99,16 +95,19 @@
 		"tmp/cache",
 		"webpack",
 		"libs",
-		"certs",
+		// "certs",
 		"Package Control.cache",
 		"public/ckeditor",
 		".vagrant",
-		"_history"
+		"_history",
+		"vendor/*",
+		"public/assets/*",
+		".terragrunt-cache",
 	],
 	"ignored_packages": [
-		"Gofmt",
 		"orgmode",
 		"SublimeLinter-golangcilint",
+		"SublimeLinter-rubocop",
 		"Vintage",
 	],
 	"index_exclude_patterns": [
@@ -116,6 +115,6 @@
 		".gitkeep",
 		"node_modules",
 		"bower_components",
-		"tmp/"
+		"tmp/",
 	],
 }

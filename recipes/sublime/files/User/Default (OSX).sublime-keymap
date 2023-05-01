@@ -130,7 +130,7 @@
   { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
 
   // go to definition
-  { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
+  // { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
 
   // go to search result
   { "keys": ["super+space", "super+g"], "command": "prev_result" },
@@ -197,8 +197,16 @@
   { "keys": ["super+space", "super+r", "super+r"], "command": "side_bar_delete" },
 
 
-  // { "keys": ["super+o"], "command": "lsp_format_document" },
+  //-----------------------------------------------
+  // LSP
+  //-----------------------------------------------
+
+  // hover
   { "keys": ["super+space", "super+o"], "command": "lsp_hover" },
+
+  // go to definition
   { "keys": ["super+space", "super+t"], "command": "lsp_symbol_definition" },
+
+  // go to diagnostics
   { "keys": ["super+space", "super+e"], "command": "lsp_goto_diagnostic" },
 ]

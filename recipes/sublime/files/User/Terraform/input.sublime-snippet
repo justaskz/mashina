@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+inputs = {${1:}}
+]]></content>
+  <tabTrigger>qinputs</tabTrigger>
+  <scope>source.terraform</scope>
+</snippet>
