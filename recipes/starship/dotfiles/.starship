@@ -4,16 +4,15 @@ $hostname\
 $directory\
 $git_branch\
 $git_status\
-$cmd_duration\
 $line_break\
 $character
 """
 
 add_newline = true
 
-[cmd_duration]
-disabled = true
-
 [hostname]
 ssh_only = true
 ssh_symbol = ""
+
+[git_branch]
+symbol = ""

@@ -7,16 +7,21 @@ function run {
 }
 
 function update_config {
-  ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$MASHINA_BIN/subl"
+  ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$MASHINA_BIN/subl"
 }
 
 function install_macos {
   SUBLIME_HOME="$HOME/Library/Application Support/Sublime Text"
   PACKAGE_CONTROL_PATH="$SUBLIME_HOME/Installed Packages"
+  SUBLIME_BACKUP_FOLDER="recipes/sublime/files"
 
+  # install package control
   mkdir -p "$PACKAGE_CONTROL_PATH"
   wget -P "$PACKAGE_CONTROL_PATH" "http://sublime.wbond.net/Package%20Control.sublime-package"
-  ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$MASHINA_BIN/subl"
+
+  # move settings
+  cp -r "$SUBLIME_BACKUP_FOLDER/Themes" "$SUBLIME_HOME/Packages"
+  cp -r "$SUBLIME_BACKUP_FOLDER/User" "$SUBLIME_HOME/Packages"
 
   # remove default sidebar context menu
   DEFAULT_PACKAGE="$SUBLIME_HOME/Packages/Default"

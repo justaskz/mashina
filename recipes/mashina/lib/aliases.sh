@@ -23,17 +23,7 @@ alias gilll="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Cres
 alias gir="git reset HEAD^"
 alias gib="git branch --sort=-committerdate"
 alias gibb="git branch"
-alias gifp="git push -f origin HEAD"
 alias gisave="git add .; git commit -m wip"
-
-#################################################
-## DOCKER
-#################################################
-alias dci="docker images"
-alias dcc="docker ps -a"
-# alias dccs="docker stop $(docker ps -a -q)"
-# alias dcir="docker rmi $(docker images -a -q)"
-alias dccr="docker system prune -f"
 
 #################################################
 ## TERRAFORM
@@ -63,15 +53,11 @@ alias s="subl"
 alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
-alias vi="/usr/bin/vim"
-alias sublime_backup="bash $HOME/repos/mashina/recipes/sublime/main.sh backup_macos"
 alias sc="syncros"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
-alias psa="ps xw | grep"
 alias untar="tar xvzf"
-alias genv="env | grep"
 alias ls="/bin/ls -lah --color"
 alias python_server="python3 -m http.server"
 

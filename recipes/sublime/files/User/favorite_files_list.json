@@ -5,19 +5,19 @@
     //-----------------------------------------------
     {
       "alias": "favorite_files_list.json",
-      "file": "/Users/justas/Library/Application Support/Sublime Text/Packages/User/favorite_files_list.json"
+      "file": "/Users/juka/Library/Application Support/Sublime Text/Packages/User/favorite_files_list.json"
     },
     {
       "alias": "Default (OSX).sublime-keymap",
-      "file": "/Users/justas/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap"
+      "file": "/Users/juka/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap"
     },
     {
       "alias": "Preferences.sublime-settings",
-      "file": "/Users/justas/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
+      "file": "/Users/juka/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
     },
     {
       "alias": ".gitignore",
-      "file": "/Users/justas/.gitignore"
+      "file": "/Users/juka/.gitignore"
     },
 
     //-----------------------------------------------
@@ -25,46 +25,46 @@
     //-----------------------------------------------
     {
       "alias": "work tasks.org",
-      "file": "/Users/justas/repos/notes/work/nordsec/tasks.org"
+      "file": "/Users/juka/repos/notes/work/nordsec/tasks.org"
     },
     {
       "alias": "snippets.sh",
-      "file": "/Users/justas/repos/notes/work/nordsec/snippets.sh"
+      "file": "/Users/juka/repos/notes/work/nordsec/snippets.sh"
     },
     //-----------------------------------------------
     // NOTES
     //-----------------------------------------------
     {
       "alias": "unix",
-      "file": "/Users/justas/repos/notes/dev/unix"
+      "file": "/Users/juka/repos/notes/dev/unix"
     },
     {
       "alias": "bash",
-      "file": "/Users/justas/repos/notes/dev/bash"
+      "file": "/Users/juka/repos/notes/dev/bash"
     },
     {
       "alias": "apt",
-      "file": "/Users/justas/repos/notes/dev/apt"
+      "file": "/Users/juka/repos/notes/dev/apt"
     },
     {
       "alias": "mysql",
-      "file": "/Users/justas/repos/notes/dev/mysql",
+      "file": "/Users/juka/repos/notes/dev/mysql",
     },
     {
       "alias": "galera",
-      "file": "/Users/justas/repos/notes/dev/galera",
+      "file": "/Users/juka/repos/notes/dev/galera",
     },
     {
       "alias": "ruby",
-      "file": "/Users/justas/repos/notes/dev/ruby",
+      "file": "/Users/juka/repos/notes/dev/ruby",
     },
     {
       "alias": "docker",
-      "file": "/Users/justas/repos/notes/dev/docker",
+      "file": "/Users/juka/repos/notes/dev/docker",
     },
     {
       "alias": "golang",
-      "file": "/Users/justas/repos/notes/dev/golang",
+      "file": "/Users/juka/repos/notes/dev/golang",
     },
   ],
   "groups": {},

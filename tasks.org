@@ -1,14 +1,8 @@
 * TASKS
   [ ] kitty
-      [ ] remove title from title bar
-      [ ] remap command and ctrl
-      [ ] change icon
-
   [ ] zsh
-
   [ ] brew
   [ ] install and select fonts
-
   [ ] git and git config
   [ ] zsh shell
   [ ] zsh plugins

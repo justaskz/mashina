@@ -8,10 +8,12 @@ function run {
 
 function update_config_debian {
   cp recipes/tmux/dotfiles/.tmux-linux.conf $HOME/.tmux.conf
+  echo "" >> $HOME/.tmux.conf
+  cat recipes/tmux/dotfiles/.tmux.conf >> $HOME/.tmux.conf
 }
 
 function update_config_macos {
-  cp recipes/tmux/dotfiles/.tmux-macos.conf $HOME/.tmux.conf
+  cp recipes/tmux/dotfiles/.tmux.conf $HOME/.tmux.conf
 }
 
 function install_debian {
@@ -29,7 +31,11 @@ function install_debian {
   ln -s "$TMUX_PATH/tmux" $MASHINA_BIN
 }
 
-function install_macos_with_brew {
+function install_macos {
+  brew install tmux
+}
+
+function install_macos_custom_version {
   # MIGHT NEED
   # brew libevent autoconf automake libtool
   BREW_TAP_NAME="$USER/local-tmux"
@@ -38,7 +44,7 @@ function install_macos_with_brew {
   brew install tmux@2.8
 }
 
-function install_macos {
+function install_macos_from_source {
   # RUN COMMON RECIPE
 
   VERSION="2.8"

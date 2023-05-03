@@ -31,7 +31,7 @@ function install_debian {
 function install_macos {
   brew install ruby-build
   git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
-  ln -s $MASHINA_OPT/rbenv/bin/rbenv $MASHINA_BIN
+  ln -sf $MASHINA_OPT/rbenv/bin/rbenv $MASHINA_BIN
 
   rbenv install -s $RUBY_VERSION
   rbenv global $RUBY_VERSION

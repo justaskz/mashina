@@ -6,14 +6,15 @@ function run {
 }
 
 function install_debian {
-  # books_manager
-  # inv
-  # projectile
-  # syncros
   exit 0
 }
 
 function install_macos {
+  # books_manager
+  # inv
+  # projectile
+  # syncros
+  ln -sf $HOME/repos/syncros/bin/syncros $MASHINA_BIN
   exit 0
 }
 
