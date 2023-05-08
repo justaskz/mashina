@@ -1,5 +1,8 @@
 * TASKS
-  [ ] kitty
+  [ ] Move mashina to ~/.config
+  [ ] Move tmux to ~/.config
+  [ ] Move starship to ~/.config
+  [ ] kitty fonts, read docs faq about not modyfied fonts
   [ ] zsh
   [ ] brew
   [ ] install and select fonts

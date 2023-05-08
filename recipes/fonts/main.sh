@@ -11,6 +11,13 @@ function install_debian {
 }
 
 function install_macos {
+  brew tap homebrew/cask-fonts
+  brew install --cask font-jetbrains-mono-nerd-font
+  brew install --cask font-sauce-code-pro-nerd-font
+  brew install --cask font-fantasque-sans-mono-nerd-font
+}
+
+function install_macos_ {
   FONT_PATH="$MASHINA_OPT/font-source-code"
 
   # INSTALL SOURCE CODE PRO FONT
