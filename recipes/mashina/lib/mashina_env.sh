@@ -50,7 +50,7 @@ function mashina_is_zsh {
   echo "$(mashina_is_variable_defined $ZSH_VERSION)"
 }
 
-export MASHINA_ROOT="$HOME/mashina"
+export MASHINA_ROOT="$HOME/.config/mashina"
 export MASHINA_INIT="$MASHINA_ROOT/init"
 export MASHINA_BIN="$MASHINA_ROOT/bin"
 export MASHINA_OPT="$MASHINA_ROOT/opt"

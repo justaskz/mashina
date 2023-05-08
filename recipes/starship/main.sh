@@ -7,7 +7,8 @@ function run {
 }
 
 function update_config {
-  cp recipes/starship/dotfiles/.starship $HOME
+  mkdir -p $HOME/.config/starship
+  cp recipes/starship/dotfiles/starship.toml $HOME/.config/starship/starship.toml
   cp recipes/starship/init/starship.sh $MASHINA_INIT
 }
 

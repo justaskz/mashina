@@ -1,5 +1,7 @@
 source recipes/helpers/main.sh
 
+TMUX_HOME="$HOME/.config/tmux"
+
 function run {
   update_config
   exit_if_installed tmux
@@ -7,17 +9,19 @@ function run {
 }
 
 function update_config_debian {
-  cp recipes/tmux/dotfiles/.tmux-linux.conf $HOME/.tmux.conf
-  echo "" >> $HOME/.tmux.conf
-  cat recipes/tmux/dotfiles/.tmux.conf >> $HOME/.tmux.conf
+  mkdir -p $TMUX_HOME
+  cp recipes/tmux/dotfiles/.tmux-linux.conf $TMUX_HOME/tmux.conf
+  echo "" >> $TMUX_HOME/tmux.conf
+  cat recipes/tmux/dotfiles/.tmux.conf >> $TMUX_HOME/tmux.conf
 }
 
 function update_config_macos {
-  cp recipes/tmux/dotfiles/.tmux.conf $HOME/.tmux.conf
+  mkdir -p $HOME/.config/tmux/
+  cp recipes/tmux/dotfiles/.tmux.conf $HOME/.config/tmux/tmux.conf
 }
 
 function install_debian {
-  VERSION="2.8"
+  VERSION="3.3a"
   TMUX_PATH="$MASHINA_OPT/tmux"
   rm -rf $TMUX_PATH
 

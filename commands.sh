@@ -40,7 +40,7 @@ function install_macos {
 }
 
 function uninstall {
-  rm -r $HOME/mashina
+  rm -r $HOME/.config/mashina
   rm -r $HOME/.profile
   rm -r $HOME/.zprofile
   rm -r $HOME/.bashrc
