@@ -1,6 +1,8 @@
 # bash recipes/nvim/main.sh;nvim
 source recipes/helpers/main.sh
 
+NEOVIM_HOME="$HOME/.config/nvim"
+
 function run {
   update_config
   exit_if_installed nvim
@@ -8,15 +10,18 @@ function run {
 }
 
 function update_config {
-  NEOVIM_HOME="$HOME/.config/nvim"
 
   mkdir -p "$NEOVIM_HOME"
-
-  cp recipes/nvim/dotfiles/init.lua $NEOVIM_HOME/init.lua
+  ln -sf $MASHINA_SOURCE/recipes/nvim/config/init.lua $NEOVIM_HOME/init.lua
 
   # cp recipes/neovim/dotfiles/init.lua $NEOVIM_HOME/init.lua
   # rm -rf $NEOVIM_HOME/lua
   # cp -r recipes/neovim/dotfiles/lua $NEOVIM_HOME/lua
+}
+
+function uninstall {
+  rm -rf $NEOVIM_HOME
+  rm -rf $HOME/.local/share/nvim
 }
 
 function install_debian {
@@ -35,8 +40,12 @@ function install_macos {
   # open nvim and run :PlugInstall
 
   # install packer
-  git clone https://github.com/wbthomason/packer.nvim $HOME/.config/nvim/pack/packer/start/packer.nvim
+  git clone https://github.com/wbthomason/packer.nvim $NEOVIM_HOME/pack/packer/start/packer.nvim
 
+}
+
+function install_lunarvim {
+  LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
 }
 
 run

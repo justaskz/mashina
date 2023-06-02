@@ -9,7 +9,7 @@ function run {
 function update_config {
   KITTY_HOME="$HOME/.config/kitty"
   mkdir -p $KITTY_HOME
-  cp recipes/kitty/dotfiles/kitty.conf $KITTY_HOME
+  ln -sf $MASHINA_SOURCE/recipes/kitty/dotfiles/kitty.conf $KITTY_HOME/kitty.conf
   cp recipes/kitty/dotfiles/macos-launch-services-cmdline $KITTY_HOME
 
   cp recipes/kitty/dotfiles/themes/theme_light.conf $KITTY_HOME
@@ -31,6 +31,8 @@ function install_macos {
   # New Tab => <Ctrl+Shift+F12>
   # New Window => <Ctrl+Shift+F12>
   # Minimize => <Ctrl+Shift+F12>
+  # Close OS Window => <Ctrl+Shift+F12>
+
   # New OS Window => <Super+Shift+N>
   # Change toggle => Settings -> Keyboard shortcuts -> Keyboard -> Move focus to the next window -> Change to super+§
 

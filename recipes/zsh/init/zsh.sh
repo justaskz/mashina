@@ -4,6 +4,24 @@ if ! $(mashina_is_zsh); then return 1; fi
 ## ZSH CONFIG
 #################################################
 
+# record timestamp of command in HISTFILE
+setopt extended_history
+
+# delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_expire_dups_first
+
+# ignore duplicated commands history list
+setopt hist_ignore_dups
+
+# ignore commands that start with space
+setopt hist_ignore_space
+
+# show command with history expansion to user before running it
+setopt hist_verify
+
+# share command history data
+setopt share_history
+
 # prevent duplicates in command history
 # setopt EXTENDED_HISTORY
 # setopt HIST_EXPIRE_DUPS_FIRST

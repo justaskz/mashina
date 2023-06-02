@@ -12,10 +12,15 @@ function install_debian {
 function install_macos {
   # books_manager
   # inv
+
   # projectile
+  ln -sf $HOME/repos/projectile/bin/projectile $MASHINA_BIN
+
   # syncros
   ln -sf $HOME/repos/syncros/bin/syncros $MASHINA_BIN
-  exit 0
+
+  # mouse
+  ln -sf $HOME/repos/mouse/mouse.rb $MASHINA_BIN/mouse
 }
 
 run

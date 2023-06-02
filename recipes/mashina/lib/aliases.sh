@@ -1,6 +1,11 @@
 unalias -a
 
 alias src="source $MASHINA_ROOT/main.sh"
+alias mashina_source="cd $HOME/repos/mashina"
+alias mashina_root="cd $MASHINA_ROOT/"
+
+alias x="hx"
+alias r="cd ~/repos/ruby-lsp-demo"
 
 #################################################
 ## TMUX

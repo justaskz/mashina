@@ -40,6 +40,9 @@ function install_macos {
 
 function install_dependencies_macos {
   brew install libffi mysql
+  gem install solargraph rails
+  gem install mysql2 -v '0.5.5' -- --with-ldflags=-L/opt/homebrew/opt/openssl@1.1/lib --with-cppflags=-I/opt/homebrew/opt/openssl@1.1/include
+
   # gem install ffi sassc
 }
 

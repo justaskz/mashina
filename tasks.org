@@ -1,7 +1,9 @@
 * TASKS
-  [ ] Move mashina to ~/.config
-  [ ] Move tmux to ~/.config
-  [ ] Move starship to ~/.config
+  [ ] mashina
+      [ ] Review mashina_aliases
+      [ ] Review mashina functions
+      [ ] Review mashina helpers functions
+      [ ] Make kitty reload config as alias
   [ ] kitty fonts, read docs faq about not modyfied fonts
   [ ] zsh
   [ ] brew
@@ -13,3 +15,52 @@
   [ ] vim
   [ ] git
   [ ] docker
+
+* EDITOR FEATURES
+  [ ] Status line
+      [X] Show language
+      [ ] Colors in status line
+  [ ] Search in all project
+  [ ] Search in opened file
+  [ ] Snippets
+  [ ] Tabs
+      [ ] Go to N tab
+      [ ] Close tabs
+  [ ] Execute line under cursor
+  [ ] Save when out of focues
+  [ ] Trim spaces
+  [ ] Tree
+  [ ] Text Navigation
+      [ ] Go to top of file
+      [ ] Go to end of file
+  [ ] Text Editing
+      [X] Comment line
+      [ ] Delete line
+
+* NEOVIM
+  [ ] Keybindings
+      [X] Set leader key
+      [X] Set reload config key
+      [X] Save file
+      [X] Quit
+  [ ] Telescope
+      [ ] How to close panel?
+  [ ] Comments
+      [ ] "numToStr/Comment.nvim"
+      [ ] "tpope/vim-commentary"
+      [ ] nerdcomment
+      [ ] Map to super+/
+      [ ] How to uncomment?
+  [ ] Sidebar
+      [ ] Mappings
+          [ ] Open sidebar
+          [ ] Close sidebar
+          [ ] Show file in sidebar
+  [ ] Tabs
+  [ ] Lualine
+      [ ] Better theme
+  [ ] Configurations
+      [ ] https://github.com/LunarVim/LunarVim
+      [ ] https://github.com/NvChad/NvChad
+      [ ] https://github.com/jdhao/nvim-config
+      [ ] https://github.com/SpaceVim/SpaceVim

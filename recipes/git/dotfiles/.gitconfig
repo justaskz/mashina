@@ -8,6 +8,7 @@
   email = justas.kazakauskas@gmail.com
 [core]
   excludesfile = /Users/t1028/.gitignore
+  editor = nvim
 [includeIf "gitdir:/Users/t1028/repos/ansible/"]
   path = ~/.gitconfig-nordsec
 [includeIf "gitdir:/Users/t1028/repos/nord/terraform-aws-services/"]

@@ -16,8 +16,8 @@ function update_config_debian {
 }
 
 function update_config_macos {
-  mkdir -p $HOME/.config/tmux/
-  cp recipes/tmux/dotfiles/.tmux.conf $HOME/.config/tmux/tmux.conf
+  mkdir -p $GLOBAL_CONFIG_DIR/tmux
+  ln -sf $MASHINA_SOURCE/recipes/tmux/dotfiles/.tmux.conf $GLOBAL_CONFIG_DIR/tmux/tmux.conf
 }
 
 function install_debian {
