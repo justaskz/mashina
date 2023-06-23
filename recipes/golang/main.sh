@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  cp recipes/golang/init/go.sh $MASHINA_INIT
+  ln -sf $MASHINA_SOURCE/recipes/golang/init/go.sh $MASHINA_INIT
 }
 
 function install_debian {

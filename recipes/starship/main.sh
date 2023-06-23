@@ -7,14 +7,14 @@ function run {
 }
 
 function update_config {
-  mkdir -p $HOME/.config/starship
-  cp recipes/starship/dotfiles/starship.toml $HOME/.config/starship/starship.toml
-  cp recipes/starship/init/starship.sh $MASHINA_INIT
+  local CONFIG=$GLOBAL_CONFIG/starship
+  mkdir -p $CONFIG
+  ln -sf $MASHINA_SOURCE/recipes/starship/config/starship.toml $CONFIG
+  ln -sf $MASHINA_SOURCE/recipes/starship/init/starship.sh $MASHINA_INIT
 }
 
 function install {
   wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P $MASHINA_TMP
-  # curl https://raw.githubusercontent.com/starship/starship/master/install/install.sh > $MASHINA_TMP/install.sh
   sh $MASHINA_TMP/install.sh --yes --bin-dir $MASHINA_BIN
   rm $MASHINA_TMP/install.sh
 }

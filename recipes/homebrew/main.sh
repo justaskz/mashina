@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  cp recipes/homebrew/init/homebrew.sh $MASHINA_INIT
+  ln -sf $MASHINA_SOURCE/recipes/homebrew/init/homebrew.sh $MASHINA_INIT
 }
 
 function install_macos {

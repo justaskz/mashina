@@ -7,12 +7,12 @@
   name = Justas Kazakauskas
   email = justas.kazakauskas@gmail.com
 [core]
-  excludesfile = /Users/t1028/.gitignore
+  excludesfile = ~/.config/git/gitignore
   editor = nvim
-[includeIf "gitdir:/Users/t1028/repos/ansible/"]
-  path = ~/.gitconfig-nordsec
-[includeIf "gitdir:/Users/t1028/repos/nord/terraform-aws-services/"]
-  path = ~/.gitconfig-nordsec
+[includeIf "gitdir:~/repos/ansible/"]
+  path = ~/.config/git/config-nordsec
+[includeIf "gitdir:~/repos/nord/terraform-aws-services/"]
+  path = ~/.config/git/config-nordsec
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =

@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  cp recipes/zsh/init/zsh.sh $MASHINA_INIT
+  ln -sf $MASHINA_SOURCE/recipes/zsh/init/zsh.sh $MASHINA_INIT
 }
 
 function install_debian {

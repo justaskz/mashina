@@ -1,4 +1,3 @@
-# bash recipes/nvim/main.sh;nvim
 source recipes/helpers/main.sh
 
 NEOVIM_HOME="$HOME/.config/nvim"
@@ -10,13 +9,8 @@ function run {
 }
 
 function update_config {
-
   mkdir -p "$NEOVIM_HOME"
   ln -sf $MASHINA_SOURCE/recipes/nvim/config/init.lua $NEOVIM_HOME/init.lua
-
-  # cp recipes/neovim/dotfiles/init.lua $NEOVIM_HOME/init.lua
-  # rm -rf $NEOVIM_HOME/lua
-  # cp -r recipes/neovim/dotfiles/lua $NEOVIM_HOME/lua
 }
 
 function uninstall {

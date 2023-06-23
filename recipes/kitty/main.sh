@@ -7,15 +7,15 @@ function run {
 }
 
 function update_config {
-  KITTY_HOME="$HOME/.config/kitty"
-  mkdir -p $KITTY_HOME
-  ln -sf $MASHINA_SOURCE/recipes/kitty/dotfiles/kitty.conf $KITTY_HOME/kitty.conf
-  cp recipes/kitty/dotfiles/macos-launch-services-cmdline $KITTY_HOME
+  local CONFIG="$GLOBAL_CONFIG/kitty"
+  mkdir -p $CONFIG
+  ln -sf $MASHINA_SOURCE/recipes/kitty/config/kitty.conf $CONFIG
 
-  cp recipes/kitty/dotfiles/themes/theme_light.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/themes/theme_dark.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/themes/theme_dev.conf $KITTY_HOME
-  cp recipes/kitty/dotfiles/themes/theme_gruvbox.conf $KITTY_HOME
+  cp recipes/kitty/config/macos-launch-services-cmdline $CONFIG
+  cp recipes/kitty/config/themes/theme_light.conf $CONFIG
+  cp recipes/kitty/config/themes/theme_dark.conf $CONFIG
+  cp recipes/kitty/config/themes/theme_dev.conf $CONFIG
+  cp recipes/kitty/config/themes/theme_gruvbox.conf $CONFIG
 }
 
 function install_debian {

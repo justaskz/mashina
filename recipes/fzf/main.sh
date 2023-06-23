@@ -7,8 +7,8 @@ function run {
 }
 
 function update_config {
-  cp recipes/fzf/init/fzf.sh $MASHINA_INIT
-  cp recipes/fzf/functions/fzf.sh $MASHINA_FUNCTIONS
+  ln -sf $MASHINA_SOURCE/recipes/fzf/init/fzf.sh $MASHINA_INIT
+  ln -sf $MASHINA_SOURCE/recipes/fzf/functions/fzf.sh $MASHINA_FUNCTIONS
 }
 
 function install {
