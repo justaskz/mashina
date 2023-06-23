@@ -1,0 +1,25 @@
+[editor]
+bufferline = "always"
+auto-save = true
+
+[keys.normal]
+"C-p" = "file_picker"
+"C-o" = "command_palette"
+# "C-" = "toggle_comments"
+"C-a" = "insert_mode"
+"C-s" = ":w!"
+"C-q" = ":q!"
+"C-w" = ":buffer-close"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["diagnostics", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# TODO
+# go to end of file
+# refresh file if there are changes
+# autosave
+# trip spaces

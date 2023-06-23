@@ -10,4 +10,5 @@ function mashina_debug {
   echo "SSH_KEYS: $(ssh-add -l)"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"
+  echo "TERM": $(echo $TERM)
 }

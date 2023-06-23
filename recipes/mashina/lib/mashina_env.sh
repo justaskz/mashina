@@ -50,8 +50,8 @@ function mashina_is_zsh {
   echo "$(mashina_is_variable_defined $ZSH_VERSION)"
 }
 
-export GLOBAL_CONFIG_DIR="$HOME/.config"
-export MASHINA_ROOT="$GLOBAL_CONFIG_DIR/mashina"
+export GLOBAL_CONFIG="$HOME/.config"
+export MASHINA_ROOT="$GLOBAL_CONFIG/mashina"
 export MASHINA_SOURCE="$HOME/repos/mashina"
 export MASHINA_INIT="$MASHINA_ROOT/init"
 export MASHINA_BIN="$MASHINA_ROOT/bin"

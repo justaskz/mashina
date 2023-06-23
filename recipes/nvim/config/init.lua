@@ -5,7 +5,6 @@ require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-lua/plenary.nvim'
   use 'cappyzawa/trim.nvim'
-  use 'Pocco81/auto-save.nvim'
   use 'nvim-lualine/lualine.nvim'
 end)
 
@@ -13,7 +12,6 @@ require('Comment').setup()
 require('telescope').setup()
 require('nvim-tree').setup()
 require('trim').setup()
-require('auto-save').setup()
 require('lualine').setup()
 
 -------------------------------------------------
@@ -41,7 +39,8 @@ map('n', '<leader>r', ':source ~/.config/nvim/init.lua<CR>', { noremap = true, s
 
 map('n', '<C-s>', ':w<CR>', { noremap = true })
 map('n', '<C-q>', ':q<CR>', { noremap = true })
-map('n', '<C-/>', 'i', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-/>', 'i', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-g>', 'i', { noremap = true })
 
 -------------------------------------------------
 -- TELESCOPE
