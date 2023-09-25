@@ -1,5 +1,4 @@
 function ssh-add-nordsec {
-  ssh-add ~/.ssh/nordsec
   ssh-add ~/.ssh/nordsec_rsa
 }
 

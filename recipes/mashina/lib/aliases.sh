@@ -5,7 +5,7 @@ alias mashina_source="cd $HOME/repos/mashina"
 alias mashina_root="cd $MASHINA_ROOT/"
 
 alias x="hx"
-alias r="cd ~/repos/ruby-lsp-demo"
+alias k="kubectl"
 
 #################################################
 ## TMUX
@@ -35,9 +35,11 @@ alias gisave="git add .; git commit -m wip"
 #################################################
 alias tf="terraform"
 alias tg="terragrunt"
-alias tgv="terragrunt validate-inputs"
+alias tfp="terraform plan -input=false"
+alias tfa="terraform apply -input=false"
 alias tgp="terragrunt plan -input=false"
 alias tga="terragrunt apply -input=false"
+alias tgv="terragrunt validate-inputs"
 
 #################################################
 ## BOOKMARKS

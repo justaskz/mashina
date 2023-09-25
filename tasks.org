@@ -1,4 +1,8 @@
 * TASKS
+  [ ] Replace all cp to ln -sf
+  [ ] Implement a function for smart file/symlink stransfer (like function files):
+      - Delete all old files (probably use prefix to recognize which files are owned by current recipe?)
+      - Transfer new files
   [ ] mashina
       [ ] Review mashina_aliases
       [ ] Review mashina functions

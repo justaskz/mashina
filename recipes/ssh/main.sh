@@ -4,13 +4,11 @@ function run {
   install
 }
 
-function install_debian {
-  cp recipes/ssh/dotfiles/rc $HOME/.ssh
-  cp recipes/ssh/functions/fix_ssh.sh $MASHINA_FUNCTIONS
-}
-
-function install_macos {
-  exit 0
+function install {
+  ln -sf $MASHINA_SOURCE/recipes/ssh/config/config $HOME/.ssh
+  ln -sf $MASHINA_SOURCE/recipes/ssh/config/rc $HOME/.ssh
+  ln -sf $MASHINA_SOURCE/recipes/ssh/functions/fix_ssh.sh $MASHINA_FUNCTIONS
+  ln -sf $MASHINA_SOURCE/recipes/ssh/functions/nord_ssh.sh $MASHINA_FUNCTIONS
 }
 
 run

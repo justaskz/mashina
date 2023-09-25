@@ -1,0 +1,30 @@
+SendEnv LANG LC_*
+
+Host *
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    LogLevel ERROR
+    HostKeyAlgorithms +ssh-rsa-cert-v01@openssh.com
+    PubkeyAcceptedAlgorithms +ssh-rsa-cert-v01@openssh.com
+
+Host github.com
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/github_rsa
+
+Host kubilas.tesonet.lt
+    Hostname kubilas.tesonet.lt
+    User git
+    IdentityFile ~/.ssh/kubilas_rsa
+
+Host nsp-prod-* nsp-*-prod-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J prod-teleport.mountaininfra-payments.com:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host 52.71.175.190
+    ControlMaster auto
+    ControlPath ~/.ssh/sockets/%r@%h:%p
+    ControlPersist 5m
