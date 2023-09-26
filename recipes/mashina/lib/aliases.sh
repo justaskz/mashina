@@ -40,6 +40,9 @@ alias tfa="terraform apply -input=false"
 alias tgp="terragrunt plan -input=false"
 alias tga="terragrunt apply -input=false"
 alias tgv="terragrunt validate-inputs"
+alias tf_root="cd ~/repos/terraform-aws-services"
+alias tf_rds="cd ~/repos/terraform-aws-services/rds/clusters"
+alias tf_msk="cd ~/repos/terraform-aws-services/kafka/clusters"
 
 #################################################
 ## BOOKMARKS
@@ -50,7 +53,6 @@ alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
 alias gohome="cd $GOPATH/src/github.com/justaskz"
-alias rds="cd ~/repos/terraform-aws-services/rds/clusters"
 
 #################################################
 ## TOOLS

@@ -32,6 +32,12 @@
   },
   "rules": [
     {
+      "name": "Boleans",
+      "scope": "boolean",
+      "foreground": "var(red)",
+      // "background": "var(red)",
+    },
+    {
       "name": "Strings",
       "scope": "string",
       "foreground": "var(foreground)",

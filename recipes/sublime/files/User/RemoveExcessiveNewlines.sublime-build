@@ -1,0 +1,3 @@
+{
+  "shell_cmd": "sed -i -zE 's/\\n{2,}\\$/\\n/g' $file"
+}
