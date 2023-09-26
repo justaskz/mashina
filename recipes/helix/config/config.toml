@@ -1,4 +1,5 @@
 [editor]
+# theme = "varua"
 bufferline = "always"
 auto-save = true
 

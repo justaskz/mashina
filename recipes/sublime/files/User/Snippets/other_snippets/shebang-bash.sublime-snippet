@@ -1,6 +1,9 @@
 <snippet>
 	<content><![CDATA[
 #!/usr/bin/env bash
+
+set -euo pipefail
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>bang-bash</tabTrigger>

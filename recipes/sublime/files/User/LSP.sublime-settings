@@ -1,10 +1,17 @@
 {
+  // "show_diagnostics_count_in_view_status": true,
+  // "show_diagnostics_in_view_status": true,
+  "show_diagnostics_panel_on_save": 0,
+  // "diagnostics_panel_include_severity_level": 4,
+
+
   "log_debug": true,
-  "lsp_code_actions_on_save": {
-    // "source.fixAll": true,
-    // "source.orgaarklnizeImports": true,
-  },
- "show_diagnostics_panel_on_save": 1,
+  "log_stderr": true,
+  // "lsp_code_actions_on_save": {
+  //   "source.fixAll": true,
+  //   "source.orgaarklnizeImports": true,
+  // },
+ // "show_diagnostics_panel_on_save": 1,
   "document_highlight_style": "",
   "hover_highlight_style": "",
   "link_highlight_style": "disabled",
@@ -17,17 +24,17 @@
     "hint": "underline",
   },
 
+  // "default_clients": {},
   "clients": {
-    // "gopls": {
-    //   "enabled": false,
-    //   "command": ["gopls"],
-    //   "selector": "source.go",
-    //   "env": { "PATH": "/opt/homebrew/bin" },
-    //   "disabled_capabilities": {
-    //     "completionProvider": true,
-    //     "hover": true,
-    //   },
-    // },
+    "gopls": {
+      "enabled": true,
+      // "command": ["/Users/t1028/go/bin/gopls"],
+      // "selector": ["source.go"],
+      // "disabled_capabilities": {
+      //   "completionProvider": true,
+      //   "hover": true,
+      // },
+    },
     // "sorbet": {
     //   "enabled": true,
     //   "command": ["srb", "tc", "--typed", "true", "--lsp", "--disable-watchman", "--dir", "."],
@@ -37,12 +44,11 @@
     "ruby": {
       "enabled": true,
       "command": ["solargraph", "stdio"],
-      "selector": "source.ruby | text.html.ruby",
-      "env": { "PATH": "/Users/t1028/.rbenv/shims" },
+      // "selector": "source.ruby | text.html.ruby",
       "initializationOptions": {
-        // "format": "json",
-        // "provideHover": true,
-        "diagnostics": false
+      //   "format": "json",
+      //   "provideHover": true,
+        "diagnostics": true
       }
     },
     // "terraform-lsp": {

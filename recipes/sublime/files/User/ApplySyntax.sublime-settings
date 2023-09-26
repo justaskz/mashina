@@ -17,19 +17,16 @@
   // (true|false|"verbose")
   "debug": false,
 
-  "default_syntaxes": [
+  "default_syntaxes": [],
+
+  // Put your custom syntax rules here:
+  "syntaxes": [
     {
-      "syntax": "Ansible/Ansible",
-      "extensions": ["yml"],
+      "syntax": "YAML/YAML",
+      "extensions": [],
       "rules": [
         { "first_line": "---" }
       ]
     },
-    {
-      "syntax": "YAML/YAML",
-      "extensions": [],
-    },
-  ],
-  // Put your custom syntax rules here:
-  "syntaxes": []
+  ]
 }

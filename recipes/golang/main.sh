@@ -18,6 +18,7 @@ function install_macos {
   brew install golang
   go install golang.org/x/tools/gopls@latest
   go install golang.org/x/tools/cmd/goimports@latest
+  mkdir -p $HOME/go/src/github.com/justaskz
 }
 
 run

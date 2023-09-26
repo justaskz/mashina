@@ -1,34 +1,35 @@
 {
 	"always_show_minimap_viewport": true,
-	"caret_style": "phase",
-	"caret_extra_top": 2,
 	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
 	"caret_extra_width": 1,
+	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"copy_with_empty_selection": true,
 	"fold_buttons": false,
+	"indent_guide_options": [],
 	"index_files": true,
+	"margin": 8,
 	"mini_diff": false,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"rulers": [99],
 	"save_on_focus_lost": true,
+	"shell_environment": "/bin/bash",
 	"show_definitions": false,
 	"show_git_status": false,
 	"show_panel_on_build": false,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
 	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?",
-	"margin": 8,
-	"indent_guide_options": [],
 
 	//-----------------------------------------------
 	// UI
 	//-----------------------------------------------
 	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"theme": "Adaptive.sublime-theme",
-	"font_face": "Source Code Pro",
-	"font_size": 13,
+	"font_face": "SauceCodePro Nerd Font",
+	"font_size": 14,
 	"line_padding_bottom": 1,
 	"line_padding_top": 0,
 
@@ -39,6 +40,7 @@
 	"tab_completion": true,
 	"auto_complete_cycle": true,
 	"auto_complete_use_index": false,
+	"auto_match_enabled": false,
 
 	// "auto_complete_commit_on_tab": true,
 	// "auto_complete_include_snippets": true,
@@ -69,10 +71,10 @@
 		"*.jar",
 		"*.zip",
 		"*.deb",
-		"core/db/migrates/*.rb"
 	],
+
 	"file_exclude_patterns": [
-		"*.log",
+		// "*.log",
 		".DS_Store",
 		"*.pyc",
 		"*.cache",
@@ -81,8 +83,10 @@
 		"*.scssc",
 		"*.rdb",
 		"*.svg",
-		"*package-lock.json*"
+		"*package-lock.json*",
+		"*cheatsheet*",
 	],
+
 	"folder_exclude_patterns": [
 		".git",
 		"node_modules",
@@ -104,14 +108,18 @@
 		"public/assets/*",
 		".terragrunt-cache",
 	],
+
 	"ignored_packages": [
+		"Ansible",
 		"orgmode",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
+		"SublimeOnSaveBuild",
 		"Vintage",
 	],
+
 	"index_exclude_patterns": [
-		"*.log",
+		// "*.log",
 		".gitkeep",
 		"node_modules",
 		"bower_components",

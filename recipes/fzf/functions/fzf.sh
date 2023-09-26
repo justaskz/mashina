@@ -26,7 +26,7 @@ function _fzf_complete_ssh() {
 }
 
 _fzf_complete_ssh_post() {
-  awk '{print $NF " -t \"sudo su -\""}'
+  awk '{print $NF " -t \"sudo -i\""}'
 }
 
 gch() {

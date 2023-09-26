@@ -147,9 +147,6 @@
   // send to Terminal
   { "keys": ["super+\\"], "command": "send_code" },
 
-  // show in sidebar
-  { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
-
   { "keys": ["super+shift+["], "command": "do_end_to_brace" },
   { "keys": ["super+shift+]"], "command": "brace_to_do_end" },
 
@@ -172,8 +169,11 @@
   // SIDEBAR
   //-----------------------------------------------
 
+  // show file in sidebar
+  { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+
   // toogle sidebar
-  { "keys": ["super+space", "super+o"], "command": "toggle_side_bar" },
+  // { "keys": ["super+space", "super+o"], "command": "toggle_side_bar" },
 
   // focus sidebar
   { "keys": ["super+space", "super+d"], "command": "focus_side_bar" },
@@ -201,6 +201,9 @@
   // LSP
   //-----------------------------------------------
 
+  // toggle diagnostics panel
+  { "keys": ["super+space", "super+p"], "command": "lsp_show_diagnostics_panel" },
+
   // hover
   { "keys": ["super+space", "super+o"], "command": "lsp_hover" },
 
@@ -208,5 +211,5 @@
   { "keys": ["super+space", "super+t"], "command": "lsp_symbol_definition" },
 
   // go to diagnostics
-  { "keys": ["super+space", "super+e"], "command": "lsp_goto_diagnostic" },
+  { "keys": ["super+space", "super+d"], "command": "lsp_goto_diagnostic" },
 ]
