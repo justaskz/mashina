@@ -1,4 +1,24 @@
 * TASKS
+  [ ] Sublime
+      [ ] Add json lsp for autoformat?
+      [ ] Review packages
+          - Questionable packages:
+            [ ] Ansible
+            [ ] ApplySyntax
+            [ ] ColorSchemeSelector
+            [ ] Expand Selection to Quotes or Select Quoted
+            [ ] git
+            [ ] gofmt
+            [ ] gototab
+            [ ] Pretty json
+            [ ] Sendcode
+            [ ] RailsGoToSpec or Spec Finder
+            [ ] All SublimeLinter
+            [ ] SublimeOnSaveBuild
+            [ ] Terrafmt
+            [ ] Terraform
+
+      [ ] There are two setting files for golang, find out which one is real
   [ ] Replace all cp to ln -sf
   [ ] Implement a function for smart file/symlink stransfer (like function files):
       - Delete all old files (probably use prefix to recognize which files are owned by current recipe?)
