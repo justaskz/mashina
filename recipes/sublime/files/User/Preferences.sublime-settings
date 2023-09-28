@@ -26,7 +26,7 @@
 	//-----------------------------------------------
 	// UI
 	//-----------------------------------------------
-	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
+	"color_scheme": "Packages/User/themes/Bliss (SL).tmTheme",
 	"theme": "Adaptive.sublime-theme",
 	"font_face": "SauceCodePro Nerd Font",
 	"font_size": 14,
