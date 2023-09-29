@@ -26,6 +26,7 @@
 		"Jinja2",
 		"LSP",
 		"LSP-gopls",
+		"LSP-json",
 		"LSP-terraform",
 		"LSP-yaml",
 		"nginx",

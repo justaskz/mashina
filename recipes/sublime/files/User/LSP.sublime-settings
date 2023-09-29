@@ -1,29 +1,25 @@
 {
   // "show_diagnostics_count_in_view_status": true,
   // "show_diagnostics_in_view_status": true,
+  "lsp_format_on_save": true,
   "show_diagnostics_panel_on_save": 0,
   // "diagnostics_panel_include_severity_level": 4,
-
-
   "log_debug": true,
-  "log_stderr": true,
   // "lsp_code_actions_on_save": {
   //   "source.fixAll": true,
   //   "source.orgaarklnizeImports": true,
   // },
- // "show_diagnostics_panel_on_save": 1,
+  // "show_diagnostics_panel_on_save": 1,
   "document_highlight_style": "",
   "hover_highlight_style": "",
   "link_highlight_style": "disabled",
   "inhibit_snippet_completions": true,
-
   "diagnostics_highlight_style": {
     "error": "underline",
     "warning": "underline",
     "info": "underline",
     "hint": "underline",
   },
-
   // "default_clients": {},
   "clients": {
     "gopls": {
@@ -43,11 +39,14 @@
     // },
     "ruby": {
       "enabled": true,
-      "command": ["solargraph", "stdio"],
+      "command": [
+        "solargraph",
+        "stdio"
+      ],
       // "selector": "source.ruby | text.html.ruby",
       "initializationOptions": {
-      //   "format": "json",
-      //   "provideHover": true,
+        //   "format": "json",
+        //   "provideHover": true,
         "diagnostics": true
       }
     },
