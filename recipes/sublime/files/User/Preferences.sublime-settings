@@ -112,6 +112,8 @@
 	"ignored_packages": [
 		"Ansible",
 		"orgmode",
+		"Pretty JSON",
+		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
 		"SublimeOnSaveBuild",
