@@ -12,6 +12,7 @@ function update_config {
 
 function install_macos {
   local SUBLIME_HOME="$HOME/Library/Application Support/Sublime Text"
+  local SUBLIME_PACKAGES_PATH="$SUBLIME_HOME/Packages"
   local PACKAGE_CONTROL_PATH="$SUBLIME_HOME/Installed Packages"
   local SUBLIME_SOURCE_FOLDER="$MASHINA_SOURCE/recipes/sublime/files"
 
@@ -20,16 +21,23 @@ function install_macos {
   wget -P "$PACKAGE_CONTROL_PATH" "http://sublime.wbond.net/Package%20Control.sublime-package"
 
   #
-  rm -rf "$SUBLIME_HOME/Packages/User"
-  ln -sf "$SUBLIME_SOURCE_FOLDER/User" "$SUBLIME_HOME/Packages/User"
+  rm -rf "$SUBLIME_PACKAGES_PATH/User"
+  ln -sf "$SUBLIME_SOURCE_FOLDER/User" "$SUBLIME_PACKAGES_PATH/User"
 
   # remove default sidebar context menu
-  local DEFAULT_PACKAGE="$SUBLIME_HOME/Packages/Default"
+  local DEFAULT_PACKAGE="$SUBLIME_PACKAGES_PATH/Default"
   mkdir -p "$DEFAULT_PACKAGE"
   touch "$DEFAULT_PACKAGE/Side Bar.sublime-menu" "$DEFAULT_PACKAGE/Side Bar Mount Point.sublime-menu"
 
   # make sublime default editor
   defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.4;}'
+
+  # install custom packages
+  git clone git@github.com:justaskz/basic_format.git "$SUBLIME_PACKAGES_PATH/basic_format"
+  rm -rf "$SUBLIME_PACKAGES_PATH/basic_format/.git"
+
+  git clone git@github.com:justaskz/SendCode.git "$SUBLIME_PACKAGES_PATH/SendCode"
+  rm -rf "$SUBLIME_PACKAGES_PATH/SendCode/.git"
 
   # go to macos keyboard shortcut settings and create custom shortcut for sublime
   # Quit Sublime Text => ^=

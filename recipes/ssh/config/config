@@ -28,3 +28,64 @@ Host 52.71.175.190
     ControlMaster auto
     ControlPath ~/.ssh/sockets/%r@%h:%p
     ControlPersist 5m
+
+#comment next 3 lines if SSH VERSION is lower than 8.9
+Host *
+  HostKeyAlgorithms +ssh-rsa-cert-v01@openssh.com
+  PubkeyAcceptedAlgorithms +ssh-rsa-cert-v01@openssh.com
+
+Host !*-gcp-* !*-stage-* !*-eu-* !*-euce1-* mountain-* nordvpn-* nord-* nordpass-* nordlocker-* nordsec-* nfct-* cs-*-us-* nordcheckout-* cloudvpn-* sky-* nordaccount-* nordpay-* nfct-* enterprise-* anna-* *-us-prod-* *-db-aws-usea1-* mountaininfra-dbproxy-bastion-prod-aws-usea1-* mountaininfra-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J aws-us1-east-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host cs-*-eu-* mountain-front-* mountain-*-eu-* *-toran-eu-* *-euce1-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J aws-eu1-central-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host nsp-nonpci-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J npc-proxy-teleport.mountaininfra-payments.com:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host stage-nfct-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J aws-us2-west-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host gcp-stage-* *-stage-gcp-* datateam-*-us-stage-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J gcp-us4-east-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host nsp-stage-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J stage-nsp-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host *-stage-aws-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J aws-usea1-nordsec-stage-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
+
+Host websec-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J aws-usea1-websec-teleport.mountaininfra.net:443 %r@%n:%p
+    StrictHostKeyChecking no
