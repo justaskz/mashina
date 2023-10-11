@@ -33,16 +33,5 @@
     }
   ],
   "linters": {
-    "rubocop": {
-      "excludes": ["*.cnf", "*Vagrantfile"]
-    },
-    "golangcilint": {
-      "env": {
-        "PATH": "/opt/homebrew/bin",
-      },
-      "executable": "golangci-lint",
-      "args": "presets style",
-      "selector": "source.go",
-    },
   }
 }

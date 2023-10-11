@@ -1,14 +1,13 @@
 {
+  "log_debug": true,
+  "lsp_format_on_save": false,
   // "show_diagnostics_count_in_view_status": true,
   // "show_diagnostics_in_view_status": true,
-  "show_diagnostics_panel_on_save": 0,
-  // "diagnostics_panel_include_severity_level": 4,
-  "log_debug": true,
-  // "lsp_code_actions_on_save": {
-  //   "source.fixAll": true,
-  //   "source.orgaarklnizeImports": true,
-  // },
   // "show_diagnostics_panel_on_save": 1,
+  // "diagnostics_panel_include_severity_level": 1,
+  "lsp_code_actions_on_save": {
+    // "source.formatAll.terraform": true,
+  },
   "document_highlight_style": "",
   "hover_highlight_style": "",
   "link_highlight_style": "disabled",
@@ -19,43 +18,16 @@
     "info": "underline",
     "hint": "underline",
   },
-  // "default_clients": {},
   "clients": {
-    "gopls": {
-      "enabled": true,
-      // "command": ["/Users/t1028/go/bin/gopls"],
-      // "selector": ["source.go"],
-      // "disabled_capabilities": {
-      //   "completionProvider": true,
-      //   "hover": true,
-      // },
-    },
-    // "sorbet": {
-    //   "enabled": true,
-    //   "command": ["srb", "tc", "--typed", "true", "--lsp", "--disable-watchman", "--dir", "."],
-    //   "selector": "source.ruby",
-    //   "env": { "PATH": "/Users/t1028/.rbenv/shims" },
-    // },
     "ruby": {
       "enabled": true,
-      "command": [
-        "solargraph",
-        "stdio"
-      ],
-      // "selector": "source.ruby | text.html.ruby",
+      "command": ["solargraph", "stdio"],
+      "selector": "source.ruby",
       "initializationOptions": {
         //   "format": "json",
         //   "provideHover": true,
         "diagnostics": true
       }
     },
-    // "terraform-lsp": {
-    //   "enabled": true,
-    //   "command": ["terraform-ls", "serve"],
-    //   "scopes": ["source.terraform"],
-    //   "initializationOptions": {
-    //     "diagnostics": true
-    //   }
-    // },
   }
 }

@@ -11,7 +11,7 @@
 	"index_files": true,
 	"margin": 8,
 	"mini_diff": false,
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": "never",
 	"overlay_scroll_bars": "enabled",
 	"rulers": [99],
 	"save_on_focus_lost": true,
@@ -19,7 +19,7 @@
 	"show_definitions": false,
 	"show_git_status": false,
 	"show_panel_on_build": false,
-	"trim_trailing_white_space_on_save": true,
+	"trim_trailing_white_space_on_save": "all",
 	"update_check": false,
 	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?",
 

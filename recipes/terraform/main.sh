@@ -15,8 +15,7 @@ function install_debian {
 
 function install_macos {
   brew tap hashicorp/tap
-  brew install hashicorp/tap/terraform
-  brew install terragrunt
+  brew install hashicorp/tap/terraform terragrunt terraform-ls
 }
 
 function terraform_manual {

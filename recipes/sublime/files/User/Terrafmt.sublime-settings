@@ -1,4 +1,3 @@
-// Any settings in this file overrides the default ones
-{
-  "cmd": ["/opt/homebrew/bin/terraform", "fmt", "-"],
-}
+// {
+//   "cmd": ["/opt/homebrew/bin/terraform", "fmt", "-"],
+// }
