@@ -1,0 +1,6 @@
+{
+  "settings": {
+    "bashIde.explainshellEndpoint": "",
+    "bashIde.shellcheckPath": "shellcheck",
+  }
+}

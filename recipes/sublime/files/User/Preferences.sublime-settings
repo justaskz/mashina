@@ -110,6 +110,7 @@
 	],
 
 	"ignored_packages": [
+		"ApplySyntax",
 		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",

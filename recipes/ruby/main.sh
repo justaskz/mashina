@@ -9,18 +9,18 @@ function run {
 }
 
 function update_config {
-  ln -sf $MASHINA_SOURCE/recipes/ruby/init/ruby.sh $MASHINA_INIT
-  cp recipes/ruby/dotfiles/.gemrc $HOME
+  ln -sf "$MASHINA_SOURCE/recipes/ruby/init/ruby.sh" "$MASHINA_INIT"
+  cp recipes/ruby/dotfiles/.gemrc "$HOME"
 
   # rubocop
   CONFIG_DIR="$GLOBAL_CONFIG/rubocop"
-  mkdir -p $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/ruby/config/rubocop/config.yml $CONFIG_DIR/config.yml
+  mkdir -p "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/ruby/config/rubocop/config.yml" "$CONFIG_DIR/config.yml"
 
   # solargraph
   CONFIG_DIR="$GLOBAL_CONFIG/solargraph"
-  mkdir -p $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/ruby/config/solargraph/config.yml $CONFIG_DIR/config.yml
+  mkdir -p "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/ruby/config/solargraph/config.yml" "$CONFIG_DIR/config.yml"
 }
 
 # function install_debian {
@@ -39,8 +39,8 @@ function update_config {
 
 function install_macos {
   brew install ruby-build
-  git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
-  ln -sf $MASHINA_OPT/rbenv/bin/rbenv $MASHINA_BIN
+  git clone --depth 1 https://github.com/sstephenson/rbenv.git "$MASHINA_OPT/rbenv"
+  ln -sf "$MASHINA_OPT/rbenv/bin/rbenv" "$MASHINA_BIN"
 
   rbenv install -s $RUBY_VERSION
   rbenv global $RUBY_VERSION

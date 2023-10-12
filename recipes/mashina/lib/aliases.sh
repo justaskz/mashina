@@ -1,8 +1,8 @@
 unalias -a
 
-alias src="source $MASHINA_ROOT/main.sh"
-alias mashina_source="cd $HOME/repos/mashina"
-alias mashina_root="cd $MASHINA_ROOT/"
+alias src='source $MASHINA_ROOT/main.sh'
+alias mashina_source='cd $HOME/repos/mashina'
+alias mashina_root='cd $MASHINA_ROOT'
 
 alias x="hx"
 alias k="kubectl"
@@ -15,7 +15,7 @@ alias tma="tmux attach -t"
 alias tmd="tmux detach"
 alias tmk="tmux kill-session -t"
 alias tml="tmux list-sessions"
-alias tms="tmux source-file ~/.tmux.conf"
+alias tms="tmux source-file ~/.config/tmux/tmux.conf"
 
 #################################################
 ## GIT

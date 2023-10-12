@@ -8,22 +8,22 @@ function run {
 
 function update_config_debian {
   TMUX_HOME="$HOME/.config/tmux"
-  mkdir -p $TMUX_HOME
-  cp recipes/tmux/dotfiles/.tmux-linux.conf $TMUX_HOME/tmux.conf
-  echo "" >> $TMUX_HOME/tmux.conf
-  cat recipes/tmux/dotfiles/.tmux.conf >> $TMUX_HOME/tmux.conf
+  mkdir -p "$TMUX_HOME"
+  cp "recipes/tmux/config/.tmux-linux.conf" "$TMUX_HOME/tmux.conf"
+  echo "" >> "$TMUX_HOME/tmux.conf"
+  cat recipes/tmux/config/.tmux.conf >> "$TMUX_HOME/tmux.conf"
 }
 
 function update_config_macos {
   local CONFIG="$GLOBAL_CONFIG/tmux"
-  mkdir -p $CONFIG
-  ln -sf $MASHINA_SOURCE/recipes/tmux/dotfiles/.tmux.conf $CONFIG/tmux.conf
+  mkdir -p "$CONFIG"
+  ln -sf "$MASHINA_SOURCE/recipes/tmux/config/.tmux.conf" "$CONFIG/tmux.conf"
 }
 
 function install_debian {
   local VERSION="3.3a"
   local TMUX_PATH="$MASHINA_OPT/tmux"
-  rm -rf $TMUX_PATH
+  rm -rf "$TMUX_PATH"
 
   sudo apt-get -y install pkg-config libevent-dev libncurses5-dev libncursesw5-dev autotools-dev automake bison byacc
   git clone --depth 1 --branch "$VERSION" https://github.com/tmux/tmux.git "$TMUX_PATH"
@@ -32,7 +32,7 @@ function install_debian {
   sh autogen.sh
   sh configure
   make
-  ln -s "$TMUX_PATH/tmux" $MASHINA_BIN
+  ln -s "$TMUX_PATH/tmux" "$MASHINA_BIN"
 }
 
 function install_macos {

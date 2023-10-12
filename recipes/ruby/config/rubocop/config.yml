@@ -16,7 +16,7 @@ Layout/LineLength:
   Max: 99
 
 Naming/VariableNumber:
-  EnforcedStyle: snakecase
+  EnforcedStyle: snake_case
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
