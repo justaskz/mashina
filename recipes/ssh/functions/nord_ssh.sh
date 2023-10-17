@@ -39,5 +39,6 @@ function ssht {
 }
 
 function ssh-teleport-ansible {
-  ssh -A juka@mountaininfra-ansible-us-2
+  # ssh -A juka@mountaininfra-ansible-us-2
+  ssh-ansible-aws
 }

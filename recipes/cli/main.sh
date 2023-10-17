@@ -14,13 +14,16 @@ function install_macos {
   # inv
 
   # projectile
-  ln -sf $HOME/repos/projectile/bin/projectile $MASHINA_BIN
+  ln -sf "$HOME/repos/projectile/bin/projectile" "$MASHINA_BIN"
 
   # syncros
-  ln -sf $HOME/repos/syncros/bin/syncros $MASHINA_BIN
+  ln -sf "$HOME/repos/syncros/bin/syncros" "$MASHINA_BIN"
 
   # mouse
-  ln -sf $HOME/repos/mouse/mouse.rb $MASHINA_BIN/mouse
+  ln -sf "$HOME/repos/mouse/mouse.rb" "$MASHINA_BIN/mouse"
+
+  # terra
+  ln -sf "$HOME/repos/terra/bin/terra" "$MASHINA_BIN"
 }
 
 run

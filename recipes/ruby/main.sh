@@ -23,19 +23,19 @@ function update_config {
   ln -sf "$MASHINA_SOURCE/recipes/ruby/config/solargraph/config.yml" "$CONFIG_DIR/config.yml"
 }
 
-# function install_debian {
-#   install_dependencies_debian
-#   git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
-#   ln -s $MASHINA_OPT/rbenv/bin/rbenv $MASHINA_BIN
+function install_debian {
+  # install_dependencies_debian
+  git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
+  ln -s "$MASHINA_OPT/rbenv/bin/rbenv" $MASHINA_BIN
 
-#   rm -rf "$(rbenv root)"/plugins
-#   mkdir -p "$(rbenv root)"/plugins
-#   git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+  rm -rf "$(rbenv root)"/plugins
+  mkdir -p "$(rbenv root)"/plugins
+  git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-#   rbenv install -s $RUBY_VERSION
-#   rbenv global $RUBY_VERSION
-#   rbenv rehash
-# }
+  rbenv install -s "$RUBY_VERSION"
+  rbenv global "$RUBY_VERSION"
+  rbenv rehash
+}
 
 function install_macos {
   brew install ruby-build

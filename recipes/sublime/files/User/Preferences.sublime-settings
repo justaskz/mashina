@@ -111,6 +111,7 @@
 
 	"ignored_packages": [
 		"ApplySyntax",
+		"LSP-bash",
 		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
