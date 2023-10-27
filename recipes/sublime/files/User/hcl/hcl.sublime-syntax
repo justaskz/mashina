@@ -1,0 +1,257 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: HCL
+file_extensions:
+  - hcl
+scope: source.hcl
+contexts:
+  main:
+    - match: "#"
+      comment: Comments
+      captures:
+        0: punctuation.definition.comment.hcl
+      push:
+        - meta_scope: comment.line.number-sign.hcl
+        - match: $\n?
+          captures:
+            0: punctuation.definition.comment.hcl
+          pop: true
+    - match: /\*
+      comment: Block comments
+      captures:
+        0: punctuation.definition.comment.hcl
+      push:
+        - meta_scope: comment.block.hcl
+        - match: \*/
+          captures:
+            0: punctuation.definition.comment.hcl
+          pop: true
+    - match: //
+      comment: Line comment
+      scope: punctuation.definition.comment.hcl
+      push:
+        - meta_scope: comment.line.double-slash.hcl
+        - match: $\n?
+          captures:
+            0: punctuation.definition.comment.hcl
+          pop: true
+    - match: \b(true|false|yes|no|on|off)\b
+      comment: Language constants (true, false, yes, no, on, off)
+      scope: constant.language.hcl
+    - match: '\b([0-9]+)([kKmMgG]b?)?\b'
+      comment: Numbers
+      scope: constant.numeric.hcl
+    - match: '\b(0x[0-9A-Fa-f]+)([kKmMgG]b?)?\b'
+      comment: Hex numbers
+      scope: constant.numeric.hcl
+    - match: '(resource)\s+((")(\w+)?("))\s+((")([\w-]+)?("))\s*\{'
+      scope: meta.resource.hcl entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl
+        2: string.quoted.double.hcl
+        3: punctuation.definition.string.begin.hcl
+        4: meta.resource.type.hcl
+        5: punctuation.definition.string.end.hcl
+        6: string.quoted.double.hcl
+        7: punctuation.definition.string.begin.hcl
+        8: meta.resource.name.hcl
+        9: punctuation.definition.string.end.hcl
+    - match: '(data)\s+((")(\w+)?("))\s+((")([\w-]+)?("))\s*\{'
+      scope: meta.data-source.hcl entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl
+        2: string.quoted.double.hcl
+        3: punctuation.definition.string.begin.hcl
+        4: meta.data-source.type.hcl
+        5: punctuation.definition.string.end.hcl
+        6: string.quoted.double.hcl
+        7: punctuation.definition.string.begin.hcl
+        8: meta.data-source.name.hcl
+        9: punctuation.definition.string.end.hcl
+    - match: '(provider|provisioner|variable|module|atlas)\s+(")([\w-]+)?(")\s*{'
+      scope: entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl
+        2: string.hcl punctuation.definition.string.begin.hcl
+        3: string.quoted.double.hcl
+        4: string.hcl punctuation.definition.string.end.hcl
+    - match: '(output)\s+(")([-\w\.]+)(")\s*{'
+      scope: entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl
+        2: string.hcl punctuation.definition.string.begin.hcl
+        3: string.quoted.double.hcl
+        4: string.hcl punctuation.definition.string.end.hcl
+    - match: ^\s*(locals|hcl)\s*{
+      captures:
+        1: storage.type.function.hcl
+      push:
+        - meta_content_scope: meta.block.hcl
+        - match: '^\s*}'
+          pop: true
+        - include: main
+    - match: '([\w_-]+)\s*(=)\s*'
+      comment: Value assignments (left hand side not in double quotes)
+      captures:
+        1: variable.assignment.hcl
+        2: keyword.operator.hcl
+    - match: '(")([\w_-]+)(")\s*(=)\s*'
+      comment: Value assignments (left hand side in double quotes)
+      captures:
+        1: punctuation.quote.double.hcl
+        2: variable.assignment.hcl
+        3: punctuation.quote.double.hcl
+        4: keyword.operator.hcl
+    - match: '([\w\-_]+)\s+({)'
+      comment: Maps
+      captures:
+        1: entity.name.section.hcl
+        2: punctuation.definition.tag.hcl
+    - include: strings
+    - include: variable_reference
+    - include: dot
+    - include: function
+    - include: for
+    - include: operators
+    # - include: aws
+    - include: dynamic
+    - include: content
+    - include: blocks
+    - include: resource_meta
+    - include: provider_meta
+  strings:
+    - match: '"'
+      comment: Strings
+      scope: punctuation.definition.string.begin.hcl
+      push:
+        - meta_scope: string.quoted.double.hcl
+        - match: '"'
+          scope: punctuation.definition.string.end.hcl
+          pop: true
+        - include: interpolation
+        - include: string_placeholder
+        - include: string_escaped_char
+    - match: '<<(\w+)'
+      scope: punctuation.definition.string.begin.hcl
+      comment: Heredoc
+      push:
+        - meta_scope: string.heredoc.hcl
+        - match: '^\1'
+          scope: punctuation.definition.string.end.hcl
+          pop: true
+        - include: interpolation
+    # - match: '<<-SFN'
+    #   comment: JSON
+    #   push:
+    #     - meta_content_scope: source.json
+    #     - match: '^SFN'
+    #       pop: true
+    #     - include: scope:source.json
+    #     - include: interpolation
+  interpolation:
+    - match: '\$\{'
+      scope: punctuation.section.embed.begin.hcl
+      push:
+        - meta_scope: meta.embed.hcl
+        - match: '\}'
+          scope: punctuation.section.embed.end.hcl
+          pop: true
+        - include: interpolated_terraform
+  interpolated_terraform:
+    - include: variable_reference
+    - include: function
+    - include: operators
+    - include: interpolation
+    - include: strings
+    - include: dot
+    # - include: aws
+  function:
+    - match: '(\w+)\('
+      comment: functions in interpolations
+      captures:
+        1: support.function.hcl
+      push:
+        - include: variable_reference
+        - include: function
+        - include: main
+        - match: '\)'
+          pop: true
+  operators:
+    - match: '\?|:'
+      scope: keyword.operator.conditional.hcl
+    - match: '=|!=|>|<|>=|<=|&&|\|\||!'
+      scope: keyword.operator.comparison.hcl
+    - match: (%|&|\*|\+|\-|/)
+      scope: keyword.operator.arithmetic.hcl
+  variable_reference:
+    - match: '(\b(self|count|each|path|var|local|module|data)\b(\.?))'
+      captures:
+        1: variable.language.hcl # capture the whole thing - orange
+        3: keyword.control.hcl # capture only the dot - red
+  # aws:
+  #   - match: '(\b((?:aws_|auth0_|azurerm_|azuread_|google_|vault_).*?)\b(\.?))'
+  #     captures:
+  #       1: storage.type.function.hcl # outermost capture - italic + blue
+  #       # 2: variable.function.hcl # inner capture - green
+  #       2: variable.language.hcl # orange
+  #       3: keyword.control.hcl # capture only the dot - red
+  dot:
+    - match: '(\.)'
+      captures:
+        # 1: variable.language.hcl # orange
+        # 1: variable.annotation.hcl # blue
+        1: keyword.control.hcl # red
+        # 1: support.function.hcl # green
+  for:
+    - match: '\b(for|in|if)\b'
+      captures:
+        1: keyword.control.hcl
+  dynamic:
+    - match: '(dynamic)\s+("\w+")\s*{'
+      scope: meta.resource.hcl entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl # capture the whole thing - blue
+        2: string.quoted.double.hcl # capture the name - yellow
+  content:
+    - match: '^\s*(content)\s*{'
+      scope: meta.resource.hcl entity.name.resource.hcl
+      captures:
+        1: storage.type.function.hcl # capture the whole thing - blue
+
+  resource_meta:
+    - match: '^\s*(count|for_each|iterator|provider|depends_on|lifecycle|sensitive|timeouts)\s*(?:{|(=))\s*'
+      comment: Resource Meta Arguments
+      captures:
+        1: keyword.control.hcl # red
+        2: keyword.control.hcl # red
+  provider_meta:
+    - match: '^\s*(alias)\s*(=)\s*'
+      comment: Resource Meta Arguments
+      captures:
+        1: keyword.control.hcl # red
+        2: keyword.control.hcl # red
+
+  blocks:
+    - match: '^\s*(source|version|count|for_each|iterator)\s*(=)\s*'
+      comment: Value assignments for special ..
+      captures:
+        1: keyword.control.hcl # red
+        2: keyword.control.hcl # red
+  string_placeholder:
+    - match: |-
+        (?x)%
+            [#0\- +']*                                  # flags
+            (\[\d+\])?                                  # field (argument #)
+            [,;:_]?                                     # separator character (AltiVec)
+            ((-?\d+)|(\[\d+\])?\*)?                     # minimum field width
+            (\.((-?\d+)|(\[\d+\])?\*)?)?                # precision
+            [diouxXDOUeEfFgGaAcCsSpqnvtTbyYhHmMzZ%]     # conversion type
+      scope: constant.other.placeholder.hcl
+    - match: "%"
+      scope: invalid.illegal.placeholder.hcl
+  string_escaped_char:
+    - match: '\\(\\|[abfnrutv''"]|x\h{2}|u\h{4}|U\h{8}|[0-7]{3})'
+      scope: constant.character.escape.hcl
+    - match: \\.
+      scope: invalid.illegal.unknown-escape.hcl

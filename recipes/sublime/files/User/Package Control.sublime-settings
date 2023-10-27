@@ -7,7 +7,6 @@
 	[
 		"All Autocomplete",
 		"Ansible",
-		"ApplySyntax",
 		"AutomaticPackageReloader",
 		"Bats",
 		"BracketHighlighter",
@@ -43,8 +42,6 @@
 		"SublimeLinter",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
-		"Terrafmt",
-		"Terraform",
 		"Text Pastry",
 		"Theme - Soda",
 		"Tmux Syntax Highlight",

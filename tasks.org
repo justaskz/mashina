@@ -1,4 +1,8 @@
 * TASKS
+  [ ] Create project Hashi
+  [ ] Create New theme
+  [ ] Fix Kitty bold font
+  [ ] Ansible LSP
   [ ] Sublime
       [ ] Add json lsp for autoformat?
       [ ] Review packages

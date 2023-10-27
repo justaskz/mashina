@@ -30,5 +30,5 @@ _fzf_complete_ssh_post() {
 }
 
 gch() {
- git checkout "$(git branch | fzf | tr -d '[:space:]')"
+  git checkout "$(git branch | fzf | tr -d '[:space:]')"
 }

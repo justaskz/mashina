@@ -39,6 +39,9 @@ function install_macos {
   git clone git@github.com:justaskz/SendCode.git "$SUBLIME_PACKAGES_PATH/SendCode"
   rm -rf "$SUBLIME_PACKAGES_PATH/SendCode/.git"
 
+  git clone git@github.com:sporto/rails-go-to-spec-sublime.git "$SUBLIME_PACKAGES_PATH/RailsGoToSpec"
+  rm -rf "$SUBLIME_PACKAGES_PATH/RailsGoToSpec/.git"
+
   # go to macos keyboard shortcut settings and create custom shortcut for sublime
   # Quit Sublime Text => ^=
 }
