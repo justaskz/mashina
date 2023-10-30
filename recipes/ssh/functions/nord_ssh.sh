@@ -18,6 +18,14 @@ function ssh-ansible-aws {
   ssh -A juka@52.71.175.190
 }
 
+function ssh-ansible-robotic-1 {
+  ssh -A juka@3.219.63.79
+}
+
+function ssh-ansible-robotic-2 {
+  ssh -A juka@44.214.9.175
+}
+
 function ssh-ansible-us {
   ssh -A juka@ansible-1.mountaininfra.net
 }
@@ -40,5 +48,6 @@ function ssht {
 
 function ssh-teleport-ansible {
   # ssh -A juka@mountaininfra-ansible-us-2
-  ssh-ansible-aws
+  # ssh-ansible-aws
+  ssh-ansible-robotic-1
 }

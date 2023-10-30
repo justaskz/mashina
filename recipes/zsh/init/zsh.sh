@@ -22,6 +22,10 @@ setopt hist_verify
 # share command history data
 setopt share_history
 
+# skip cd to enter directory
+setopt auto_cd
+
+
 # prevent duplicates in command history
 # setopt EXTENDED_HISTORY
 # setopt HIST_EXPIRE_DUPS_FIRST
@@ -55,7 +59,8 @@ setopt share_history
 
 # syntax highlighting
 source $MASHINA_OPT/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-ZSH_HIGHLIGHT_STYLES[path]='fg=none'
+ZSH_HIGHLIGHT_STYLES[path]="fg=none"
+ZSH_HIGHLIGHT_STYLES[unknown-token]="fg=red"
 
 # git autocomplete
 zstyle ':completion:*:*:git:*' script $MASHINA_FUNCTIONS/git-completion.zsh

@@ -8,16 +8,5 @@ services:
       context: .
     tty: true
     stdin_open: true
-    networks:
-      mashina_network:
-        ipv4_address: 192.168.57.10
     volumes:
-      - ./:/mashina
-
-networks:
-  mashina_network:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: "192.168.57.0/26"
+      - ./://root/repos/mashina

@@ -35,7 +35,7 @@
       "name": "Boleans",
       "scope": "boolean",
       "foreground": "var(red)",
-      // "background": "var(red)",
+      "background": "var(blue)",
     },
     {
       "name": "Strings",
@@ -45,7 +45,7 @@
     {
       "name": "Numbers",
       "scope": "constant.numeric",
-      "foreground": "var(blue)",
+      "foreground": "var(red)",
     },
     {
       "name": "Comment",
@@ -61,6 +61,11 @@
       "name": "Function parameters",
       "scope": "meta.function.parameters",
       "foreground": "var(blue)",
+    },
+    {
+      "name": "Ruby class methods",
+      "scope": "source.ruby variable.other.readwrite",
+      "foreground": "#ffffff"
     },
   ],
 }
