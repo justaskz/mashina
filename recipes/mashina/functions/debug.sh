@@ -7,8 +7,8 @@ function mashina_debug {
   echo "MASHINA_IS_SHELL_INTERACTIVE: $(mashina_is_shell_interactive)"
   echo "PATH: $PATH"
   echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
-  echo "SSH_KEYS: \n$(ssh-add -l)"
+  echo -e "SSH_KEYS: \n$(ssh-add -l)"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"
-  echo "TERM": $(echo $TERM)
+  echo "TERM: $TERM"
 }
