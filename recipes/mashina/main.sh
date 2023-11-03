@@ -21,9 +21,9 @@ function install {
   ln -sf "$MASHINA_SOURCE/recipes/mashina/lib/mashina_env.sh" "$MASHINA_ROOT/mashina_env.sh"
   ln -sf "$MASHINA_SOURCE/recipes/mashina/lib/aliases.sh" "$MASHINA_ROOT/aliases.sh"
 
-  for FILE in recipes/mashina/functions/*.sh; do
+  for FILE in $MASHINA_SOURCE/recipes/mashina/functions/*.sh; do
     if [[ -a $FILE ]]; then
-      cp "$FILE" "$MASHINA_FUNCTIONS"
+      ln -sf "$FILE" "$MASHINA_FUNCTIONS"
     fi
   done
 }

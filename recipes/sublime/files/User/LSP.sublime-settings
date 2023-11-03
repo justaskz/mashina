@@ -20,7 +20,7 @@
   },
   "clients": {
     "ruby": {
-      "enabled": true,
+      "enabled": false,
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby",
       "initializationOptions": {
