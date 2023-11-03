@@ -1,7 +1,8 @@
 * TASKS
   [ ] Create project Hashi
   [ ] Create New theme
-  [ ] Fix Kitty bold font
+      [ ] https://github.com/saadq/bliss-ui
+      [ ] https://github.com/saadq/bliss-syntax
   [ ] Ansible LSP
   [ ] Sublime
       [ ] Add json lsp for autoformat?
@@ -64,31 +65,3 @@
   [ ] Text Editing
       [X] Comment line
       [ ] Delete line
-
-* NEOVIM
-  [ ] Keybindings
-      [X] Set leader key
-      [X] Set reload config key
-      [X] Save file
-      [X] Quit
-  [ ] Telescope
-      [ ] How to close panel?
-  [ ] Comments
-      [ ] "numToStr/Comment.nvim"
-      [ ] "tpope/vim-commentary"
-      [ ] nerdcomment
-      [ ] Map to super+/
-      [ ] How to uncomment?
-  [ ] Sidebar
-      [ ] Mappings
-          [ ] Open sidebar
-          [ ] Close sidebar
-          [ ] Show file in sidebar
-  [ ] Tabs
-  [ ] Lualine
-      [ ] Better theme
-  [ ] Configurations
-      [ ] https://github.com/LunarVim/LunarVim
-      [ ] https://github.com/NvChad/NvChad
-      [ ] https://github.com/jdhao/nvim-config
-      [ ] https://github.com/SpaceVim/SpaceVim

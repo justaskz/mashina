@@ -1,7 +1,7 @@
 format = """
 $username\
 $hostname\
-$directory\
+$directory(bold red)\
 $git_branch\
 $git_status\
 $line_break\
@@ -14,6 +14,9 @@ add_newline = true
 [hostname]
 ssh_only = true
 ssh_symbol = ""
+
+[directory]
+# style = "green bold"
 
 [git_branch]
 symbol = ""

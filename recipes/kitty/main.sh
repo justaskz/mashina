@@ -11,11 +11,12 @@ function update_config {
   mkdir -p $CONFIG
   ln -sf $MASHINA_SOURCE/recipes/kitty/config/kitty.conf $CONFIG
 
-  cp recipes/kitty/config/macos-launch-services-cmdline $CONFIG
-  cp recipes/kitty/config/themes/theme_light.conf $CONFIG
-  cp recipes/kitty/config/themes/theme_dark.conf $CONFIG
-  cp recipes/kitty/config/themes/theme_dev.conf $CONFIG
-  cp recipes/kitty/config/themes/theme_gruvbox.conf $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/macos-launch-services-cmdline" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_light.conf" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_dark.conf" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_dev.conf" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_gruvbox.conf" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_bliss.conf" $CONFIG
 }
 
 function install_debian {

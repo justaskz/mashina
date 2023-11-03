@@ -151,9 +151,7 @@
   { "keys": ["super+shift+]"], "command": "brace_to_do_end" },
 
   // go to spec
-  // { "keys": ["super+shift+y"], "command": "rails_go_to_spec" },
-  { "keys": ["super+shift+y"], "command": "toggle_spec" },
-  // { "keys": ["super+shift+w"], "command": "rails_go_to_spec" },
+  { "keys": ["super+shift+y"], "command": "rails_go_to_spec" },
 
   //-----------------------------------------------
   // DISABLE

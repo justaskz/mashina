@@ -4,5 +4,5 @@
 -- ${1:NAME}
 -------------------------------------------------
 ]]></content>
-	<tabTrigger>labelVim</tabTrigger>
+	<tabTrigger>label-vim</tabTrigger>
 </snippet>

@@ -35,7 +35,9 @@ function ssh-ansible-eu {
 }
 
 function ssha {
-  ssh-teleport-ansible
+  # ssh-teleport-ansible
+  ssh-ansible-aws
+  # ssh-ansible-robotic-1
 }
 
 function sshb {
@@ -47,7 +49,5 @@ function ssht {
 }
 
 function ssh-teleport-ansible {
-  # ssh -A juka@mountaininfra-ansible-us-2
-  # ssh-ansible-aws
-  ssh-ansible-robotic-1
+  ssh -A juka@mountaininfra-ansible-us-2
 }

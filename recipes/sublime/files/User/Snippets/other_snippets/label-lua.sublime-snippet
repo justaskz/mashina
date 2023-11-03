@@ -4,6 +4,6 @@
 -- ${1:name}
 -------------------------------------------------
 ]]></content>
-	<tabTrigger>labelLua</tabTrigger>
+	<tabTrigger>label-lua</tabTrigger>
 	<scope>source.lua</scope>
 </snippet>
