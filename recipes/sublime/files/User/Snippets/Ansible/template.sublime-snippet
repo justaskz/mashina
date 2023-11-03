@@ -6,7 +6,6 @@
     dest: ${3:dest}
     owner: ${4:owner}
     group: ${5:group}
-
 ]]></content>
   <tabTrigger>qtemplate</tabTrigger>
   <scope>source.ansible</scope>

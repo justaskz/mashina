@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #!/usr/bin/env bash
 
 set -euo pipefail
 
 ]]></content>
-	<tabTrigger>bang-bash</tabTrigger>
+  <tabTrigger>bang-bash</tabTrigger>
 </snippet>

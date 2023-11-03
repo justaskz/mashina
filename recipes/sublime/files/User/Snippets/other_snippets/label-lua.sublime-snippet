@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 -------------------------------------------------
 -- ${1:name}
 -------------------------------------------------
 ]]></content>
-	<tabTrigger>label-lua</tabTrigger>
-	<scope>source.lua</scope>
+  <tabTrigger>label-lua</tabTrigger>
+  <scope>source.lua</scope>
 </snippet>

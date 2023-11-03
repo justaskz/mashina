@@ -1,9 +1,7 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ${1:var} ${2:name} = require('${3:module}')
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>req</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.js</scope>
+  <tabTrigger>req</tabTrigger>
+  <scope>source.js</scope>
 </snippet>

@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 source recipes/helpers/main.sh
 
 function run {
@@ -17,8 +17,6 @@ function install_macos {
 
 run
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>qinstall</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.shell</scope>
+  <tabTrigger>qinstall</tabTrigger>
+  <scope>source.shell</scope>
 </snippet>

@@ -1,10 +1,10 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 func ${1:name}(${2:arg}) {
-	${3:// code}
+  ${3:// code}
 }
-	]]></content>
-	<tabTrigger>qf</tabTrigger>
-	<scope>source.go</scope>
-	<description>go function</description>
+  ]]></content>
+  <tabTrigger>qf</tabTrigger>
+  <scope>source.go</scope>
+  <description>go function</description>
 </snippet>

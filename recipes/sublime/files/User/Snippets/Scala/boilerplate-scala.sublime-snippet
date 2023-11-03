@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 package com.codewars.${1:name}
 
 object ${2:Name} {
@@ -9,8 +9,6 @@ object ${2:Name} {
 }
 
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>boiler-scala</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.scala</scope>
+  <tabTrigger>boiler-scala</tabTrigger>
+  <scope>source.scala</scope>
 </snippet>

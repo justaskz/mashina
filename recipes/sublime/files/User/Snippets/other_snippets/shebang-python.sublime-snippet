@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #!/usr/bin/env python
 ]]></content>
-	<tabTrigger>bang-python</tabTrigger>
+  <tabTrigger>bang-python</tabTrigger>
 </snippet>

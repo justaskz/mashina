@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 describe '${1:something}' do
   ${2:# code}
 end
 ]]></content>
-	<tabTrigger>qdescribe</tabTrigger>
-	<scope>source.ruby</scope>
+  <tabTrigger>qdescribe</tabTrigger>
+  <scope>source.ruby</scope>
 </snippet>

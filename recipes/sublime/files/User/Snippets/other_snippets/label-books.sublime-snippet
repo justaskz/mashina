@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ## ##############################################
 ## ${1:name}
 ## ##############################################
@@ -11,5 +11,5 @@
 ### _list
 
 ]]></content>
-	<tabTrigger>label-books</tabTrigger>
+  <tabTrigger>label-books</tabTrigger>
 </snippet>

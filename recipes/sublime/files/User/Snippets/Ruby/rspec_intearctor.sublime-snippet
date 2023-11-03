@@ -1,14 +1,11 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 RSpec.describe ${1:Class}, ${2:'.for'} do
   subject${3:} { described_class.for(${4:arguments}) }
 
   ${5:# code}
 end
-
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>qrspec_interactor</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <tabTrigger>qrspec_interactor</tabTrigger>
+  <scope>source.ruby</scope>
 </snippet>

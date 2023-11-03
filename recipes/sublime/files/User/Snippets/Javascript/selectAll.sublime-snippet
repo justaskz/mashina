@@ -1,9 +1,7 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 .selectAll('${1:this}')
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ss</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.js</scope>
+  <tabTrigger>ss</tabTrigger>
+  <scope>source.js</scope>
 </snippet>

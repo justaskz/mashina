@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #!/usr/bin/env R
 ]]></content>
-	<tabTrigger>bang-r</tabTrigger>
+  <tabTrigger>bang-r</tabTrigger>
 </snippet>

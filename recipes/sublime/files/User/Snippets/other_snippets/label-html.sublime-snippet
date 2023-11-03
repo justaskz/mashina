@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 <!--*********************************************
 ${2:name}
 **********************************************-->
 ]]></content>
-	<tabTrigger>label-html</tabTrigger>
+  <tabTrigger>label-html</tabTrigger>
 </snippet>

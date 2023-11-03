@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 -------------------------------------------------
 -- ${1:NAME}
 -------------------------------------------------
 ]]></content>
-	<tabTrigger>label-vim</tabTrigger>
+  <tabTrigger>label-vim</tabTrigger>
 </snippet>

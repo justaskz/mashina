@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #!/usr/bin/env node
 ]]></content>
-	<tabTrigger>bang-node</tabTrigger>
+  <tabTrigger>bang-node</tabTrigger>
 </snippet>

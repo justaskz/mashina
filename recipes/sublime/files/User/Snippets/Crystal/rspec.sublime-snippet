@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 describe ${1:Class} do
   subject(:${2:tool}) { described_class.new }
 
@@ -13,6 +13,6 @@ describe ${1:Class} do
 end
 
 ]]></content>
-	<tabTrigger>qspec</tabTrigger>
-	<scope>source.crystal</scope>
+  <tabTrigger>qspec</tabTrigger>
+  <scope>source.crystal</scope>
 </snippet>

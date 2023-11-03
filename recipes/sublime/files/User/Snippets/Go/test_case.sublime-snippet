@@ -1,10 +1,10 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 func Test${2:Name}(t *testing.T) {
-	assert.Equal(t, ${3:expected}, ${4:actual})${5:}
+  assert.Equal(t, ${3:expected}, ${4:actual})${5:}
 }
 ]]></content>
-	<tabTrigger>qtest_case</tabTrigger>
-	<scope>source.go</scope>
-	<description>go test boilerplate</description>
+  <tabTrigger>qtest_case</tabTrigger>
+  <scope>source.go</scope>
+  <description>go test boilerplate</description>
 </snippet>

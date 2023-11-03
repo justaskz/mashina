@@ -1,11 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 it "should ${1:do}"
   ${2:# code}
 end
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>it</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.shell</scope>
+  <tabTrigger>it</tabTrigger>
+  <scope>source.shell</scope>
 </snippet>
