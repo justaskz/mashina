@@ -1,0 +1,24 @@
+<snippet>
+  <content>
+<![CDATA[
+#################################################
+## DOCKER COMPOSE
+#################################################
+dc_build:
+	@ docker-compose build
+
+dc_up:
+	@ docker-compose up -d
+
+dc_down:
+	@ docker-compose down
+
+dc_connect:
+  @ docker-compose exec app bash
+
+dc_rebuild: dc_down dc_build dc_up
+]]>
+  </content>
+  <tabTrigger>qdocker-makefile</tabTrigger>
+  <scope>source.makefile</scope>
+</snippet>

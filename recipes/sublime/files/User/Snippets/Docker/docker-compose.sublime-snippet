@@ -1,0 +1,38 @@
+<snippet>
+  <content>
+<![CDATA[
+---
+version: "3.9"
+services:
+  rails:
+    container_name: infra-app__rails
+    image: infra-app
+    hostname: infra-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - bundler:/usr/local/bundle
+    ports:
+      - "${RAILS_PORT}:${RAILS_PORT}"
+    networks:
+      - infra_default
+    depends_on:
+      - mysql
+      - sidekiq
+
+networks:
+  default:
+
+volumes:
+  bundler:
+]]>
+  </content>
+  <tabTrigger>qdocker-compose</tabTrigger>
+  <scope>source.yaml</scope>
+</snippet>

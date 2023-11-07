@@ -1,6 +1,6 @@
 source recipes/helpers/main.sh
 
-RUBY_VERSION=2.7.8
+RUBY_VERSION="3.2.2"
 
 function run {
   update_config

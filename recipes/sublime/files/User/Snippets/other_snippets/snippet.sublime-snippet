@@ -7,7 +7,6 @@
 ${1:code}
 ]]${2:>}
   </content>
-
   <tabTrigger>${3:trigger}</tabTrigger>
   <scope>source.${4:scope}</scope>
 </snippet>

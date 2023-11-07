@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+FROM ${1:image}
+RUN apt update -qq && apt install -y wget
+WORKDIR ${2:/app}
+]]>
+  </content>
+  <tabTrigger>qdocker</tabTrigger>
+</snippet>

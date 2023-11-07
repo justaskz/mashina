@@ -63,6 +63,7 @@ alias add="subl -a"
 alias a="cd $HOME/repos/ansible"
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
 alias sc="syncros"
+alias aws="aws --region=$AWS_REGION --profile=$AWS_PROFILE"
 
 alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"

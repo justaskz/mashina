@@ -12,6 +12,9 @@ auto-save = true
 "C-q" = ":q!"
 "C-w" = ":buffer-close"
 
+# EXPERIMENTAL
+"G" = "goto_last_line"
+
 [editor.statusline]
 left = ["mode", "spinner", "file-name"]
 right = ["diagnostics", "file-type"]
@@ -20,7 +23,6 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 
 # TODO
-# go to end of file
 # refresh file if there are changes
 # autosave
-# trip spaces
+# trim spaces

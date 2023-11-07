@@ -8,9 +8,9 @@ function run {
 
 function update_config {
   local CONFIG_DIR="$GLOBAL_CONFIG/helix"
-  mkdir -p $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/helix/config/config.toml $CONFIG_DIR/config.toml
-  ln -sf $MASHINA_SOURCE/recipes/helix/config/languages.toml $CONFIG_DIR/languages.toml
+  mkdir -p "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/helix/config/config.toml" "$CONFIG_DIR/config.toml"
+  ln -sf "$MASHINA_SOURCE/recipes/helix/config/languages.toml" "$CONFIG_DIR/languages.toml"
 }
 
 function install_debian {

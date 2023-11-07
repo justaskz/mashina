@@ -1,7 +1,7 @@
-[language-server]
-solargraph = { command = "solargraph", args = ["stdio"] }
+# [language-server]
+# solargraph = { command = "solargraph", args = ["stdio"] }
 
 
-[[language]]
-name = "go"
+# [[language]]
+# name = "go"
 # config = { goimports = true, gofumpt = true, staticcheck = true, analyses = { unusedparams = true, unreachable = true } }
