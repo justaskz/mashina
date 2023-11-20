@@ -110,6 +110,7 @@
 	],
 
 	"ignored_packages": [
+		"Git",
 		"LSP-bash",
 		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",

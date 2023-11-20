@@ -27,7 +27,7 @@ Host nsp-prod-* nsp-*-prod-*
 Host 52.71.175.190
     ControlMaster auto
     ControlPath ~/.ssh/sockets/%r@%h:%p
-    ControlPersist 5m
+    ControlPersist 30m
 
 #comment next 3 lines if SSH VERSION is lower than 8.9
 Host *

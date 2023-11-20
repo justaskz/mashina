@@ -11,7 +11,7 @@
   editor = nvim
 [includeIf "gitdir:~/repos/ansible/"]
   path = ~/.config/git/config-nordsec
-[includeIf "gitdir:~/repos/nord/terraform-aws-services/"]
+[includeIf "gitdir:~/repos/terraform-aws-services/"]
   path = ~/.config/git/config-nordsec
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"

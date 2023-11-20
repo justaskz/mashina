@@ -2,7 +2,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'vendor/**/*'
-    - 'spec/fixtures/**/*'
+    - 'spec/**/*'
     - 'tmp/**/*'
 
 Lint/AmbiguousBlockAssociation:

@@ -4,5 +4,5 @@
 ## ${1:name}
 #################################################
 ]]></content>
-  <tabTrigger>qlabel</tabTrigger>
+  <tabTrigger>qlabel-universal</tabTrigger>
 </snippet>

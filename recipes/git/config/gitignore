@@ -1,8 +1,6 @@
-.tags*
 .DS_Store
 *.rdb
 node_modules
-core_snippets.rb
 
 PRIVATE-*
 # core-common-v2.yml
@@ -13,4 +11,5 @@ ssh-v2.j2
 # aws-v2.yml
 # roles/aws-v2
 resize-disk.yml
+ec2
 terra
