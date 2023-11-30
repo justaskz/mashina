@@ -4,14 +4,27 @@ function main() {
   if $(mashina_is_bash); then
     source "$FZF_HOME/shell/completion.bash"
     source "$FZF_HOME/shell/key-bindings.bash"
+
+    #################################################
+    ## ssh **: inventory
+    #################################################
     [ -n "$BASH" ] && complete -F _fzf_complete_ssh -o default -o bashdefault ssh
+
+    ##################################################
+    ## TERRA
+    ##################################################
+    [ -n "$BASH" ] && complete -F _fzf_complete_terra -o default -o bashdefault terra
   fi
 
   if $(mashina_is_zsh); then
     source "$FZF_HOME/shell/completion.zsh"
     source "$FZF_HOME/shell/key-bindings.zsh"
-    zle -N fzf-file-widget_mod
-    bindkey '^P' fzf-file-widget_mod
+
+    #################################################
+    ## CTRL + P
+    #################################################
+    # zle -N fzf-file-widget_mod
+    # bindkey '^P' fzf-file-widget_mod
   fi
 }
 

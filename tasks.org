@@ -1,5 +1,10 @@
 * TASKS
-  [ ] Create project Hashi
+  [ ] CLI: bat
+  [ ] CLI: other modern rust clis
+  [ ] CLI: mkdir + touch create folders and files with one command
+  [ ] CLI: fd
+  [ ] CLI: grep alternative
+  [ ] Python LSP plugin
   [ ] Create New theme
       [ ] https://github.com/saadq/bliss-ui
       [ ] https://github.com/saadq/bliss-syntax
@@ -22,9 +27,8 @@
             [ ] SublimeOnSaveBuild
             [ ] Terrafmt
             [ ] Terraform
-
       [ ] There are two setting files for golang, find out which one is real
-  [ ] Replace all cp to ln -sf
+  [X] Replace all cp to ln -sf
   [ ] Implement a function for smart file/symlink stransfer (like function files):
       - Delete all old files (probably use prefix to recognize which files are owned by current recipe?)
       - Transfer new files

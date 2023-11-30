@@ -1,6 +1,5 @@
 <snippet>
   <content><![CDATA[
-class ${1:ClassName}
   include LeanInteractor
 
   initialize_for :${2:parameter}
@@ -8,7 +7,6 @@ class ${1:ClassName}
   def run
     # ${3:code}
   end
-end
 ]]></content>
   <tabTrigger>qlean_interactor</tabTrigger>
   <scope>source.ruby</scope>

@@ -161,7 +161,7 @@
   // { "keys": ["super+o"], "command": "noop" },
 
   // disable quiting
-  { "keys": ["super+q"], "command": "false" },
+  { "keys": ["super+q"], "command": "noop" },
 
   // disable font size
   { "keys": ["super+equals"], "command": "noop" },

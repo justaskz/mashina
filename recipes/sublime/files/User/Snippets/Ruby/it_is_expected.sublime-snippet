@@ -2,6 +2,6 @@
   <content><![CDATA[
 it { is_expected.to ${2:eq}(${3:expected}) }
 ]]></content>
-  <tabTrigger>qis_expected</tabTrigger>
+  <tabTrigger>qits_expected</tabTrigger>
   <scope>source.ruby</scope>
 </snippet>
