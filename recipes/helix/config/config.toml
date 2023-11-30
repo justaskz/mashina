@@ -1,5 +1,11 @@
+theme = "varua"
+# varua
+# boo_berry
+# autumn
+# github_dark_tritanopia
+
 [editor]
-# theme = "varua"
+true-color = true
 bufferline = "always"
 auto-save = true
 
