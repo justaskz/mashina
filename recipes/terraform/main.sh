@@ -19,7 +19,7 @@ function install_macos {
 }
 
 function terraform_manual {
-  VERSION="1.4.5"
+  VERSION="1.6.5"
   URL="https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
   wget $URL -O $MASHINA_TMP/terraform.zip
   unzip $MASHINA_TMP/terraform.zip -d $MASHINA_OPT/terraform
@@ -29,7 +29,7 @@ function terraform_manual {
 }
 
 function terragrunt_manual {
-  VERSION="0.45.4"
+  VERSION="0.53.8"
   URL="https://github.com/gruntwork-io/terragrunt/releases/download/v${VERSION}/terragrunt_linux_amd64"
   wget $URL -O $MASHINA_TMP/terragrunt
   mkdir -p $MASHINA_OPT/terragrunt

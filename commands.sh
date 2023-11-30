@@ -1,5 +1,6 @@
 function install_dev {
   bash recipes/mashina/main.sh
+  source "$HOME/.profile"
 
   # bash recipes/zsh/main.sh
   # bash recipes/homebrew/main.sh
@@ -17,7 +18,7 @@ function install_dev {
 
 function install_debian {
   bash recipes/mashina/main.sh
-  source $HOME/.profile
+  source "$HOME/.profile"
   bash recipes/common/main.sh
   # bash recipes/bash/main.sh
   bash recipes/tmux/main.sh
@@ -40,11 +41,11 @@ function install_macos {
 }
 
 function uninstall {
-  rm -r $HOME/.config/mashina
-  rm -r $HOME/.profile
-  rm -r $HOME/.zprofile
-  rm -r $HOME/.bashrc
-  rm -r $HOME/.zshrc
+  rm -r "$HOME/.config/mashina"
+  rm -r "$HOME/.profile"
+  rm -r "$HOME/.zprofile"
+  rm -r "$HOME/.bashrc"
+  rm -r "$HOME/.zshrc"
 }
 
 $@

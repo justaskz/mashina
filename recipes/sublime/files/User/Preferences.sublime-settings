@@ -110,8 +110,7 @@
 	],
 
 	"ignored_packages": [
-		"Git",
-		"LSP-bash",
+		"Git blame",
 		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",

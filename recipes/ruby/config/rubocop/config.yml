@@ -16,6 +16,7 @@ Layout/LineLength:
   Max: 99
 
 Naming/VariableNumber:
+  Enabled: false
   EnforcedStyle: snake_case
 
 Style/ClassAndModuleChildren:
@@ -23,6 +24,15 @@ Style/ClassAndModuleChildren:
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/OpenStructUse:
+  Enabled: false
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma

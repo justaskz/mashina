@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+locals {
+  common_vars = read_terragrunt_config(find_in_parent_folders("common_vars.hcl")).inputs
+}
+]]>
+  </content>
+  <tabTrigger>qcommon</tabTrigger>
+  <scope>source.hcl</scope>
+</snippet>

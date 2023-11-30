@@ -5,11 +5,11 @@ function mashina_debug {
   echo "MASHINA_IS_BASH: $(mashina_is_bash)"
   echo "MASHINA_IS_ZSH: $(mashina_is_zsh)"
   echo "MASHINA_IS_SHELL_INTERACTIVE: $(mashina_is_shell_interactive)"
+  echo "TERM: $TERM"
   echo "PATH: $PATH"
   echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
   echo "SSH_AUTH_SOCK_SYMLINK: $(/bin/ls $SSH_AUTH_SOCK)"
   echo -e "SSH_KEYS: \n$(ssh-add -l | sed 's/^/  /')"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"
-  echo "TERM: $TERM"
 }

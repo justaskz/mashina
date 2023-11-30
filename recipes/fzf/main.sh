@@ -7,15 +7,15 @@ function run {
 }
 
 function update_config {
-  ln -sf $MASHINA_SOURCE/recipes/fzf/init/fzf.sh $MASHINA_INIT
-  ln -sf $MASHINA_SOURCE/recipes/fzf/functions/fzf.sh $MASHINA_FUNCTIONS
+  ln -sf "$MASHINA_SOURCE/recipes/fzf/init/fzf.sh" "$MASHINA_INIT"
+  ln -sf "$MASHINA_SOURCE/recipes/fzf/functions/fzf.sh" "$MASHINA_FUNCTIONS"
 }
 
 function install {
   FZF_HOME="$MASHINA_OPT/fzf"
-  git clone --depth 1 https://github.com/junegunn/fzf.git $FZF_HOME
+  git clone --depth 1 https://github.com/junegunn/fzf.git "$FZF_HOME"
   bash $FZF_HOME/install --bin
-  ln -s $FZF_HOME/bin/fzf $MASHINA_BIN
+  ln -s "$FZF_HOME/bin/fzf" "$MASHINA_BIN"
 }
 
 run

@@ -72,4 +72,5 @@ export MASHINA_TMP="$MASHINA_ROOT/tmp"
 # export BASE_PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 export BASE_PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$MASHINA_BIN:$BASE_PATH"
-export TERRA_ROOT_PATH=$HOME/repos/terraform-aws-services
+export TERRA_ROOT_PATH="$HOME/repos/terraform-aws-services"
+export INV_ANSIBLE_PATH="$HOME/repos/ansible"

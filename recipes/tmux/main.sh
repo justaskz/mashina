@@ -32,7 +32,7 @@ function install_debian {
   sh autogen.sh
   sh configure
   make
-  ln -s "$TMUX_PATH/tmux" "$MASHINA_BIN"
+  ln -sf "$TMUX_PATH/tmux" "$MASHINA_BIN"
 }
 
 function install_macos {
