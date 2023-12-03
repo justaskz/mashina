@@ -2,3 +2,4 @@
 .vagrant
 tmp
 authorized_keys
+snap.sh
