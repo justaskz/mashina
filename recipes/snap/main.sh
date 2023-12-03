@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  ln -sf $MASHINA_SOURCE/recipes/snap/init/snap.sh $MASHINA_INIT
+  ln -sf "$MASHINA_SOURCE/recipes/snap/init/snap.sh" "$MASHINA_INIT"
 }
 
 function install_debian {

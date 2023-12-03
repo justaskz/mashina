@@ -1,4 +1,5 @@
 function mashina_debug {
+  echo "MASHINA_VERSION: $MASHINA_VERSION"
   echo "MASHINA_IS_LOADED: $(mashina_is_mashina_loaded)"
   echo "MASHINA_IS_DEBIAN: $(mashina_is_debian)"
   echo "MASHINA_IS_MACOS: $(mashina_is_macos)"
@@ -8,7 +9,7 @@ function mashina_debug {
   echo "TERM: $TERM"
   echo "PATH: $PATH"
   echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
-  echo "SSH_AUTH_SOCK_SYMLINK: $(/bin/ls $SSH_AUTH_SOCK)"
+  echo "SSH_AUTH_SOCK_SYMLINK: $(/bin/ls "$SSH_AUTH_SOCK")"
   echo -e "SSH_KEYS: \n$(ssh-add -l | sed 's/^/  /')"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"

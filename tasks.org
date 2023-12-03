@@ -1,9 +1,13 @@
 * TASKS
+  [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]
+  [ ] Sublime project wise autocomplete
+  [ ] Sublime yaml highlights
   [ ] CLI: bat
   [ ] CLI: other modern rust clis
   [ ] CLI: mkdir + touch create folders and files with one command
   [ ] CLI: fd
   [ ] CLI: grep alternative
+  [ ] Mashina: Create version
   [ ] Python LSP plugin
   [ ] Create New theme
       [ ] https://github.com/saadq/bliss-ui

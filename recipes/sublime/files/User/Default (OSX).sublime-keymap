@@ -11,7 +11,7 @@
   { "keys": ["super+left"], "command": "move", "args": { "by": "subwords", "forward": false }},
   { "keys": ["super+right"], "command": "move", "args": { "by": "subwords", "forward": true }},
   // delete word
-  { "keys": ["super+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+  { "keys": ["super+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true }},
 
 
   // ALT
@@ -22,7 +22,7 @@
   { "keys": ["alt+left"], "command": "move_to", "args": { "to": "bol", "extend": false }},
   { "keys": ["alt+right"], "command": "move_to", "args": { "to": "eol", "extend": false }},
   // delete line
-  { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
+  { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}},
 
 
   // SHIFT
@@ -38,10 +38,8 @@
   // select between commas
   { "keys": ["super+shift+down"], "command": "select_quoted" },
   // select a word
-  { "keys": ["super+shift+left"], "command": "move", "args": {
-      "by": "words", "forward": false, "extend": true }},
-  { "keys": ["super+shift+right"], "command": "move", "args": {
-      "by": "word_ends", "forward": true, "extend": true }},
+  { "keys": ["super+shift+left"], "command": "move", "args": { "by": "words", "forward": false, "extend": true }},
+  { "keys": ["super+shift+right"], "command": "move", "args": { "by": "word_ends", "forward": true, "extend": true }},
 
 
   // ALT + SHIFT
@@ -67,8 +65,8 @@
   // { "keys": ["super+ctrl+j"], "command": "scroll_lines", "args": { "amount": -1.0 }},
 
   // jump through words
-  { "keys": ["super+i"], "command": "move", "args": { "by": "subwords", "forward": false }},
-  { "keys": ["super+o"], "command": "move", "args": { "by": "subwords", "forward": true }},
+  // { "keys": ["super+i"], "command": "move", "args": { "by": "subwords", "forward": false }},
+  // { "keys": ["super+o"], "command": "move", "args": { "by": "subwords", "forward": true }},
 
   // move lines up and down
   { "keys": ["alt+k"], "command": "swap_line_up" },
@@ -105,8 +103,7 @@
   //-----------------------------------------------
 
   // new line
-  { "keys": ["super+enter"], "command": "run_macro_file",
-    "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
+  { "keys": ["super+enter"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
 
   // copy file path to clipboard
   { "keys": ["super+space", "super+c"], "command": "copy_path" },
@@ -127,13 +124,16 @@
   { "keys": ["ctrl+backspace"], "command": "right_delete" },
 
   // right delete word
-  { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+  // { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true }},
 
   // go to definition
   { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
 
   // go to search result
-  { "keys": ["super+space", "super+g"], "command": "prev_result" },
+  // { "keys": ["super+space", "super+g"], "command": "prev_result" },
+
+  // open autosuggestion
+  { "keys": ["super+space", "super+h"], "command": "auto_complete" },
 
   //-----------------------------------------------
   //
@@ -158,7 +158,7 @@
   //-----------------------------------------------
 
   // disable open file
-  // { "keys": ["super+o"], "command": "noop" },
+  { "keys": ["super+o"], "command": "noop" },
 
   // disable quiting
   { "keys": ["super+q"], "command": "noop" },
@@ -204,18 +204,21 @@
   // LSP
   //-----------------------------------------------
 
-  // toggle diagnostics panel
-  { "keys": ["super+space", "super+p"], "command": "lsp_show_diagnostics_panel" },
-
   // hover
   { "keys": ["super+space", "super+o"], "command": "lsp_hover" },
 
   // go to definition
   { "keys": ["super+space", "super+d"], "command": "lsp_symbol_definition" },
 
+  // toggle diagnostics panel
+  { "keys": ["super+space", "super+p"], "command": "lsp_show_diagnostics_panel" },
+
   // go to diagnostics
-  { "keys": ["super+space", "super+g"], "command": "lsp_goto_diagnostic" },
+  // { "keys": ["super+space", "super+g"], "command": "lsp_goto_diagnostic" },
 
   // toggle Language Server Logs Panel
   { "keys": ["super+space", "super+l"], "command": "lsp_toggle_server_panel", "context": [{"key": "setting.lsp_active"}] },
+
+  // open documentation
+  // { "keys": ["super+space", "super+h"], "command": "lsp_signature_help_show", "context": [{"key": "lsp.signature_help_available"}] },
 ]

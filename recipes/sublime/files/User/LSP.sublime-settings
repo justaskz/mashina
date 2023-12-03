@@ -5,13 +5,18 @@
   // "show_diagnostics_in_view_status": true,
   // "show_diagnostics_panel_on_save": 1,
   // "diagnostics_panel_include_severity_level": 1,
+
   "lsp_code_actions_on_save": {
     // "source.formatAll.terraform": true,
   },
+
   "document_highlight_style": "",
   "hover_highlight_style": "",
   "link_highlight_style": "disabled",
   "inhibit_snippet_completions": true,
+  // "inhibit_word_completions": true,
+  // "semantic_highlighting": true,
+
   "diagnostics_highlight_style": {
     "error": "underline",
     "warning": "underline",
@@ -24,9 +29,9 @@
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby",
       "initializationOptions": {
+        "diagnostics": true
         //   "format": "json",
         //   "provideHover": true,
-        "diagnostics": true
       }
     },
   }

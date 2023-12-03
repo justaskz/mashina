@@ -12,4 +12,3 @@ ssh-v2.j2
 # roles/aws-v2
 resize-disk.yml
 ec2
-terra

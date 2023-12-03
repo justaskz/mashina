@@ -27,6 +27,7 @@
 		"INI",
 		"Jinja2",
 		"LSP",
+		"LSP-bash",
 		"LSP-gopls",
 		"LSP-json",
 		"LSP-terraform",

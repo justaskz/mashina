@@ -6,7 +6,7 @@ function main() {
     source "$FZF_HOME/shell/key-bindings.bash"
 
     #################################################
-    ## ssh **: inventory
+    ## SSH **: INVENTORY
     #################################################
     [ -n "$BASH" ] && complete -F _fzf_complete_ssh -o default -o bashdefault ssh
 
@@ -14,6 +14,11 @@ function main() {
     ## TERRA
     ##################################################
     [ -n "$BASH" ] && complete -F _fzf_complete_terra -o default -o bashdefault terra
+
+    ##################################################
+    ## INV
+    ##################################################
+    [ -n "$BASH" ] && complete -F _fzf_complete_inv -o default -o bashdefault inv
   fi
 
   if $(mashina_is_zsh); then

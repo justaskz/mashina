@@ -23,7 +23,7 @@ function install_macos {
   ln -sf "$HOME/repos/mouse/mouse.rb" "$MASHINA_BIN/mouse"
 
   # terra
-  ln -sf "$HOME/repos/ansible/terra/bin/terra" "$MASHINA_BIN"
+  ln -sf "$HOME/repos/terra/bin/terra" "$MASHINA_BIN"
 }
 
 run

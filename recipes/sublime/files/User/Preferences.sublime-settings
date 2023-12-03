@@ -110,8 +110,8 @@
 	],
 
 	"ignored_packages": [
+		"All Autocomplete",
 		"Git blame",
-		"SublimeLinter-flow",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
 		"Vintage",
