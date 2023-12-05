@@ -1,10 +1,10 @@
 source recipes/helpers/main.sh
 
 function run {
-  install
+  update_config
 }
 
-function install {
+function update_config {
   ln -sf "$MASHINA_SOURCE/recipes/ssh/config/config" "$HOME/.ssh"
   ln -sf "$MASHINA_SOURCE/recipes/ssh/config/rc" "$HOME/.ssh"
   ln -sf "$MASHINA_SOURCE/recipes/ssh/functions/fix_ssh.sh" "$MASHINA_FUNCTIONS"

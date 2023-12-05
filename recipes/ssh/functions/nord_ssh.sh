@@ -38,6 +38,10 @@ function ssh-aws-stage {
   ssh -A juka@35.173.184.184
 }
 
+function ssh-hz-test {
+  ssh -A juka@65.21.225.249
+}
+
 function ssha {
   # ssh-teleport-ansible
   ssh-aws
@@ -48,8 +52,12 @@ function sshb {
   ssh-ansible-eu
 }
 
-function ssht {
+function sshs {
   ssh-aws-stage
+}
+
+function ssht {
+  ssh-hz-test
 }
 
 function ssh-teleport-ansible {
