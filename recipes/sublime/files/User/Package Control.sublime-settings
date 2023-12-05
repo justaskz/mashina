@@ -1,7 +1,6 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
+	"in_process_packages": [
 	],
 	"installed_packages":
 	[
@@ -38,7 +37,6 @@
 		"Ruby Block Converter",
 		"SCSS",
 		"Select Quoted",
-		"SendCode",
 		"SideBarEnhancements",
 		"SublimeERB",
 		"SublimeLinter",

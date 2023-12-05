@@ -16,12 +16,12 @@ Host github.com
 ## TELEPORT
 ##################################################
 
-# Host nsp-prod-* nsp-*-prod-*
-#     Port 3022
-#     ForwardAgent yes
-#     UserKnownHostsFile /dev/null
-#     ProxyCommand tsh proxy ssh -J prod-teleport.mountaininfra-payments.com:443 %r@%n:%p
-#     StrictHostKeyChecking no
+Host nsp-prod-* nsp-*-prod-*
+    Port 3022
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    ProxyCommand tsh proxy ssh -J prod-teleport.mountaininfra-payments.com:443 %r@%n:%p
+    StrictHostKeyChecking no
 
 Host 52.71.175.190
     ControlMaster auto
