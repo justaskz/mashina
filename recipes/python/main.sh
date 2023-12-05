@@ -10,21 +10,21 @@ function run {
 }
 
 function update_config {
-  cp recipes/python/init/pyenv.sh $MASHINA_INIT
+  cp recipes/python/init/pyenv.sh "$MASHINA_INIT"
 }
 
 function install_debian {
   install_dependencies_debian
-  rm -rf $MASHINA_OPT/pyenv
-  git clone https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
-  ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
+  rm -rf "$MASHINA_OPT/pyenv"
+  git clone https://github.com/pyenv/pyenv.git "$MASHINA_OPT/pyenv"
+  ln -s "$MASHINA_OPT/pyenv/bin/pyenv" "$MASHINA_BIN/pyenv"
   pyenv install $PYTHON_VERSION
   pyenv global $PYTHON_VERSION
 }
 
 function install_macos {
-  git clone --depth 1 https://github.com/pyenv/pyenv.git $MASHINA_OPT/pyenv
-  ln -s $MASHINA_OPT/pyenv/bin/pyenv $MASHINA_BIN/pyenv
+  git clone --depth 1 https://github.com/pyenv/pyenv.git "$MASHINA_OPT/pyenv"
+  ln -s "$MASHINA_OPT/pyenv/bin/pyenv" "$MASHINA_BIN/pyenv"
   pyenv install $PYTHON_VERSION
   pyenv global $PYTHON_VERSION
   pip install --upgrade pip

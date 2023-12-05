@@ -14,7 +14,7 @@ function ssh-add-dev {
   ssh-add ~/.ssh/dev_rsa
 }
 
-function ssh-ansible-aws {
+function ssh-aws {
   ssh -A juka@52.71.175.190
 }
 
@@ -34,9 +34,13 @@ function ssh-ansible-eu {
   ssh -A juka@ansible-2.mountaininfra.net
 }
 
+function ssh-aws-stage {
+  ssh -A juka@35.173.184.184
+}
+
 function ssha {
   # ssh-teleport-ansible
-  ssh-ansible-aws
+  ssh-aws
   # ssh-ansible-robotic-1
 }
 
@@ -45,7 +49,7 @@ function sshb {
 }
 
 function ssht {
-  ssh -A juka@65.21.225.249
+  ssh-aws-stage
 }
 
 function ssh-teleport-ansible {

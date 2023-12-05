@@ -32,6 +32,7 @@ function install_macos {
 function setup_control_server {
   bash recipes/mashina/main.sh
   source "$HOME/.profile"
+  bash recipes/common/main.sh
   bash recipes/tmux/main.sh
   bash recipes/fzf/main.sh
   bash recipes/starship/main.sh

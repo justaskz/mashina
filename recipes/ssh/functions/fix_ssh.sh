@@ -2,7 +2,8 @@
 
 function fix_ssh {
   # if [[ ! -S ~/.ssh/ssh_auth_sock ]] && [[ -S "$SSH_AUTH_SOCK" ]]; then
+  # fi
+
   echo "Fixing"
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
-  # fi
 }
