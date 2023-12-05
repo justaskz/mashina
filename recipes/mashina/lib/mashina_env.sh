@@ -50,6 +50,12 @@ function mashina_is_zsh {
   echo "$(mashina_is_variable_defined $ZSH_VERSION)"
 }
 
+function mashina_version {
+  local commit_hash="$(git rev-parse --short=6 master)"
+  local tag="$(git describe --tags `git rev-list --tags --max-count=1`)"
+
+  echo "$tag ($commit_hash)"
+}
 
 export GLOBAL_CONFIG="$HOME/.config"
 export MASHINA_ROOT="$GLOBAL_CONFIG/mashina"
@@ -59,8 +65,7 @@ export MASHINA_BIN="$MASHINA_ROOT/bin"
 export MASHINA_OPT="$MASHINA_ROOT/opt"
 export MASHINA_FUNCTIONS="$MASHINA_ROOT/functions"
 export MASHINA_TMP="$MASHINA_ROOT/tmp"
-MASHINA_VERSION="$(cat "$MASHINA_SOURCE/VERSION")"
-export MASHINA_VERSION
+# export MASHINA_VERSION
 # export LC_ALL="en_US.UTF-8"
 
 # TODO: make path for macos

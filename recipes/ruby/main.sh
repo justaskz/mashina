@@ -25,8 +25,8 @@ function update_config {
 
 function install_debian {
   # install_dependencies_debian
-  git clone --depth 1 https://github.com/sstephenson/rbenv.git $MASHINA_OPT/rbenv
-  ln -s "$MASHINA_OPT/rbenv/bin/rbenv" $MASHINA_BIN
+  git clone --depth 1 https://github.com/sstephenson/rbenv.git "$MASHINA_OPT/rbenv"
+  ln -s "$MASHINA_OPT/rbenv/bin/rbenv" "$MASHINA_BIN"
 
   rm -rf "$(rbenv root)"/plugins
   mkdir -p "$(rbenv root)"/plugins

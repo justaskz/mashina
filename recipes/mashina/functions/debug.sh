@@ -1,5 +1,5 @@
 function mashina_debug {
-  echo "MASHINA_VERSION: $MASHINA_VERSION"
+  echo "MASHINA_VERSION: $(mashina_version)"
   echo "MASHINA_IS_LOADED: $(mashina_is_mashina_loaded)"
   echo "MASHINA_IS_DEBIAN: $(mashina_is_debian)"
   echo "MASHINA_IS_MACOS: $(mashina_is_macos)"

@@ -11,7 +11,7 @@ function install {
   pip install --user ansible==$ANSIBLE_VERSION
 
   rm -rf $MASHINA_BIN/ansible*
-  ln -s $HOME/.local/bin/ansible* $MASHINA_BIN
+  ln -s $HOME/.local/bin/ansible* "$MASHINA_BIN"
 }
 
 function nord {

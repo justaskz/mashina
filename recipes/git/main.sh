@@ -7,10 +7,10 @@ function run {
 
 function update_config {
   local CONFIG_DIR="$GLOBAL_CONFIG/git"
-  mkdir -p $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/git/config/config $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/git/config/config-nordsec $CONFIG_DIR
-  ln -sf $MASHINA_SOURCE/recipes/git/config/gitignore $CONFIG_DIR
+  mkdir -p "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/git/config/config" "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/git/config/config-nordsec" "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/git/config/gitignore" "$CONFIG_DIR"
 }
 
 function install_macos {
