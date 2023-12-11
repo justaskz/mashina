@@ -1,8 +1,14 @@
 source recipes/helpers/main.sh
 
 function run {
+  update_config
   exit_if_installed terraform
   install
+}
+
+function update_config {
+  mkdir -p "$GLOBAL_CONFIG/tflint"
+  ln -sf "$MASHINA_SOURCE/recipes/terraform/config/tflint.hcl" "$GLOBAL_CONFIG/tflint/.tflint.hcl"
 }
 
 function install_debian {
@@ -15,7 +21,7 @@ function install_debian {
 
 function install_macos {
   brew tap hashicorp/tap
-  brew install hashicorp/tap/terraform terragrunt terraform-ls
+  brew install hashicorp/tap/terraform terragrunt terraform-ls tflint
 }
 
 function terraform_manual {

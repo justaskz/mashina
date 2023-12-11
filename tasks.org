@@ -1,4 +1,5 @@
 * TASKS
+  [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
   [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]
   [ ] Sublime project wise autocomplete
   [ ] Sublime yaml highlights

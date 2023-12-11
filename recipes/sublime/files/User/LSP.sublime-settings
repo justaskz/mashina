@@ -29,10 +29,15 @@
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby",
       "initializationOptions": {
-        "diagnostics": true
+        "diagnostics": true,
         //   "format": "json",
         //   "provideHover": true,
       }
+    },
+    "tflint": {
+      "enabled": true,
+      "command": ["tflint", "--langserver"],
+      "selector": "source.terraform | source.hcl",
     },
   }
 }

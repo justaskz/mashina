@@ -8,6 +8,7 @@ function mashina_debug {
   echo "MASHINA_IS_SHELL_INTERACTIVE: $(mashina_is_shell_interactive)"
   echo "TERM: $TERM"
   echo "PATH: $PATH"
+  echo -e "SSHD_PROCESSES: \n$(ps -eo pid,user,time,cmd | grep '[s]shd' | grep "$(whoami)" | sed 's/^/  /')"
   echo "SSH_AUTH_SOCK: $SSH_AUTH_SOCK"
   echo "SSH_AUTH_SOCK_SYMLINK: $(/bin/ls "$SSH_AUTH_SOCK")"
   echo -e "SSH_KEYS: \n$(ssh-add -l | sed 's/^/  /')"

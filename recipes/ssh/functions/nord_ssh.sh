@@ -35,7 +35,7 @@ function ssh-ansible-eu {
 }
 
 function ssh-aws-stage {
-  ssh -A juka@35.173.184.184
+  ssh -A juka@52.204.95.108
 }
 
 function ssh-hz-test {

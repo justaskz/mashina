@@ -29,6 +29,7 @@
 		"LSP-bash",
 		"LSP-gopls",
 		"LSP-json",
+		"LSP-pyright",
 		"LSP-terraform",
 		"LSP-yaml",
 		"nginx",

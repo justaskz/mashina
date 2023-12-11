@@ -52,7 +52,7 @@ alias opt="cd ~/opt"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
-alias gohome="cd $GOPATH/src/github.com/justaskz"
+alias gohome='cd $GOPATH/src/github.com/justaskz'
 
 #################################################
 ## TOOLS
@@ -60,10 +60,10 @@ alias gohome="cd $GOPATH/src/github.com/justaskz"
 alias ..="cd .."
 alias s="subl"
 alias add="subl -a"
-alias a="cd $HOME/repos/ansible"
+alias a='cd $HOME/repos/ansible'
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
 alias sc="syncros"
-alias aws="aws --region=$AWS_REGION --profile=$AWS_PROFILE"
+alias aws='aws --region=$AWS_REGION --profile=$AWS_PROFILE'
 alias nordlayer_logs="cd /Users/t1028/Library/Containers/com.nordvpn.macos.teams/Data/Library/Logs/NordLayer"
 
 alias search="find * | grep -i"
