@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config_debian {
-  TMUX_HOME="$HOME/.config/tmux"
+  local TMUX_HOME="$HOME/.config/tmux"
   mkdir -p "$TMUX_HOME"
   cp "recipes/tmux/config/.tmux-linux.conf" "$TMUX_HOME/tmux.conf"
   echo "" >> "$TMUX_HOME/tmux.conf"

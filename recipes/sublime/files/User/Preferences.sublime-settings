@@ -112,6 +112,7 @@
 	"ignored_packages": [
 		"All Autocomplete",
 		"Git blame",
+		"SublimeLinter",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",
 		"Vintage",

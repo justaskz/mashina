@@ -13,3 +13,4 @@ ssh-v2.j2
 resize-disk.yml
 ec2
 config.yml
+.infracost
