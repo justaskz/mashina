@@ -6,12 +6,15 @@ function run {
 }
 
 function install {
-  ANSIBLE_VERSION=6.4.0 # Used in nord
+  ANSIBLE_VERSION="9.1.0"
 
   pip install --user ansible==$ANSIBLE_VERSION
+  rm -rf "$MASHINA_BIN/ansible*"
+  ln -sf "$HOME"/.local/bin/ansible* "$MASHINA_BIN"
+}
 
-  rm -rf $MASHINA_BIN/ansible*
-  ln -s $HOME/.local/bin/ansible* "$MASHINA_BIN"
+function install_dependencies {
+  pip install --user netaddr
 }
 
 function nord {

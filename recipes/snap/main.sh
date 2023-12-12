@@ -11,7 +11,7 @@ function update_config {
 }
 
 function install_debian {
-  apt install snapd
+  sudo apt install -y snapd
 }
 
 function install_macos {
