@@ -52,9 +52,7 @@ function mashina_is_zsh {
 
 function mashina_version {
   local commit_hash="$(git -C "$MASHINA_SOURCE" rev-parse --short=6 master)"
-  local tag="$(git -C "$MASHINA_SOURCE" describe --tags `git rev-list --tags --max-count=1`)"
-
-  echo "$tag ($commit_hash)"
+  echo "$commit_hash"
 }
 
 export GLOBAL_CONFIG="$HOME/.config"
