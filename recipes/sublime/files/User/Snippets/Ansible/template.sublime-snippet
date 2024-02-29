@@ -8,5 +8,5 @@
     group: ${5:group}
 ]]></content>
   <tabTrigger>qtemplate</tabTrigger>
-  <scope>source.ansible</scope>
+  <scope>source.yaml</scope>
 </snippet>
