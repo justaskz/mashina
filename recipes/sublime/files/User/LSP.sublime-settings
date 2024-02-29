@@ -25,7 +25,7 @@
   },
   "clients": {
     "ruby": {
-      "enabled": true,
+      "enabled": false,
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby",
       "initializationOptions": {
@@ -38,6 +38,13 @@
       "enabled": true,
       "command": ["tflint", "--langserver"],
       "selector": "source.terraform | source.hcl",
+    },
+    "sorbet": {
+      "enabled": true,
+      "command": [
+        "srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman"
+      ],
+      "selector": "source.ruby | text.html.ruby",
     },
   }
 }

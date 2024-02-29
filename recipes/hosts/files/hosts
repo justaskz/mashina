@@ -2,25 +2,38 @@
 255.255.255.255 broadcasthost
 ::1             localhost
 
-127.0.0.1 www.sublimetext.com
-127.0.0.1 sublimetext.com
-127.0.0.1 sublimehq.com
-127.0.0.1 telemetry.sublimehq.com
-127.0.0.1 license.sublimehq.com
-127.0.0.1 45.55.255.55
-127.0.0.1 45.55.41.223
-0.0.0.0 license.sublimehq.com
-0.0.0.0 45.55.255.55
-0.0.0.0 45.55.41.223
+##################################################
+## SUBLIME
+##################################################
+# 127.0.0.1 www.sublimetext.com
+# 127.0.0.1 sublimetext.com
+# 127.0.0.1 sublimehq.com
+# 127.0.0.1 telemetry.sublimehq.com
+# 127.0.0.1 license.sublimehq.com
+# 127.0.0.1 45.55.255.55
+# 127.0.0.1 45.55.41.223
+# 0.0.0.0 license.sublimehq.com
+# 0.0.0.0 45.55.255.55
+# 0.0.0.0 45.55.41.223
 # 127.0.0.1 g3.dcdn.lt
 # 127.0.0.1 www.g3.dcdn.lt
-127.0.0.1 www.xferrecords.com
-127.0.0.1 xferrecords.com
+# 127.0.0.1 www.xferrecords.com
+# 127.0.0.1 xferrecords.com
 
+##################################################
+## VAGRANT LOCAL
+##################################################
 192.168.56.10 master
 192.168.56.11 node1
 192.168.56.12 node2
 192.168.56.13 node3
 192.168.56.150 mashina
 192.168.56.200 darkbox
-65.21.225.249 infra
+
+##################################################
+## INFRA
+##################################################
+65.21.225.249 consul.infra.net
+65.21.225.249 kibana.infra.net
+65.21.225.249 echo.infra.net
+65.21.225.249 app.infra.net
