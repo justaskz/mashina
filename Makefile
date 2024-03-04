@@ -1,13 +1,13 @@
 install:
-	@ bash commands.sh install_dev
+	@ bash commands.sh install
 
 uninstall:
 	@ bash commands.sh uninstall
 
-build:
+build: down
 	@ docker-compose build
 
-up:
+up: build
 	@ docker-compose up -d
 
 down:

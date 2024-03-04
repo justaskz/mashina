@@ -14,7 +14,7 @@ command_timeout = 3000
 # show_always = true
 
 [hostname]
-ssh_only = true
+ssh_only = false
 ssh_symbol = ""
 
 [git_branch]

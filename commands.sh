@@ -1,8 +1,9 @@
-function install_dev {
+function install {
   bash recipes/mashina/main.sh
   source "$HOME/.profile"
   bash recipes/starship/main.sh
   bash recipes/fzf/main.sh
+  source "$HOME/.profile"
 }
 
 function install_debian {
