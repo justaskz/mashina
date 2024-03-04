@@ -1,7 +1,9 @@
 FROM debian:11.4
 
-RUN apt update && apt install -y vim less zsh wget git
-WORKDIR "/root/repos/mashina"
+RUN apt update && apt install -y vim less zsh wget git make
+WORKDIR /root/repos/mashina
+COPY ./ ./
+RUN bash commands.sh install
 
 # ENV USER_NAME=mashina
 # ENV GROUP_NAME=mashina
