@@ -4,7 +4,6 @@ VERSON="0.32.0"
 
 function run {
   update_config
-  exit_if_installed k9s
   install
 }
 
@@ -16,7 +15,7 @@ function update_config {
 
 function install_debian {
   PACKAGE="k9s_Linux_amd64.tar.gz"
-  URL="https://github.com/derailed/k9s/releases/download/v0.32.0/$PACKAGE"
+  URL="https://github.com/derailed/k9s/releases/download/v$VERSION/$PACKAGE"
 
   wget -P "$MASHINA_TMP" "$URL"
   mkdir -p "$MASHINA_OPT/k9s"

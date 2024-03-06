@@ -6,14 +6,6 @@ function ssh-add-nordsec-gitlab {
   ssh-add ~/.ssh/nordsec_gitlab_rsa
 }
 
-function ssh-add-github {
-  ssh-add ~/.ssh/github_rsa
-}
-
-function ssh-add-dev {
-  ssh-add ~/.ssh/dev_rsa
-}
-
 function ssh-aws {
   ssh -A juka@52.71.175.190
 }
@@ -42,6 +34,11 @@ function ssh-hz-test {
   ssh -A juka@65.21.225.249
 }
 
+# proxy to cat-kubectl-mng-stage-aws-usea1-1 through nordsec-bastion-mng-stage-aws-usea1-1
+function ssh-k8s-stage {
+  ssh -A -J juka@52.4.249.219 juka@172.17.9.76
+}
+
 function ssha {
   # ssh-teleport-ansible
   ssh-aws
@@ -58,6 +55,10 @@ function sshs {
 
 function ssht {
   ssh-hz-test
+}
+
+function sshk {
+  ssh-k8s-stage
 }
 
 function ssh-teleport-ansible {
