@@ -112,6 +112,9 @@
 	"ignored_packages": [
 		"All Autocomplete",
 		"Git blame",
+		"LSP-json",
+		"LSP-terraform",
+		"sublime-terrafmt",
 		"SublimeLinter",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",

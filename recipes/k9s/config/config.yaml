@@ -1,3 +1,5 @@
+---
 k9s:
   ui:
     enableMouse: true
+    reactive: true

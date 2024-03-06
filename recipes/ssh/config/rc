@@ -2,3 +2,4 @@
 # fi
 
 ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+echo "$(date "+%Y-%m-%d %H:%M:%S") $SSH_AUTH_SOCK" >> ~/.ssh/rc_log

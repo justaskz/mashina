@@ -14,7 +14,8 @@ function update_config {
 }
 
 function install_debian {
-  snap install helix --classic
+  # snap install helix --classic
+  exit 0
 }
 
 function install_macos {

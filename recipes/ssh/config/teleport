@@ -1,4 +1,4 @@
-SendEnv LANG LC_*
+# https://nordsec.atlassian.net/wiki/spaces/CAT/pages/12167676621/Teleport+guide
 
 Host *
     StrictHostKeyChecking no
@@ -6,11 +6,6 @@ Host *
     LogLevel ERROR
     HostKeyAlgorithms +ssh-rsa-cert-v01@openssh.com
     PubkeyAcceptedAlgorithms +ssh-rsa-cert-v01@openssh.com
-
-Host github.com
-    Hostname github.com
-    User git
-    IdentityFile ~/.ssh/github_rsa
 
 ##################################################
 ## TELEPORT

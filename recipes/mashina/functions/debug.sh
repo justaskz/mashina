@@ -16,4 +16,6 @@ function mashina_debug {
   echo -e "SSH_KEYS: \n$(ssh-add -l | sed 's/^/  /')"
   echo "INVENTORY: $INVENTORY"
   echo "GROUP: $GROUP"
+  echo "AWS_PROFILE: $AWS_PROFILE"
+  echo "AWS_REGION: $AWS_REGION"
 }

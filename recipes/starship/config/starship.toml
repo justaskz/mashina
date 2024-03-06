@@ -1,9 +1,11 @@
 format = """
+$os\
 $username\
 $hostname\
 $directory\
 $git_branch\
 $git_status\
+$aws\
 $line_break\
 $character
 """
@@ -14,8 +16,15 @@ command_timeout = 3000
 # show_always = true
 
 [hostname]
-ssh_only = false
 ssh_symbol = ""
 
 [git_branch]
 symbol = ""
+
+[os]
+disabled = false
+style = "blue bold"
+
+[os.symbols]
+Macos = ""
+Debian = "Debian "

@@ -1,0 +1,18 @@
+SendEnv LANG LC_*
+
+Host *
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    LogLevel ERROR
+
+Host github.com
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/github_rsa
+
+# proxy to cat-kubectl-mng-stage-aws-usea1-1 through nordsec-bastion-mng-stage-aws-usea1-1
+Host 172.17.9.76
+    User juka
+    ProxyJump juka@52.4.249.219
+    IdentityFile ~/.ssh/nordsec_rsa
+    ForwardAgent yes

@@ -35,12 +35,12 @@
       }
     },
     "tflint": {
-      "enabled": true,
+      "enabled": false,
       "command": ["tflint", "--langserver"],
       "selector": "source.terraform | source.hcl",
     },
     "sorbet": {
-      "enabled": true,
+      "enabled": false,
       "command": [
         "srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman"
       ],
