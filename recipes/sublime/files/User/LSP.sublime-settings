@@ -35,7 +35,7 @@
       }
     },
     "tflint": {
-      "enabled": false,
+      "enabled": true,
       "command": ["tflint", "--langserver"],
       "selector": "source.terraform | source.hcl",
     },
