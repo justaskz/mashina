@@ -1,6 +1,6 @@
 source recipes/helpers/main.sh
 
-VERSON="0.32.0"
+VERSION="0.32.0"
 
 function run {
   update_config
@@ -21,7 +21,7 @@ function install_debian {
   mkdir -p "$MASHINA_OPT/k9s"
   tar -xzvf "$MASHINA_TMP/$PACKAGE" -C "$MASHINA_OPT/k9s"
   rm -rf "$MASHINA_TMP/$PACKAGE"
-  ln -sf "$MASHINA_OPT/k9s/k9s" $MASHINA_BIN
+  ln -sf "$MASHINA_OPT/k9s/k9s" "$MASHINA_BIN"
 }
 
 function install_macos {
