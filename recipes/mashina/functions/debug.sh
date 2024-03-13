@@ -1,7 +1,7 @@
 function mashina_debug {
   local ssh_auth_sock="${SSH_AUTH_SOCK:-undefined}"
 
-  echo "MASHINA_VERSION: $(mashina_version)"
+  echo "MASHINA_COMMIT_HASH: $(mashina_version)"
   echo "MASHINA_IS_LOADED: $(mashina_is_mashina_loaded)"
   echo "MASHINA_IS_DEBIAN: $(mashina_is_debian)"
   echo "MASHINA_IS_MACOS: $(mashina_is_macos)"
