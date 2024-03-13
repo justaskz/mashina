@@ -23,11 +23,11 @@ function mashina_is_variable_defined {
 }
 
 function mashina_is_shell_interactive {
-  echo "$(mashina_is_variable_defined PS)"
+  mashina_is_variable_defined PS
 }
 
 function mashina_is_mashina_loaded {
-  echo "$(mashina_is_variable_defined MASHINA_ROOT)"
+  mashina_is_variable_defined "$MASHINA_ROOT"
 }
 
 function mashina_is_macos {
@@ -39,19 +39,20 @@ function mashina_is_macos {
 }
 
 function mashina_is_debian {
-  echo "$(mashina_is_file_present /etc/debian_version)"
+  mashina_is_file_present /etc/debian_version
 }
 
 function mashina_is_bash {
-  echo "$(mashina_is_variable_defined $BASH_VERSION)"
+  mashina_is_variable_defined "$BASH_VERSION"
 }
 
 function mashina_is_zsh {
-  echo "$(mashina_is_variable_defined $ZSH_VERSION)"
+  mashina_is_variable_defined "$ZSH_VERSION"
 }
 
-function mashina_version {
-  local commit_hash="$(git -C "$MASHINA_SOURCE" rev-parse --short=6 master)"
+function mashina_commit_hash {
+  local commit_hash
+  commit_hash="$(git -C "$MASHINA_SOURCE" rev-parse --short=6 master)"
   echo "$commit_hash"
 }
 
@@ -63,6 +64,8 @@ export MASHINA_BIN="$MASHINA_ROOT/bin"
 export MASHINA_OPT="$MASHINA_ROOT/opt"
 export MASHINA_FUNCTIONS="$MASHINA_ROOT/functions"
 export MASHINA_TMP="$MASHINA_ROOT/tmp"
+export MASHINA_IS_DEBIAN=false
+
 # export MASHINA_VERSION
 # export LC_ALL="en_US.UTF-8"
 

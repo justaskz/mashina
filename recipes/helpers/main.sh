@@ -16,11 +16,11 @@ function exit_if_installed {
 }
 
 function update_config {
-  if $(mashina_is_macos); then
+  if mashina_is_macos; then
     update_config_macos
   fi
 
-  if $(mashina_is_debian); then
+  if mashina_is_debian; then
     update_config_debian
   fi
 }
@@ -40,11 +40,11 @@ function download_and_install {
   TMP_FILE="$MASHINA_TMP/$NAME.tgz"
   OPT_PATH="$MASHINA_OPT/$NAME"
 
-  rm -rf $TMP_FILE
-  rm -rf $OPT_PATH
+  rm -rf "$TMP_FILE"
+  rm -rf "$OPT_PATH"
 
-  wget $URL -O $TMP_FILE
-  mkdir -p $OPT_PATH
-  tar -xf $TMP_FILE --directory $OPT_PATH --strip-components=1
-  rm -rf $TMP_FILE
+  wget "$URL" -O "$TMP_FILE"
+  mkdir -p "$OPT_PATH"
+  tar -xf "$TMP_FILE" --directory "$OPT_PATH" --strip-components=1
+  rm -rf "$TMP_FILE"
 }

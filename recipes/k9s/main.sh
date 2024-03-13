@@ -1,6 +1,5 @@
 source recipes/helpers/main.sh
 
-VERSION="0.32.0"
 
 function run {
   update_config
@@ -14,6 +13,7 @@ function update_config {
 }
 
 function install_debian {
+  VERSION="0.32.3"
   PACKAGE="k9s_Linux_amd64.tar.gz"
   URL="https://github.com/derailed/k9s/releases/download/v$VERSION/$PACKAGE"
 

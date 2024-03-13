@@ -8,7 +8,8 @@ ENV HOME=/home/$USER_NAME
 ENV USER=$USER_NAME
 
 RUN groupadd -r $GROUP_NAME && \
-    useradd -g $GROUP_NAME -G sudo $USER_NAME --create-home --shell=/bin/bash && \
+    useradd -g $GROUP_NAME $USER_NAME --create-home --shell=/bin/bash && \
+    usermod -G sudo $USER_NAME && \
     echo 'mashina ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 WORKDIR /root/repos/mashina

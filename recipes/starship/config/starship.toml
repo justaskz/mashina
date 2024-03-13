@@ -12,19 +12,22 @@ $character
 
 command_timeout = 3000
 
-# [username]
-# show_always = true
+[username]
+show_always = false
 
 [hostname]
+ssh_only = false
+trim_at = ""
 ssh_symbol = ""
+detect_env_vars = ['!KITTY_WINDOW_ID']
 
 [git_branch]
 symbol = ""
 
 [os]
-disabled = false
-style = "blue bold"
+disabled = true
+style = "white bold"
 
 [os.symbols]
 Macos = ""
-Debian = "Debian "
+Debian = "D | "
