@@ -1,6 +1,6 @@
-FROM debian:11.9
+FROM debian:12
 
-RUN apt update && apt install -y vim less zsh wget git make sudo xz-utils curl
+RUN apt update && apt install -y vim less zsh wget git make sudo xz-utils curl procps unzip
 
 ENV USER_NAME=mashina
 ENV GROUP_NAME=mashina

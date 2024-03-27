@@ -7,7 +7,7 @@ uninstall:
 build: down
 	@ docker-compose build
 
-up: build
+up:
 	@ docker-compose up -d
 
 down:

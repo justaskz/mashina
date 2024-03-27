@@ -9,5 +9,5 @@ services:
     tty: true
     stdin_open: true
     volumes:
-      - ./://root/repos/mashina
-      - ./://home/mashina/repos/mashina
+      - ./://root/repos/mashina:ro
+      - ./://home/mashina/repos/mashina:ro

@@ -56,6 +56,11 @@ function mashina_commit_hash {
   echo "$commit_hash"
 }
 
+function mashina_version {
+  local commit_hash="$(git -C "$MASHINA_SOURCE" rev-parse --short=6 master)"
+  echo "$commit_hash"
+}
+
 export GLOBAL_CONFIG="$HOME/.config"
 export MASHINA_ROOT="$GLOBAL_CONFIG/mashina"
 export MASHINA_SOURCE="$HOME/repos/mashina"
@@ -65,6 +70,8 @@ export MASHINA_OPT="$MASHINA_ROOT/opt"
 export MASHINA_FUNCTIONS="$MASHINA_ROOT/functions"
 export MASHINA_TMP="$MASHINA_ROOT/tmp"
 export MASHINA_IS_DEBIAN=false
+# export TERM=xterm-kitty
+# export TERM=tmux
 
 # export MASHINA_VERSION
 # export LC_ALL="en_US.UTF-8"

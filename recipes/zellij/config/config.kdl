@@ -1,0 +1,20 @@
+default_shell "bash"
+// simplified_ui true
+pane_frames false
+// default_layout "compact"
+default_layout "default"
+session_serialization false
+
+// keybinds {
+//   tmux {
+//     // bind "F11" { Write 2; SwitchToMode "Normal"; }
+//     // bind "Ctrl Space" { Detach; }
+//     // bind "n" { NewPane "Right"; SwitchToMode "Normal"; }
+//   }
+// }
+
+// ui {
+//   pane_frames {
+//     hide_session_name true
+//   }
+// }

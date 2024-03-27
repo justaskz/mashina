@@ -13,7 +13,11 @@ function update_config {
 }
 
 function install_debian {
-  exit 0
+  # # wget https://github.com/sayanarijit/xplr/releases/latest/download/xplr-linux.tar.gz
+  # wget https://github.com/sayanarijit/xplr/releases/latest/download/xplr-linux-aarch64.tar.gz
+  # tar -xzvf xplr*.tar.gz
+
+  # ln -sf "$HOME/xplr" "$MASHINA_BIN/xplr"
 }
 
 function install_macos {

@@ -2,7 +2,7 @@ source recipes/helpers/main.sh
 
 function run {
   update_config
-  exit_if_installed helix
+  exit_if_installed hx
   install
 }
 
@@ -14,28 +14,21 @@ function update_config {
 }
 
 function install_debian {
-  # snap install helix --classic
-  exit 0
+  local ARCH="$(uname -m)"
+  local VERSION="23.10"
+  local BASE_NAME="helix-$VERSION-$ARCH-linux"
+  local URL="https://github.com/helix-editor/helix/releases/download/$VERSION/$BASE_NAME.tar.xz"
+
+  rm -rf "$MASHINA_TMP"/helix*
+  wget -P "$MASHINA_TMP" "$URL"
+  unxz "$MASHINA_TMP"/helix*
+  tar -xf "$MASHINA_TMP/$BASE_NAME.tar" --directory "$MASHINA_OPT"
+  rm "$MASHINA_TMP/$BASE_NAME.tar"
+  ln -sf "$MASHINA_OPT/$BASE_NAME/hx" "$MASHINA_BIN"
 }
 
 function install_macos {
   brew install helix
 }
-
-# function manual {
-#   # does not work well, missing libs
-#   local VERSION="23.10"
-#   local URL="https://github.com/helix-editor/helix/releases/download/$VERSION/helix-$VERSION-x86_64-linux.tar.xz"
-#   local TMP_FILE="$MASHINA_TMP/helix.tar.xz"
-#   local OPT_PATH="$MASHINA_OPT/helix"
-
-#   wget $URL -O $TMP_FILE
-#   mkdir -p $OPT_PATH
-#   unxz $TMP_FILE
-#   tar -xf "$MASHINA_TMP/helix.tar" --directory $OPT_PATH --strip-components=1
-#   rm -rf "$MASHINA_TMP/helix.tar"
-
-#   ln -sf "$OPT_PATH/hx" "$MASHINA_BIN"
-# }
 
 run

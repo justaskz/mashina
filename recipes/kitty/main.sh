@@ -8,15 +8,11 @@ function run {
 
 function update_config {
   local CONFIG="$GLOBAL_CONFIG/kitty"
-  mkdir -p $CONFIG
-  ln -sf $MASHINA_SOURCE/recipes/kitty/config/kitty.conf $CONFIG
+  mkdir -p "$CONFIG"
 
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/macos-launch-services-cmdline" $CONFIG
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_light.conf" $CONFIG
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_dark.conf" $CONFIG
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_dev.conf" $CONFIG
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_gruvbox.conf" $CONFIG
-  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/theme_bliss.conf" $CONFIG
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/kitty.conf" "$CONFIG"
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/macos-launch-services-cmdline" "$CONFIG"
+  ln -sf "$MASHINA_SOURCE/recipes/kitty/config/themes/" "$CONFIG/themes"
 }
 
 function install_debian {
@@ -45,7 +41,7 @@ function install_macos {
 
   # CHANGE ICON
   # https://github.com/k0nserv/kitty-icon/blob/main/README.md
-  git clone --depth 1 https://github.com/k0nserv/kitty-icon.git $MASHINA_OPT/kitty-icon
+  git clone --depth 1 https://github.com/k0nserv/kitty-icon.git "$MASHINA_OPT/kitty-icon"
 }
 
 function build_from_source {
@@ -58,7 +54,7 @@ function build_from_source {
   brew install openssl
 
   git clone --depth=1 git@github.com:kovidgoyal/kitty.git $MASHINA_OPT/kitty
-  cd $MASHINA_OPT/kitty
+  cd "$MASHINA_OPT/kitty"
   python3 -m pip install -r docs/requirements.txt && make docs
   LDFLAGS=-L/opt/homebrew/lib make app
 }

@@ -21,7 +21,7 @@ function update_config_macos {
 }
 
 function install_debian {
-  local VERSION="3.3a"
+  local VERSION="3.4"
   local TMUX_PATH="$MASHINA_OPT/tmux"
   rm -rf "$TMUX_PATH"
 
