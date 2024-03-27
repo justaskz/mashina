@@ -25,15 +25,11 @@
       [ ] https://github.com/helix-editor/helix/issues/2177
   [ ] Git diff side by side in terminal
   [ ] TUI process manager
-  [ ] Set EDITOR var
 
 * TASKS
   * DOING
 
   * BACKLOG
-  [ ] Create new package for machina functions.
-      [ ] Use tests
-      [ ] Port old functions to this package
   -------------------------------------------------------------------------------------------------
   [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
   [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]

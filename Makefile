@@ -1,3 +1,6 @@
+test:
+	@ bats tests
+
 install:
 	@ bash commands.sh install
 

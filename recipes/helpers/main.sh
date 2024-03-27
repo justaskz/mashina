@@ -16,11 +16,11 @@ function exit_if_installed {
 }
 
 function update_config {
-  if mashina_is_macos; then
+  if mashina__is_macos; then
     update_config_macos
   fi
 
-  if mashina_is_debian; then
+  if mashina__is_debian; then
     update_config_debian
   fi
 }

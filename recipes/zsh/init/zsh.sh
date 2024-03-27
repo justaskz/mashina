@@ -1,4 +1,4 @@
-if ! $(mashina_is_zsh); then return 1; fi
+if ! $(mashina__is_zsh); then return 1; fi
 
 #################################################
 ## ZSH CONFIG

@@ -5,7 +5,7 @@ function run {
 }
 
 function update_config {
-  if mashina_is_macos; then
+  if mashina__is_macos; then
     ln -sf "$MASHINA_SOURCE/recipes/ssh/config/config_client" "$HOME/.ssh/config"
   fi
 
