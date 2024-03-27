@@ -14,7 +14,6 @@ auto-save = true
 "C-o" = "command_palette"
 "C-/" = "toggle_comments"
 "C-s" = ":w!"
-"C-q" = ":q!"
 "C-w" = ":buffer-close"
 
 # EXPERIMENTAL

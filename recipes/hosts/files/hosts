@@ -33,9 +33,12 @@
 ##################################################
 ## INFRA
 ##################################################
-65.21.225.249 consul.infra.net
-65.21.225.249 kibana.infra.net
-65.21.225.249 echo.infra.net
 65.21.225.249 app.infra.net
-65.21.225.249 grafana.infra.net
 65.21.225.249 argocd.infra.net
+65.21.225.249 consul.infra.net
+65.21.225.249 echo.infra.net
+65.21.225.249 grafana.infra.net
+65.21.225.249 kibana.infra.net
+65.21.225.249 prometheus.infra.net
+65.21.225.249 status.infra.net
+65.21.225.249 strava.infra.net

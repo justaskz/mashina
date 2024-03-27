@@ -7,6 +7,7 @@ function run {
 }
 
 function update_config {
+  install_plugins
   ln -sf "$MASHINA_SOURCE/recipes/zsh/init/zsh.sh" "$MASHINA_INIT"
 }
 

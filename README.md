@@ -3,6 +3,7 @@
 mkdir -p $HOME/repos
 git clone git@github.com:justaskz/mashina.git $HOME/repos/mashina
 cd $HOME/repos/mashina
+make install
 ```
 
 ```

@@ -25,6 +25,7 @@
 		"Haproxy",
 		"INI",
 		"Jinja2",
+		"KDL",
 		"LSP",
 		"LSP-bash",
 		"LSP-gopls",

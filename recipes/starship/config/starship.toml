@@ -13,7 +13,9 @@ $character
 command_timeout = 3000
 
 [username]
-show_always = false
+show_always = true
+style_user = 'bold white'
+style_root = 'bold red'
 
 [hostname]
 ssh_only = false
@@ -25,9 +27,13 @@ detect_env_vars = ['!KITTY_WINDOW_ID']
 symbol = ""
 
 [os]
-disabled = true
-style = "white bold"
+disabled = false
+format = "[$symbol](bold white) "
 
 [os.symbols]
-Macos = ""
-Debian = "D | "
+Debian = ""
+Macos = ""
+Ubuntu = ""
+
+[directory]
+read_only = " 󰌾"

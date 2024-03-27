@@ -1,9 +1,44 @@
+* LOOKS
+  [ ] Fonts
+      [ ] Investigate NerdFont vs Kitty symbols hack
+      [ ] Create font installation script
+      [ ] Choose font
+  [ ] Create prompt like Christian has
+  [ ] Check Christian helix theme
+  [ ] Create color scheme for terminal
+      [ ] Check catpuchino
+      [ ] Check christian terminal theme
+      [ ] Search for design tools or precreated schemes
+      [ ] Check screenshots on desktop for inspiration
+  [ ] Terminal looks
+      [ ] Check padding
+  [ ] multiplexer
+      [ ] Try zellij
+          [ ] https://www.youtube.com/watch?v=gtjPeTCkm-8
+          [ ] https://www.youtube.com/watch?v=eR92AXKxZjs
+          [ ] https://www.reddit.com/r/vimporn/comments/10eqj6z/neovim_zellij/
+      [ ] Try to fix tmux and not blinking cursor
+  [ ] File tree
+      [ ] Try yazi
+      [ ] Helix explorer https://zenn.dev/fraim/articles/migrate-helix-file-explorer
+      [ ] https://github.com/helix-editor/helix/discussions/8314
+      [ ] https://github.com/helix-editor/helix/issues/2177
+  [ ] Git diff side by side in terminal
+  [ ] TUI process manager
+  [ ] Set EDITOR var
+
 * TASKS
+  * DOING
+
+  * BACKLOG
+  [ ] Create new package for machina functions.
+      [ ] Use tests
+      [ ] Port old functions to this package
+  -------------------------------------------------------------------------------------------------
   [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
   [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]
   [ ] Sublime project wise autocomplete
   [ ] Sublime yaml highlights
-  [ ] CLI: bat
   [ ] CLI: other modern rust clis
   [ ] CLI: mkdir + touch create folders and files with one command
   [ ] CLI: fd

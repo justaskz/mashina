@@ -6,8 +6,16 @@ function run {
   install
 }
 
-function update_config {
-  ln -sf "$MASHINA_SOURCE/recipes/homebrew/init/homebrew.sh" "$MASHINA_INIT"
+function update_config_debian {
+  ln -sf "$MASHINA_SOURCE/recipes/homebrew/init/homebrew_linux.sh" "$MASHINA_INIT/homebrew.sh"
+}
+
+function update_config_macos {
+  ln -sf "$MASHINA_SOURCE/recipes/homebrew/init/homebrew.sh" "$MASHINA_INIT/homebrew.sh"
+}
+
+function install_debian {
+  exit 0
 }
 
 function install_macos {

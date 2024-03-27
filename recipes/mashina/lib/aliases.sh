@@ -6,6 +6,7 @@ alias mashina_root='cd $MASHINA_ROOT'
 
 alias x="hx"
 alias k="kubectl"
+# alias bat="bat --paging=always --theme=nord --style=changes,numbers"
 
 #################################################
 ## TMUX
@@ -13,9 +14,17 @@ alias k="kubectl"
 alias tmc="tmux new -s"
 alias tma="tmux attach -t"
 alias tmd="tmux detach"
-alias tmk="tmux kill-session -t"
 alias tml="tmux list-sessions"
+alias tmk="tmux kill-session -t"
 alias tms="tmux source-file ~/.config/tmux/tmux.conf"
+
+##################################################
+## ZELLIJ
+##################################################
+alias zlc="zellij -s"
+alias zla="zellij attach"
+alias zll="zellij list-sessions"
+alias zlk="zellij delete-session"
 
 #################################################
 ## GIT
