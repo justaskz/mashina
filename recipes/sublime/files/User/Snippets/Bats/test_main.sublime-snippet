@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+#!/usr/bin/env bats
+
+load "setup"
+
+@test "${1:name}" {
+  ${2:assert_output} ${3:true}
+}
+]]></content>
+  <tabTrigger>qtest_main</tabTrigger>
+  <scope>source.shell.bash.bats</scope>
+</snippet>

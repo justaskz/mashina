@@ -1,7 +1,7 @@
 function main() {
   local FZF_HOME="$MASHINA_OPT/fzf"
 
-  if $(mashina_is_bash); then
+  if $(mashina__is_bash); then
     source "$FZF_HOME/shell/completion.bash"
     source "$FZF_HOME/shell/key-bindings.bash"
 
@@ -21,7 +21,7 @@ function main() {
     [ -n "$BASH" ] && complete -F _fzf_complete_inv -o default -o bashdefault inv
   fi
 
-  if $(mashina_is_zsh); then
+  if $(mashina__is_zsh); then
     source "$FZF_HOME/shell/completion.zsh"
     source "$FZF_HOME/shell/key-bindings.zsh"
 
