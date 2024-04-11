@@ -112,7 +112,6 @@
 	"ignored_packages": [
 		"All Autocomplete",
 		"Git blame",
-		"LSP-json",
 		"SublimeLinter",
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-rubocop",

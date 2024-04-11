@@ -25,6 +25,13 @@
       [ ] https://github.com/helix-editor/helix/issues/2177
   [ ] Git diff side by side in terminal
   [ ] TUI process manager
+  [ ] File tree tools
+      [ ] yazi
+      [ ] vifm
+      [ ] broot
+      [ ] xplr
+
+
 
 * TASKS
   * DOING

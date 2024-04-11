@@ -15,8 +15,10 @@ function update_config {
 
 function install {
   wget https://raw.githubusercontent.com/starship/starship/master/install/install.sh -P "$MASHINA_TMP"
-  sh "$MASHINA_TMP/install.sh" --yes --bin-dir "$MASHINA_BIN"
+  mkdir -p "$MASHINA_OPT/starship"
+  sh "$MASHINA_TMP/install.sh" --yes --bin-dir "$MASHINA_OPT/starship"
   rm "$MASHINA_TMP/install.sh"
+  ln -sf "$MASHINA_OPT/starship/starship" "$MASHINA_BIN"
 }
 
 run

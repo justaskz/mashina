@@ -36,3 +36,6 @@ Ubuntu = ""
 
 [directory]
 read_only = " 󰌾"
+
+[aws]
+format = "$symbol"

@@ -14,3 +14,4 @@ resize-disk.yml
 ec2
 config.yml
 .infracost
+*.log

@@ -8,7 +8,7 @@
   email = justas.kazakauskas@gmail.com
 [core]
   excludesfile = ~/.config/git/gitignore
-  editor = vim
+  editor = nvim
 [includeIf "gitdir:~/repos/ansible/"]
   path = ~/.config/git/config-nordsec
 [includeIf "gitdir:~/repos/terraform-aws-services/"]
@@ -19,3 +19,5 @@
 [mergetool "sourcetree"]
   cmd = /private/var/folders/3z/xgv3j7xj259gjztyl4wkmwpr0000gn/T/AppTranslocation/E2782484-2A8F-4213-BBBB-2D155B519163/d/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
+[init]
+defaultBranch = main

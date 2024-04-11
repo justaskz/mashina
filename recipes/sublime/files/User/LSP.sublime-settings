@@ -25,7 +25,7 @@
   },
   "clients": {
     "ruby": {
-      "enabled": false,
+      "enabled": true,
       "command": ["solargraph", "stdio"],
       "selector": "source.ruby",
       "initializationOptions": {
@@ -42,7 +42,7 @@
     "sorbet": {
       "enabled": false,
       "command": [
-        "srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman"
+        "srb", "tc", "--typed", "true", "--enable-all-experimental-lsp-features", "--lsp", "--disable-watchman", "."
       ],
       "selector": "source.ruby | text.html.ruby",
     },

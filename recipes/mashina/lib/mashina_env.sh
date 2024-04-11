@@ -14,6 +14,5 @@ export EDITOR="vim"
 # export TERM=tmux
 
 # TOOLS
-export TERRA_ROOT_PATH="$HOME/repos/terraform-aws-services"
 export INV_ANSIBLE_PATH="$HOME/repos/ansible"
 export TFLINT_CONFIG_FILE="$GLOBAL_CONFIG/tflint/.tflint.hcl"

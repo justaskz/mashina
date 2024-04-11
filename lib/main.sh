@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-source "lib/is_variable_defined.sh"
-source "lib/default_editor.sh"
-source "lib/is_zsh.sh"
-source "lib/is_bash.sh"
-source "lib/is_macos.sh"
-source "lib/is_debian.sh"
-source "lib/version.sh"
+source "$HOME/repos/mashina/lib/is_variable_defined.sh"
+source "$HOME/repos/mashina/lib/default_editor.sh"
+source "$HOME/repos/mashina/lib/is_zsh.sh"
+source "$HOME/repos/mashina/lib/is_bash.sh"
+source "$HOME/repos/mashina/lib/is_macos.sh"
+source "$HOME/repos/mashina/lib/is_debian.sh"
+source "$HOME/repos/mashina/lib/version.sh"

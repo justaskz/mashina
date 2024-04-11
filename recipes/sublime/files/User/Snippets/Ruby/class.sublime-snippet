@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+class ${1:ClassName}
+  ${2:# code}
+end
+]]></content>
+  <tabTrigger>qclass</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

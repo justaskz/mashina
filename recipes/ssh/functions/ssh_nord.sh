@@ -34,6 +34,11 @@ function ssh-hz-test {
   ssh -A juka@65.21.225.249
 }
 
+# proxy to cat-kubectl-mng-prod-aws-usea1-1 through aws-mountaininfra-bastion-us
+function ssh-k8s-prod {
+  ssh -A -J juka@18.208.23.133 juka@172.16.9.76
+}
+
 # proxy to cat-kubectl-mng-stage-aws-usea1-1 through nordsec-bastion-mng-stage-aws-usea1-1
 function ssh-k8s-stage {
   ssh -A -J juka@52.4.249.219 juka@172.17.9.76

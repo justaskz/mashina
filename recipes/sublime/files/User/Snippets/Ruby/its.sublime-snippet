@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+its(:${1:attribute}) { is_expected.to eq(${2:expected_value}) }
+]]></content>
+  <tabTrigger>qits</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

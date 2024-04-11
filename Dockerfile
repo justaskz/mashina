@@ -1,6 +1,6 @@
 FROM debian:12
 
-RUN apt update && apt install -y vim less zsh wget git make sudo xz-utils curl procps unzip
+RUN apt update && apt install -y vim less zsh wget git make sudo xz-utils curl procps unzip build-essential software-properties-common
 
 ENV USER_NAME=mashina
 ENV GROUP_NAME=mashina

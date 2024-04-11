@@ -7,10 +7,13 @@ function install {
   source "$HOME/.profile"
 }
 
+function install_dependencies {
+  bash recipes/common/main.sh
+}
+
 function install_debian {
   bash recipes/mashina/main.sh
   source "$HOME/.profile"
-  bash recipes/common/main.sh
   bash recipes/starship/main.sh
   bash recipes/fzf/main.sh
 

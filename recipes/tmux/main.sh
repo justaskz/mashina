@@ -7,11 +7,11 @@ function run {
 }
 
 function update_config_debian {
-  local TMUX_HOME="$HOME/.config/tmux"
-  mkdir -p "$TMUX_HOME"
-  cp "recipes/tmux/config/.tmux-linux.conf" "$TMUX_HOME/tmux.conf"
-  echo "" >> "$TMUX_HOME/tmux.conf"
-  cat recipes/tmux/config/.tmux.conf >> "$TMUX_HOME/tmux.conf"
+  local CONFIG="$GLOBAL_CONFIG/tmux"
+  mkdir -p "$CONFIG"
+  cp "$MASHINA_SOURCE/recipes/tmux/config/.tmux-linux.conf" "$CONFIG/tmux.conf"
+  echo "" >> "$CONFIG/tmux.conf"
+  cat "$MASHINA_SOURCE/recipes/tmux/config/.tmux.conf" >> "$CONFIG/tmux.conf"
 }
 
 function update_config_macos {

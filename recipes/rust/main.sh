@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  ln -s "$HOME/.cargo/bin/*" "$MASHINA_BIN"
+  ln -sf "$HOME/.cargo/bin/"* "$MASHINA_BIN"
 }
 
 function install {

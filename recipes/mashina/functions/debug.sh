@@ -6,7 +6,6 @@ function mashina_debug {
   echo "MASHINA_IS_MACOS: $(mashina__is_macos)"
   echo "MASHINA_IS_BASH: $(mashina__is_bash)"
   echo "MASHINA_IS_ZSH: $(mashina__is_zsh)"
-  echo "MASHINA_IS_SHELL_INTERACTIVE: $(mashina_is_shell_interactive)"
   echo "TERM: $TERM"
   echo "PATH: $PATH"
   echo -e "SSHD_PROCESSES: \n$(ps -eo pid,user,time,cmd | grep '[s]shd' | grep "$(whoami)" | sed 's/^/  /')"

@@ -15,7 +15,6 @@ function install {
   mkdir -p "$MASHINA_TMP"
 
   cp recipes/mashina/dotfiles/.bashrc "$HOME"
-  cp recipes/mashina/dotfiles/.profile "$HOME"
   cp recipes/mashina/dotfiles/.zshrc "$HOME"
   ln -sf "$MASHINA_SOURCE/recipes/mashina/lib/main.sh" "$MASHINA_ROOT/main.sh"
   ln -sf "$MASHINA_SOURCE/recipes/mashina/lib/mashina_env.sh" "$MASHINA_ROOT/mashina_env.sh"
