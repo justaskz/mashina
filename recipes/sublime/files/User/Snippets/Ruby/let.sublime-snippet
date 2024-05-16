@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-let(:${1:name}) { ${2:instance_double}(${3:resource}) }
+let(:${1:name}) { ${2:build}(${3:resource}) }
 ]]></content>
   <tabTrigger>qlet</tabTrigger>
   <scope>source.ruby</scope>

@@ -26,6 +26,9 @@ function install_plugins {
   # git completions
   wget -O "$MASHINA_FUNCTIONS/git-completion.bash" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
   wget -O "$MASHINA_FUNCTIONS/git-completion.zsh" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+
+  # fzf-tab
+  git clone https://github.com/Aloxaf/fzf-tab "$MASHINA_OPT/fzf-tab"
 }
 
 # function install_ohmyzsh {

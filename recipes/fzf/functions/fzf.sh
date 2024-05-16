@@ -25,35 +25,35 @@
 ##################################################
 ## ssh **: inventory
 ##################################################
-function _fzf_complete_ssh {
-  _fzf_complete "--multi --reverse" "$@" < <(cat $HOME/repos/inventory)
-}
+# function _fzf_complete_ssh {
+#   _fzf_complete "--multi --reverse" "$@" < <(cat $HOME/repos/inventory)
+# }
 
-function _fzf_complete_ssh_post {
-  awk '{print $NF " -t \"sudo -i\""}'
-}
+# function _fzf_complete_ssh_post {
+#   awk '{print $NF " -t \"sudo -i\""}'
+# }
 
 ##################################################
 ## git branch
 ##################################################
-function gch {
-  git checkout "$(git branch | fzf | tr -d '[:space:]')"
-}
+# function gch {
+#   git checkout "$(git branch | fzf | tr -d '[:space:]')"
+# }
 
 ##################################################
 ## TERRA
 ##################################################
-function _fzf_complete_terra {
-  _fzf_complete --multi --reverse --prompt="terra > " -- "$@" < <(terra list)
-}
+# function _fzf_complete_terra {
+#   _fzf_complete --multi --reverse --prompt="terra > " -- "$@" < <(terra list)
+# }
 
 ##################################################
 ## INV
 ##################################################
-function _fzf_complete_inv {
-  _fzf_complete "--multi --reverse" "$@" < <(inv groups)
-}
+# function _fzf_complete_inv {
+#   _fzf_complete "--multi --reverse" "$@" < <(inv groups)
+# }
 
-function _fzf_complete_inv_post {
-  awk '{print "GROUP=\"$NF\""}'
-}
+# function _fzf_complete_inv_post {
+#   awk '{print "GROUP=\"$NF\""}'
+# }

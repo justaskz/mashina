@@ -3,7 +3,6 @@ function install {
   source "$HOME/.profile"
   bash recipes/starship/main.sh
   bash recipes/fzf/main.sh
-  bash recipes/helix/main.sh
   source "$HOME/.profile"
 }
 

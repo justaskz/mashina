@@ -13,7 +13,7 @@ function update_config {
 }
 
 function install_debian {
-  VERSION="0.32.3"
+  VERSION="0.32.4"
   PACKAGE="k9s_Linux_amd64.tar.gz"
   URL="https://github.com/derailed/k9s/releases/download/v$VERSION/$PACKAGE"
 
