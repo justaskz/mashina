@@ -5,14 +5,18 @@ function run {
 }
 
 function install_debian {
-  apt update
+  apt update -yy
   apt -y install \
     build-essential \
     software-properties-common \
     apt-transport-https \
+    ca-certificates \
     wget \
     curl \
-    rsync
+    rsync \
+    iproute2 \
+    unzip \
+    jq
 }
 
 function install_macos {

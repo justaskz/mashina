@@ -6,6 +6,11 @@ alias mashina_root='cd $MASHINA_ROOT'
 
 alias x="hx"
 alias k="kubectl"
+alias kc="kubecm"
+alias d="docker"
+alias dc="docker compose"
+alias m="make"
+# alias m="cd $HOME/repos/mashina; $EDITOR $HOME/repos/mashina/banner"
 # alias bat="bat --paging=always --theme=nord --style=changes,numbers"
 
 #################################################
@@ -46,6 +51,7 @@ alias tf="terraform"
 alias tg="terragrunt"
 alias tfp="terraform plan -input=false"
 alias tfa="terraform apply -input=false"
+alias tfaa="terraform apply -input=false -auto-approve"
 alias tgp="terragrunt plan -input=false"
 alias tga="terragrunt apply -input=false"
 alias tgv="terragrunt validate-inputs"
@@ -56,8 +62,6 @@ alias tf_msk="cd ~/repos/terraform-aws-services/kafka/clusters"
 #################################################
 ## BOOKMARKS
 #################################################
-alias bin="cd ~/bin"
-alias opt="cd ~/opt"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias sublime_home='cd "$HOME/Library/Application Support/Sublime Text"'
@@ -69,7 +73,6 @@ alias gohome='cd $GOPATH/src/github.com/justaskz'
 alias ..="cd .."
 alias s="subl"
 alias add="subl -a"
-alias xp="xplr"
 alias a='cd $HOME/repos/ansible'
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
 alias sc="syncros"

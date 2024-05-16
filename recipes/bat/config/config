@@ -1,2 +1,3 @@
 --paging="always"
 --style="changes,numbers"
+--theme=Nord

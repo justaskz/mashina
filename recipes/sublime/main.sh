@@ -49,6 +49,14 @@ function install_macos {
   # Quit Sublime Text => ^=
 }
 
+function set_as_default_editor {
+  brew install duti
+
+  duti -s com.sublimetext.4 .rb all
+  duti -s com.sublimetext.4 .erb all
+  duti -s com.sublimetext.4 .json all
+}
+
 # function install_macos2 {
 #   SUBLIME_HOME="$HOME/Library/Application Support/Sublime Text"
 #   PACKAGE_CONTROL_PATH="$SUBLIME_HOME/Installed Packages"

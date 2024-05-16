@@ -21,32 +21,27 @@
 # 127.0.0.1 xferrecords.com
 
 ##################################################
-## VAGRANT LOCAL
+## LOCAL.NET
 ##################################################
-192.168.56.10 master
-192.168.56.11 node1
-192.168.56.12 node2
-192.168.56.13 node3
-192.168.56.150 mashina
-192.168.56.200 darkbox
+# 0.0.0.0 infra-app.local.net
+# 0.0.0.0 baf.local.net
+# 0.0.0.0 passengers.baf.08.berylia.org
 
 ##################################################
-## INFRA
+## INFRA.NET
 ##################################################
-0.0.0.0 infra-app.local
-
 65.21.225.249 app.infra.net
+65.21.225.249 beg.infra.net
 65.21.225.249 argocd.infra.net
 65.21.225.249 consul.infra.net
 65.21.225.249 echo.infra.net
 65.21.225.249 grafana.infra.net
+65.21.225.249 harbor.infra.net
+65.21.225.249 helm.infra.net
 65.21.225.249 kibana.infra.net
 65.21.225.249 prometheus.infra.net
+65.21.225.249 registry.infra.net
+65.21.225.249 sso.infra.net
 65.21.225.249 status.infra.net
 65.21.225.249 strava.infra.net
-
-##################################################
-## OTHER
-##################################################
-0.0.0.0 bob.berylia.org
-0.0.0.0 bob
+65.21.225.249 vault.infra.net

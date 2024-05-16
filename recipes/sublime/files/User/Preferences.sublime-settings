@@ -74,7 +74,7 @@
 	],
 
 	"file_exclude_patterns": [
-		// "*.log",
+		"*.log",
 		".DS_Store",
 		"*.pyc",
 		"*.cache",
@@ -83,8 +83,12 @@
 		"*.scssc",
 		"*.rdb",
 		"*.svg",
+		// "*.sql",
 		"*package-lock.json*",
 		"*cheatsheet*",
+
+		///
+		// "public/assets/*",
 	],
 
 	"folder_exclude_patterns": [
@@ -101,12 +105,14 @@
 		"libs",
 		// "certs",
 		"Package Control.cache",
-		"public/ckeditor",
 		".vagrant",
 		"_history",
-		"vendor/*",
-		"public/assets/*",
 		".terragrunt-cache",
+
+		////
+		// "vendor/*",
+		// "public/assets/*",
+		// "public/ckeditor",
 	],
 
 	"ignored_packages": [
@@ -119,7 +125,7 @@
 	],
 
 	"index_exclude_patterns": [
-		// "*.log",
+		"log/development.log",
 		".gitkeep",
 		"node_modules",
 		"bower_components",

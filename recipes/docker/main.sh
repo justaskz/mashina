@@ -1,7 +1,7 @@
 source recipes/helpers/main.sh
 
 function run {
-  # exit_if_installed command
+  exit_if_installed docker
   install
 }
 
