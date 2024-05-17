@@ -7,11 +7,13 @@ load "setup"
 
   run mashina__is_debian
 
-  assert_output true
+  assert_success
 }
 
 @test "when OS is not Debian" {
+  unset OSTYPE
+
   run mashina__is_debian
 
-  assert_output false
+  assert_failure
 }

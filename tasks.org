@@ -35,6 +35,9 @@
   * DOING
 
   * BACKLOG
+  [ ] Review backlog
+  [ ] FZF: implement separate history file for fzf. Add only if command is successful, remove duplicates
+  [ ] FZF: center the input and make floating like Spotlight Search on Macos
   -------------------------------------------------------------------------------------------------
   [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
   [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]

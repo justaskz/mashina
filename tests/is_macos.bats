@@ -5,7 +5,8 @@ load "setup"
 @test "when OS is MacOS" {
   run mashina__is_macos
 
-  assert_output true
+  # assert_output true
+  assert_success
 }
 
 @test "when OS is not MacOS" {
@@ -13,5 +14,5 @@ load "setup"
 
   run mashina__is_macos
 
-  assert_output false
+  assert_failure
 }

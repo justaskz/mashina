@@ -8,13 +8,13 @@ uninstall:
 	@ bash commands.sh uninstall
 
 build: down
-	@ docker-compose build
+	@ docker compose build
 
 up:
-	@ docker-compose up -d
+	@ docker compose up -d
 
 down:
-	@ docker-compose down
+	@ docker compose down
 
 connect:
-	@ docker-compose exec mashina bash
+	@ docker compose exec mashina bash

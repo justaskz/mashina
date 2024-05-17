@@ -1,7 +1,7 @@
 function mashina__is_variable_defined {
   if [[ -n "$1" ]]; then
-    echo true
+    return 0
   else
-    echo false
+    return 1
   fi
 }

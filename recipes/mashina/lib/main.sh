@@ -12,4 +12,6 @@ done
 source "$MASHINA_ROOT/aliases.sh"
 
 # for sublime
-echo "export PATH=$PATH" > "$HOME/.bash_profile"
+if mashina__is_macos; then
+  echo "export PATH=$PATH" > "$HOME/.bash_profile"
+fi

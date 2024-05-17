@@ -7,13 +7,11 @@ load "setup"
 
   run mashina__is_variable_defined "$TEST_VAR"
 
-  assert_output true
   assert_success
 }
 
 @test "when variable is not defined" {
   run mashina__is_variable_defined "$UNDEFINED_TEST_VAR"
 
-  assert_output false
-  assert_success
+  assert_failure
 }

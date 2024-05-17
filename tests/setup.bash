@@ -1,5 +1,5 @@
-setup() {
-  load "test_helper/bats-support/load"
-  load "test_helper/bats-assert/load"
+function setup {
+  bats_load_library "bats-support/load.bash"
+  bats_load_library "bats-assert/load.bash"
   load "../lib/main.sh"
 }

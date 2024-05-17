@@ -7,11 +7,13 @@ load "setup"
 
   run mashina__is_zsh
 
-  assert_output true
+  assert_success
 }
 
 @test "when shell is not zsh" {
+  unset ZSH_VERSION
+
   run mashina__is_zsh
 
-  assert_output false
+  assert_failure
 }
