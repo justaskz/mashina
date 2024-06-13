@@ -1,0 +1,65 @@
+---
+hosts:
+  - name: mountaininfra-ansible-us-2
+    user: juka
+    ip: 52.71.175.190
+
+  - name: mountaininfra-general-ansible-stage-usea1-1
+    user: juka
+    ip: 52.204.95.108
+
+  - name: infra-1
+    user: juka
+    ip: 65.21.225.249
+
+  - name: cat-kubectl-mng-stage-aws-usea1-1
+    user: juka
+    ip: 172.17.9.76
+
+projects:
+  - name: ansible
+    local_path: /Users/t1028/repos/ansible
+    remote_path: /home/juka/repos/ansible
+
+  - name: terraform
+    local_path: /Users/t1028/repos/terraform-aws-services
+    remote_path: /home/juka/repos/terraform-aws-services
+
+  - name: aws-eks-cluster
+    local_path: /Users/t1028/repos/aws-eks-cluster
+    remote_path: /home/juka/repos/aws-eks-cluster
+
+  - name: infra
+    local_path: /Users/t1028/repos/infra
+    remote_path: /home/juka/repos/infra
+
+deployments:
+  - name: ansible-prod
+    project: ansible
+    host: mountaininfra-ansible-us-2
+
+  - name: terraform-prod
+    project: terraform
+    host: mountaininfra-general-ansible-stage-usea1-1
+
+  - name: terraform-stage
+    project: terraform
+    host: mountaininfra-general-ansible-stage-usea1-1
+
+  - name: aws-eks-cluster-stage
+    project: aws-eks-cluster
+    host: cat-kubectl-mng-stage-aws-usea1-1
+
+  - name: infra
+    project: infra
+    host: infra-1
+
+excluded:
+  - ^facts
+  - _history
+  - .git
+  - .vagrant
+  - .terragrunt-cache
+  - .terraform.lock.hcl
+  - .DS_Store
+  - tmp

@@ -1,3 +1,4 @@
+export XDG_CONFIG_HOME="$HOME/.config"
 export GLOBAL_CONFIG="$HOME/.config"
 export MASHINA_ROOT="$GLOBAL_CONFIG/mashina"
 export MASHINA_SOURCE="$HOME/repos/mashina"
@@ -9,6 +10,7 @@ export MASHINA_TMP="$MASHINA_ROOT/tmp"
 export BASE_PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$MASHINA_BIN:$BASE_PATH"
 export EDITOR="vim"
+# export PS="append_to_custom_history; $PS"
 
 # export TERM=xterm-kitty
 # export TERM=tmux

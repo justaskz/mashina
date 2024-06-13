@@ -73,8 +73,8 @@ compinit
 zstyle ':completion:*' menu select
 
 # fzf-tab
-# autoload -U compinit; compinit
-# source "$MASHINA_OPT/fzf-tab/fzf-tab.plugin.zsh"
+autoload -U compinit; compinit
+source "$MASHINA_OPT/fzf-tab/fzf-tab.plugin.zsh"
 
 # add empty line before comamnd
 # precmd() { precmd() { echo "" } }

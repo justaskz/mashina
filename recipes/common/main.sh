@@ -20,7 +20,7 @@ function install_debian {
 }
 
 function install_macos {
-  brew install wget grep gnu-sed tree neofetch findutils unzip rsync ripgrep
+  brew install wget grep gnu-sed tree neofetch findutils unzip rsync ripgrep fd
 
   ln -fs /opt/homebrew/opt/grep/libexec/gnubin/grep "$MASHINA_BIN/grep"
   ln -fs /opt/homebrew/opt/grep/libexec/gnubin/egrep "$MASHINA_BIN/egrep"

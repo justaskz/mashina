@@ -1,0 +1,70 @@
+{
+	"history":
+	[
+		{
+			"data":
+			{
+				"args":
+				{
+					"stop": "8",
+				},
+				"command": "text_pastry_range",
+				"text": "range 8",
+			},
+			"key": "08dede21219c7413ce33bff167d06bfc",
+			"label": "range 8",
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"start": "8",
+					"stop": "10",
+				},
+				"command": "text_pastry_range",
+				"text": "range 8-10",
+			},
+			"key": "5e6b2ca23a4376de4e5b0a8976894bd7",
+			"label": "range 8-10",
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"start": "9",
+					"stop": "15",
+				},
+				"command": "text_pastry_range",
+				"text": "range 9-15",
+			},
+			"key": "696e8033542315650be55ad5e0f8462f",
+			"label": "range 9-15",
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"start": "8",
+					"stop": "15",
+				},
+				"command": "text_pastry_range",
+				"text": "range 8-15",
+			},
+			"key": "d84e289077bb836f40ef4c4249617f69",
+			"label": "range 8-15",
+		},
+	],
+	"last_command":
+	{
+		"args":
+		{
+			"stop": "15",
+			"start": "8",
+		},
+		"command": "text_pastry_range",
+		"text": "range 8-15",
+	},
+}

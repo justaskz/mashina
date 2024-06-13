@@ -1,4 +1,4 @@
-function main() {
+function main {
   local FZF_HOME="$MASHINA_OPT/fzf"
 
   if $(mashina__is_bash); then

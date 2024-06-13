@@ -1,3 +1,47 @@
+* TASKS
+  * DOING
+
+  * BACKLOG
+  [ ] Review backlog
+  [ ] FZF: implement separate history file for fzf. Add only if command is successful, remove duplicates
+  [ ] FZF: center the input and make floating like Spotlight Search on Macos
+  -------------------------------------------------------------------------------------------------
+  [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
+  [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]
+  [ ] Sublime project wise autocomplete
+  [ ] Sublime yaml highlights
+  [ ] CLI: other modern rust clis
+  [ ] CLI: mkdir + touch create folders and files with one command
+  [ ] CLI: fzf-tab
+  [ ] CLI: grep alternative
+  [ ] Create New theme
+      [ ] https://github.com/saadq/bliss-ui
+      [ ] https://github.com/saadq/bliss-syntax
+  [ ] Sublime
+      [ ] Add json lsp for autoformat?
+      [ ] Review packages
+          - Questionable packages:
+            [ ] Ansible
+            [ ] ApplySyntax
+            [ ] ColorSchemeSelector
+            [ ] Expand Selection to Quotes or Select Quoted
+            [ ] git
+            [ ] gofmt
+            [ ] gototab
+            [ ] Pretty json
+            [ ] Sendcode
+            [ ] RailsGoToSpec or Spec Finder
+            [ ] All SublimeLinter
+            [ ] SublimeOnSaveBuild
+            [ ] Terrafmt
+            [ ] Terraform
+      [ ] There are two setting files for golang, find out which one is real
+  [X] Replace all cp to ln -sf
+  [ ] Implement a function for smart file/symlink stransfer (like function files):
+      - Delete all old files (probably use prefix to recognize which files are owned by current recipe?)
+      - Transfer new files
+  [ ] kitty fonts, read docs faq about not modyfied fonts
+
 * LOOKS
   [ ] Fonts
       [ ] Investigate NerdFont vs Kitty symbols hack
@@ -30,87 +74,3 @@
       [ ] vifm
       [ ] broot
       [ ] xplr
-
-* TASKS
-  * DOING
-
-  * BACKLOG
-  [ ] Review backlog
-  [ ] FZF: implement separate history file for fzf. Add only if command is successful, remove duplicates
-  [ ] FZF: center the input and make floating like Spotlight Search on Macos
-  -------------------------------------------------------------------------------------------------
-  [ ] Use readonly vars with defaults: `readonly _USER_HOME="${HOME:-/etc}"`
-  [ ] Proper SSH config [[https://core-admin.pages.digitalarsenal.net/docs/infrastructure/users-ssh-access/]] [[https://core-admin.pages.digitalarsenal.net/docs/tools/teleport/openssh-configuration/]]
-  [ ] Sublime project wise autocomplete
-  [ ] Sublime yaml highlights
-  [ ] CLI: other modern rust clis
-  [ ] CLI: mkdir + touch create folders and files with one command
-  [ ] CLI: fzf-tab
-  [ ] CLI: fd
-  [ ] CLI: grep alternative
-  [ ] Mashina: Create version
-  [ ] Python LSP plugin
-  [ ] Create New theme
-      [ ] https://github.com/saadq/bliss-ui
-      [ ] https://github.com/saadq/bliss-syntax
-  [ ] Ansible LSP
-  [ ] Sublime
-      [ ] Add json lsp for autoformat?
-      [ ] Review packages
-          - Questionable packages:
-            [ ] Ansible
-            [ ] ApplySyntax
-            [ ] ColorSchemeSelector
-            [ ] Expand Selection to Quotes or Select Quoted
-            [ ] git
-            [ ] gofmt
-            [ ] gototab
-            [ ] Pretty json
-            [ ] Sendcode
-            [ ] RailsGoToSpec or Spec Finder
-            [ ] All SublimeLinter
-            [ ] SublimeOnSaveBuild
-            [ ] Terrafmt
-            [ ] Terraform
-      [ ] There are two setting files for golang, find out which one is real
-  [X] Replace all cp to ln -sf
-  [ ] Implement a function for smart file/symlink stransfer (like function files):
-      - Delete all old files (probably use prefix to recognize which files are owned by current recipe?)
-      - Transfer new files
-  [ ] mashina
-      [ ] Review mashina_aliases
-      [ ] Review mashina functions
-      [ ] Review mashina helpers functions
-      [ ] Make kitty reload config as alias
-  [ ] kitty fonts, read docs faq about not modyfied fonts
-  [ ] zsh
-  [ ] brew
-  [ ] install and select fonts
-  [ ] git and git config
-  [ ] zsh shell
-  [ ] zsh plugins
-  [ ] zsh config
-  [ ] vim
-  [ ] git
-  [ ] docker
-
-* EDITOR FEATURES
-  [ ] Status line
-      [X] Show language
-      [ ] Colors in status line
-  [ ] Search in all project
-  [ ] Search in opened file
-  [ ] Snippets
-  [ ] Tabs
-      [ ] Go to N tab
-      [ ] Close tabs
-  [ ] Execute line under cursor
-  [ ] Save when out of focues
-  [ ] Trim spaces
-  [ ] Tree
-  [ ] Text Navigation
-      [ ] Go to top of file
-      [ ] Go to end of file
-  [ ] Text Editing
-      [X] Comment line
-      [ ] Delete line
