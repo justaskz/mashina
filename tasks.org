@@ -12,7 +12,6 @@
   [ ] Sublime yaml highlights
   [ ] CLI: other modern rust clis
   [ ] CLI: mkdir + touch create folders and files with one command
-  [ ] CLI: fzf-tab
   [ ] CLI: grep alternative
   [ ] Create New theme
       [ ] https://github.com/saadq/bliss-ui

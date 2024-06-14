@@ -1,6 +1,6 @@
 source recipes/helpers/main.sh
 
-PYTHON_VERSION="3.12.1"
+PYTHON_VERSION="3.12"
 
 function run {
   update_config

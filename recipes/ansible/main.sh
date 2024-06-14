@@ -24,7 +24,7 @@ function nord {
   # from ansible dir
   cd ~/repos/ansible/
   pip install --upgrade --user -r collections/ansible_collections/nordsec/team_password_manager/requirements.txt
-  pip install --user boto3 influxdb netaddr
+  pip install --user boto3 influxdb netaddr cryptography
 }
 
 run
