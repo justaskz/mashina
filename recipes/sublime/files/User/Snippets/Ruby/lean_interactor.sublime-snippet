@@ -3,7 +3,7 @@
 class ${1:ClassName}
   include LeanInteractor
 
-  initialize_call :${2:parameter}
+  initialize_for :${2:parameter}
 
   def run
     ${3:# code}

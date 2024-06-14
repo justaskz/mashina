@@ -1,6 +1,12 @@
 <snippet>
   <content><![CDATA[
-def ${1:up}
+def up
+  execute <<~SQL
+    ${1:# sql code}
+  SQL
+end
+
+def down
   execute <<~SQL
     ${2:# sql code}
   SQL

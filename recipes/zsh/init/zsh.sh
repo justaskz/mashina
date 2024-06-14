@@ -20,10 +20,10 @@ setopt hist_ignore_space
 setopt hist_verify
 
 # share command history data
-setopt share_history
+# setopt share_history
 
 # skip cd to enter directory
-setopt auto_cd
+# setopt auto_cd
 
 
 # prevent duplicates in command history
@@ -73,8 +73,31 @@ compinit
 zstyle ':completion:*' menu select
 
 # fzf-tab
-# autoload -U compinit; compinit
-# source "$MASHINA_OPT/fzf-tab/fzf-tab.plugin.zsh"
+autoload -U compinit; compinit
+source "$MASHINA_OPT/fzf-tab/fzf-tab.plugin.zsh"
 
 # add empty line before comamnd
 # precmd() { precmd() { echo "" } }
+
+
+
+##################################################
+## EXPERIMENTAL
+##################################################
+
+# successful_history_file="$HOME/zsh_successful_history"
+
+# function log_successful_command {
+#   if [[ $? -eq 0 || $? -eq 1 ]]; then
+#     echo "$LAST_CMD" >> "$successful_history_file"
+#   fi
+# }
+
+# function preexec_function {
+#   export LAST_CMD="$1"
+# }
+
+# # Register the hooks
+# autoload -Uz add-zsh-hook
+# add-zsh-hook precmd log_successful_command
+# add-zsh-hook preexec preexec_function

@@ -5,7 +5,10 @@ alias mashina_source='cd $HOME/repos/mashina'
 alias mashina_root='cd $MASHINA_ROOT'
 
 alias x="hx"
+alias h="hx"
 alias k="kubectl"
+alias ka="kubectl apply -f"
+alias ha="helmfile apply -f"
 alias kc="kubecm"
 alias d="docker"
 alias dc="docker compose"

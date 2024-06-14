@@ -21,13 +21,14 @@ function install_helm_debian {
   sudo apt-get install helm
 }
 
-function install_helmfire {
-  VERSION="0.164.0"
+function install_helmfile {
+  VERSION="0.165.0"
   URL="https://github.com/helmfile/helmfile/releases/download/v${VERSION}/helmfile_${VERSION}_linux_386.tar.gz"
   wget -P "$MASHINA_TMP" "$URL"
   mkdir -p "$MASHINA_OPT/helmfile"
   tar -xzv -f "$MASHINA_TMP/helmfile_${VERSION}_linux_386.tar.gz" -C "$MASHINA_OPT/helmfile"
   ln -sf "$MASHINA_OPT/helmfile/helmfile" "$MASHINA_BIN"
+  helm plugin install https://github.com/databus23/helm-diff
 }
 
 run

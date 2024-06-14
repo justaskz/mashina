@@ -6,12 +6,12 @@ PRIVATE-*
 # core-common-v2.yml
 # core-users-v2
 # staff_accounts_v2.yml
-ssh_access_v2
-ssh-v2.j2
+# ssh_access_v2
+# ssh-v2.j2
 # aws-v2.yml
 # roles/aws-v2
-resize-disk.yml
-ec2
-config.yml
+# resize-disk.yml
+# ec2
+# config.yml
 .infracost
 *.log

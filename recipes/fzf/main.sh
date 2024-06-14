@@ -14,7 +14,7 @@ function update_config {
 function install {
   FZF_HOME="$MASHINA_OPT/fzf"
   git clone --depth 1 https://github.com/junegunn/fzf.git "$FZF_HOME"
-  bash $FZF_HOME/install --bin
+  bash "$FZF_HOME/install" --bin
   ln -s "$FZF_HOME/bin/fzf" "$MASHINA_BIN"
 }
 

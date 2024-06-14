@@ -1,4 +1,4 @@
-function mashina__is_macos() {
+function mashina__is_macos {
   if [[ "$OSTYPE" == "darwin"* ]]; then
     return 0
   else
