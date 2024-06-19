@@ -7,7 +7,7 @@ function run {
 }
 
 function update_config {
-  ln -sf "$HOME/.cargo/bin/"* "$MASHINA_BIN"
+  ln -sf "$MASHINA_SOURCE/recipes/rust/init/rust.sh" "$MASHINA_INIT"
 }
 
 function install {

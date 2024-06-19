@@ -1,5 +1,8 @@
 ---
 k9s:
+  liveViewAutoRefresh: true
   ui:
     enableMouse: false
     reactive: false
+    skin: everforest-dark
+    # skin: rose-pine-moon

@@ -11,29 +11,24 @@ Host github.com
     IdentityFile ~/.ssh/github_rsa
 
 # proxy to cat-kubectl-mng-prod-aws-usea1-1 through aws-mountaininfra-bastion-us
-Host 172.16.9.76
+Host cat-kubectl-mng-prod-aws-usea1-1
+    HostName 172.16.9.76
     User juka
     ProxyJump juka@18.208.23.133
     IdentityFile ~/.ssh/nordsec_rsa
     ForwardAgent yes
 
 # proxy to cat-kubectl-mng-stage-aws-usea1-1 through nordsec-bastion-mng-stage-aws-usea1-1
-Host 172.17.9.76
+Host cat-kubectl-mng-stage-aws-usea1-1
+    HostName 172.17.9.76
     User juka
     ProxyJump juka@52.4.249.219
     IdentityFile ~/.ssh/nordsec_rsa
     ForwardAgent yes
 
-Host main-1
-    HostName 192.168.56.100
-    User vagrant
-    ProxyJump juka@65.21.225.249
-    IdentityFile ~/.ssh/dev_rsa
-    ForwardAgent yes
-
-Host k8s-main-1
-    HostName 192.168.56.101
-    User vagrant
-    ProxyJump juka@65.21.225.249
-    IdentityFile ~/.ssh/dev_rsa
+Host cat-kubectl-mng-preprod-aws-usea1-1
+    HostName 172.16.17.76
+    User juka
+    ProxyJump juka@18.208.23.133
+    IdentityFile ~/.ssh/nordsec_rsa
     ForwardAgent yes

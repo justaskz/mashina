@@ -46,5 +46,30 @@
       ],
       "selector": "source.ruby | text.html.ruby",
     },
+    "lsp-ai": {
+      "enabled": false,
+      "command": ["/Users/t1028/.cargo/bin/lsp-ai"],
+      "selector": "source",
+      "initializationOptions": {
+        "memory": {
+          "file_store": {}
+        },
+        "models": {
+          "default": {
+            "type": "llama_cpp",
+            "repository": "TheBloke/deepseek-coder-6.7B-instruct-GGUF",
+            "name": "deepseek-coder-6.7b-instruct.Q5_K_S.gguf",
+            "n_ctx": 2048
+          },
+        },
+        "completion": {
+          "model": "default",
+          "parameters": {
+            "max_context": 2000,
+            "max_tokens": 64
+          }
+        }
+      },
+    },
   }
 }
