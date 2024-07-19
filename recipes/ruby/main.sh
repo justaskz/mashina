@@ -4,7 +4,6 @@ RUBY_VERSION="3.3.4"
 
 function run {
   update_config
-  exit_if_installed rbenv
   install
 }
 
@@ -62,7 +61,7 @@ function install_dependencies_macos {
 }
 
 function install_dependencies_debian {
-  sudo apt install -y libz-dev default-libmysqlclient-dev libffi-dev libyaml-dev # libmysqlclient-dev
+  apt install -y libz-dev default-libmysqlclient-dev libffi-dev libyaml-dev # libmysqlclient-dev
 }
 
 run
