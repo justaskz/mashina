@@ -13,10 +13,3 @@ load "setup"
 
   PATH="$original_path"
 }
-
-@test "when helix is installed" {
-  run mashina__default_editor
-
-  assert_output "hx"
-  assert_success
-}

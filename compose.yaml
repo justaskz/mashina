@@ -4,10 +4,6 @@ services:
     container_name: mashina
     image: mashina
     hostname: mashina
-    build:
-      context: .
-    tty: true
-    stdin_open: true
+    build: .
     volumes:
-      - ./://root/repos/mashina:ro
-      - ./://home/mashina/repos/mashina:ro
+      - ./:/opt/mashina:ro

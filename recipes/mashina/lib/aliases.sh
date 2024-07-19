@@ -1,8 +1,8 @@
 unalias -a
 
-alias src='source $MASHINA_ROOT/main.sh'
+alias src='source $MASHINA_CONFIG/main.sh'
 alias mashina_source='cd $HOME/repos/mashina'
-alias mashina_root='cd $MASHINA_ROOT'
+alias MASHINA_CONFIG='cd $MASHINA_CONFIG'
 
 alias x="hx"
 alias h="hx"

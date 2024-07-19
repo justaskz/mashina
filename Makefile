@@ -7,7 +7,7 @@ install:
 uninstall:
 	@ bash commands.sh uninstall
 
-build: down
+build:
 	@ docker compose build
 
 up:

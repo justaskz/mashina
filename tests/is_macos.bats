@@ -3,9 +3,10 @@
 load "setup"
 
 @test "when OS is MacOS" {
+  local OSTYPE="darwin"
+
   run mashina__is_macos
 
-  # assert_output true
   assert_success
 }
 

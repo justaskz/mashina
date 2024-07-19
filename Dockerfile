@@ -12,10 +12,10 @@ RUN groupadd -r $GROUP_NAME && \
     usermod -G sudo $USER_NAME && \
     echo 'mashina ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-WORKDIR /root/repos/mashina
-WORKDIR $HOME/repos/mashina
+WORKDIR /opt/mashina
 COPY ./ ./
-RUN bash commands.sh install
-
-RUN chown -R $USER_NAME:$GROUP_NAME $HOME
+RUN chown -R $USER_NAME:$GROUP_NAME /opt/mashina
 USER $USER_NAME
+RUN bash recipes/mashina/main.sh
+
+CMD ["/usr/bin/tail", "-f", "/dev/null"]
