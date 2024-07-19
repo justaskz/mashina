@@ -1,4 +1,4 @@
-source recipes/helpers/main.sh
+source "$MASHINA_SOURCE/recipes/helpers/main.sh"
 
 function run {
   exit_if_installed command

@@ -1,4 +1,4 @@
-source recipes/helpers/main.sh
+source "$MASHINA_SOURCE/recipes/helpers/main.sh"
 
 PYTHON_VERSION="3.12"
 
