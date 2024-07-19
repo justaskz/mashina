@@ -2,5 +2,4 @@
 
 mkdir -p /opt/mashina
 git clone https://github.com/justaskz/mashina.git /opt/mashina
-cd /opt/mashina
-make install
+bash /opt/mashina/recipes/mashina/main.sh

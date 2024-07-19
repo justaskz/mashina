@@ -1,5 +1,5 @@
-MASHINA_ROOT="$HOME/.config/mashina"
+MASHINA_CONFIG="$HOME/.config/mashina"
 
-if [[ -a "$MASHINA_ROOT/main.sh" ]]; then
-  source "$MASHINA_ROOT/main.sh"
+if [[ -a "$MASHINA_CONFIG/main.sh" ]]; then
+  source "$MASHINA_CONFIG/main.sh"
 fi
