@@ -59,6 +59,7 @@ excluded:
   - _history
   - .git
   - .vagrant
+  - .terraform
   - .terragrunt-cache
   - .terraform.lock.hcl
   - .DS_Store

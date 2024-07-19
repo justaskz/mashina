@@ -39,10 +39,17 @@
 65.21.225.249 harbor.infra.net
 65.21.225.249 helm.infra.net
 65.21.225.249 k8s.infra.net
+65.21.225.249 keel.infra.net
 65.21.225.249 kibana.infra.net
+65.21.225.249 mesh.infra.net
 65.21.225.249 prometheus.infra.net
 65.21.225.249 registry.infra.net
 65.21.225.249 sso.infra.net
 65.21.225.249 status.infra.net
 65.21.225.249 strava.infra.net
 65.21.225.249 vault.infra.net
+
+##################################################
+## BLOCK
+##################################################
+# 127.0.0.1 s1.15min.lt
