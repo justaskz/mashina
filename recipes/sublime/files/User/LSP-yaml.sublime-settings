@@ -1,5 +1,9 @@
 {
   "yaml.schemas": {
-    "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.29.5-standalone-strict/all.json": "*.k8s.yaml",
+//     // "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.29.5-standalone-strict/all.json": "*.k8s.yaml",
+    // "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.29.5-standalone-strict/all.json": "*.yaml",
+    // "kubernetes": ["*kubernetes/*.yaml"]
+    "kubernetes": ["/*"],
+    "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.29.5-standalone-strict/all.json": "/*",
   }
 }

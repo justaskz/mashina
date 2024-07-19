@@ -7,18 +7,21 @@ function run {
 }
 
 function update_config {
-  ln -sf $MASHINA_SOURCE/recipes/golang/init/go.sh $MASHINA_INIT
+  ln -sf "$MASHINA_SOURCE/recipes/golang/init/go.sh" "$MASHINA_INIT"
 }
 
 function install_debian {
-  exit 0
+  URL="https://go.dev/dl/go1.22.4.linux-amd64.tar.gz"
+  wget -P "$MASHINA_TMP" "$URL"
+  tar -xf "$MASHINA_TMP/go1.22.4.linux-amd64.tar.gz" --directory "$MASHINA_OPT"
+  ln -sf "$MASHINA_OPT"/go/bin/go* "$MASHINA_BIN"
 }
 
 function install_macos {
   brew install golang
   go install golang.org/x/tools/gopls@latest
   go install golang.org/x/tools/cmd/goimports@latest
-  mkdir -p $HOME/go/src/github.com/justaskz
+  mkdir -p "$HOME/go/src/github.com/justaskz"
 }
 
 run

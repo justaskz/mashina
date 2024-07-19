@@ -10,3 +10,25 @@ plugins:
     args:
     - -c
     - "watch -n 5 kubectl get events --context $CONTEXT --namespace $NAMESPACE --field-selector involvedObject.name=$NAME"
+
+  remove_finalizers:
+    shortCut: Ctrl-F
+    confirm: true
+    dangerous: true
+    scopes:
+      - all
+    description: Removes finalizers
+    command: kubectl
+    background: true
+    args:
+      - patch
+      - --context
+      - $CONTEXT
+      - --namespace
+      - $NAMESPACE
+      - $RESOURCE_NAME
+      - $NAME
+      - -p
+      - '{"metadata":{"finalizers":null}}'
+      - --type
+      - merge

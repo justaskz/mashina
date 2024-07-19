@@ -6,9 +6,9 @@ function run {
 }
 
 function update_config {
-  CONFIG_DIR="$GLOBAL_CONFIG/k9s"
-  mkdir -p "$CONFIG_DIR"
-  ln -sf "$MASHINA_SOURCE/recipes/k9s/config" "$CONFIG_DIR"
+  # CONFIG_DIR="$GLOBAL_CONFIG/k9s"
+  # mkdir -p "$CONFIG_DIR"
+  ln -sf "$MASHINA_SOURCE/recipes/k9s/config" "$GLOBAL_CONFIG/k9s"
 }
 
 function install_debian {
