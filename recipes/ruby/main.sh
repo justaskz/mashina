@@ -10,7 +10,7 @@ function run {
 
 function update_config {
   ln -sf "$MASHINA_SOURCE/recipes/ruby/init/ruby.sh" "$MASHINA_INIT"
-  cp recipes/ruby/dotfiles/.gemrc "$HOME"
+  cp "$MASHINA_SOURCE/recipes/ruby/dotfiles/.gemrc" "$HOME"
 
   # rubocop
   CONFIG_DIR="$GLOBAL_CONFIG/rubocop"
@@ -24,7 +24,8 @@ function update_config {
 }
 
 function install_debian {
-  # install_dependencies_debian
+  install_dependencies_debian
+
   git clone --depth 1 https://github.com/sstephenson/rbenv.git "$MASHINA_OPT/rbenv"
   ln -s "$MASHINA_OPT/rbenv/bin/rbenv" "$MASHINA_BIN"
 
@@ -61,7 +62,7 @@ function install_dependencies_macos {
 }
 
 function install_dependencies_debian {
-  sudo apt install -y libz-dev default-libmysqlclient-dev # libmysqlclient-dev
+  sudo apt install -y libz-dev default-libmysqlclient-dev libffi-dev libyaml-dev # libmysqlclient-dev
 }
 
 run
