@@ -1,3 +1,7 @@
+```bash
+curl https://raw.githubusercontent.com/justaskz/mashina/master/install.sh | bash
+```
+
 ### Installation
 ```
 mkdir -p $HOME/repos
