@@ -17,7 +17,7 @@ WORKDIR /opt/mashina
 COPY . .
 RUN chown -R $USER_NAME:$GROUP_NAME /opt/mashina
 USER $USER_NAME
-# RUN bash recipes/mashina/main.sh
+RUN bash /opt/mashina/recipes/mashina/main.sh
 # RUN bash recipes/common/main.sh
 # RUN bash recipes/ruby/main.sh
 
