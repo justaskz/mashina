@@ -16,8 +16,8 @@ function update_config {
 }
 
 function install_debian {
-  local ARCH="$(uname -m)"
   local VERSION="24.07"
+  local ARCH="$(uname -m)"
   local BASE_NAME="helix-$VERSION-$ARCH-linux"
   local URL="https://github.com/helix-editor/helix/releases/download/$VERSION/$BASE_NAME.tar.xz"
 
