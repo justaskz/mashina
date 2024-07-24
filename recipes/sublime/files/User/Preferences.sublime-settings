@@ -74,7 +74,7 @@
 	],
 
 	"file_exclude_patterns": [
-		"*.log",
+		// "*.log",
 		".DS_Store",
 		"*.pyc",
 		"*.cache",
