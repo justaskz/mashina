@@ -1,0 +1,22 @@
+version: 2.0
+shards:
+  admiral:
+    git: https://github.com/jwaldrip/admiral.cr.git
+    version: 1.11.5
+
+  jsonschema:
+    git: https://github.com/aarongodin/jsonschema.git
+    version: 0.1.0+git.commit.018dc50f4a3ba6e6c2783f19a46284043d1815ed
+
+  prop:
+    git: https://github.com/nicolab/crystal-prop.git
+    version: 0.7.1
+
+  spectator:
+    git: https://gitlab.com/arctic-fox/spectator.git
+    version: 0.12.0
+
+  validator:
+    git: https://github.com/nicolab/crystal-validator.git
+    version: 1.11.0
+
