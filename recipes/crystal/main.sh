@@ -12,7 +12,7 @@ function install_debian {
 }
 
 function install_macos {
-  brew install crystal
+  brew install crystal crystalline
 }
 
 run

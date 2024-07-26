@@ -1,0 +1,8 @@
+---
+packages:
+  - name: helix
+    version: 24.07
+  - name: fzf
+    version: 0.54.1
+  - name: starship
+    version: 1.19.0

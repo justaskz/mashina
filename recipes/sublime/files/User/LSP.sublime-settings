@@ -46,6 +46,11 @@
       ],
       "selector": "source.ruby | text.html.ruby",
     },
+    "crystal": {
+      "enabled": true,
+      "command": ["crystalline", "--stdio"],
+      "selector": "source.crystal"
+    },
     "lsp-ai": {
       "enabled": false,
       "command": ["/Users/t1028/.cargo/bin/lsp-ai"],
