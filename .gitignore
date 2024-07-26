@@ -1,3 +1,5 @@
+poc/mashina/bin
+poc/mashina/lib
 .DS_Store
 .vagrant
 tmp
