@@ -33,6 +33,10 @@ projects:
     local_path: /Users/t1028/repos/infra
     remote_path: /home/juka/repos/infra
 
+  - name: infra-app
+    local_path: /Users/t1028/repos/rails-infra-app
+    remote_path: /home/juka/repos/infra/apps/rails-infra-app
+
 deployments:
   - name: ansible-prod
     project: ansible
@@ -58,6 +62,10 @@ deployments:
     project: infra
     host: cat-kubectl-mng-stage-aws-usea1-1
 
+  - name: infra-app
+    project: infra-app
+    host: infra-1
+
 excluded:
   - ^facts
   - _history
@@ -68,3 +76,4 @@ excluded:
   - .terraform.lock.hcl
   - .DS_Store
   - tmp
+  - apps
