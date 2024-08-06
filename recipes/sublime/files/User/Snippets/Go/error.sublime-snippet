@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+if err != nil {
+  ${1:fmt.Println(err)}
+}
+]]></content>
+  <tabTrigger>qerr</tabTrigger>
+  <scope>source.go</scope>
+  <description>go error handling</description>
+</snippet>

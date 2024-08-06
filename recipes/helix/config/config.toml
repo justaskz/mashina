@@ -10,7 +10,7 @@ bufferline = "always"
 auto-save = true
 
 [keys.normal]
-"C-p" = "file_picker"
+"C-p" = "file_picker_in_current_directory"
 "C-o" = "command_palette"
 # "C-/" = "toggle_comments"
 "C-s" = ":w!"

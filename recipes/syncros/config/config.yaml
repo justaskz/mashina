@@ -14,7 +14,7 @@ hosts:
 
   - name: cat-kubectl-mng-stage-aws-usea1-1
     user: juka
-    ip: 172.17.9.76
+    ip: cat-kubectl-mng-stage-aws-usea1-1
 
 projects:
   - name: ansible
@@ -53,6 +53,10 @@ deployments:
   - name: infra
     project: infra
     host: infra-1
+
+  - name: infra-stage
+    project: infra
+    host: cat-kubectl-mng-stage-aws-usea1-1
 
 excluded:
   - ^facts

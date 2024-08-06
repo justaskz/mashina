@@ -6,4 +6,5 @@ end
 ]]></content>
   <tabTrigger>qit</tabTrigger>
   <scope>source.ruby</scope>
+  <description>rspec it block</description>
 </snippet>

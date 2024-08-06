@@ -42,6 +42,7 @@
 65.21.225.249 keel.infra.net
 65.21.225.249 kibana.infra.net
 65.21.225.249 mesh.infra.net
+65.21.225.249 mimir.infra.net
 65.21.225.249 prometheus.infra.net
 65.21.225.249 registry.infra.net
 65.21.225.249 sso.infra.net

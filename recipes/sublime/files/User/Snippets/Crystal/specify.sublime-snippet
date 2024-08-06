@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+  specify do
+    expect(${1:subject}).to eq(${2:result})
+  end
+]]></content>
+  <tabTrigger>qspecify</tabTrigger>
+  <scope>source.crystal</scope>
+</snippet>

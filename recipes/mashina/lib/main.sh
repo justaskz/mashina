@@ -14,4 +14,5 @@ source "$MASHINA_CONFIG/aliases.sh"
 # for sublime
 if mashina__is_macos; then
   echo "export PATH=$PATH" > "$HOME/.bash_profile"
+  echo "export GOPATH=$HOME/go" >> "$HOME/.bash_profile"
 fi

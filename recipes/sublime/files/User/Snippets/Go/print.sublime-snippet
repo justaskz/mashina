@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-log.Println(${1:message})
+fmt.Println(${1:message})
 ]]></content>
   <tabTrigger>qprint</tabTrigger>
   <scope>source.go</scope>

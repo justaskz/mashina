@@ -1,10 +1,9 @@
 unalias -a
 
 alias src='source $MASHINA_CONFIG/main.sh'
-alias mashina_source='cd $HOME/repos/mashina'
-alias MASHINA_CONFIG='cd $MASHINA_CONFIG'
+# alias mashina_source='cd $HOME/repos/mashina'
+# alias MASHINA_CONFIG='cd $MASHINA_CONFIG'
 
-alias x="hx"
 alias h="hx"
 alias k="kubectl"
 alias ka="kubectl apply -f"
@@ -12,8 +11,6 @@ alias ha="helmfile apply -f"
 alias kc="kubecm"
 alias d="docker"
 alias dc="docker compose"
-alias m="make"
-# alias m="cd $HOME/repos/mashina; $EDITOR $HOME/repos/mashina/banner"
 # alias bat="bat --paging=always --theme=nord --style=changes,numbers"
 
 #################################################
@@ -75,7 +72,6 @@ alias gohome='cd $GOPATH/src/github.com/justaskz'
 #################################################
 alias ..="cd .."
 alias s="subl"
-alias add="subl -a"
 alias a='cd $HOME/repos/ansible'
 alias watch_and_make="fswatch -or . | xargs -n1 -I{} make"
 alias sc="syncros"
@@ -87,8 +83,8 @@ alias untar="tar xvzf"
 alias ls="/bin/ls -lah --color"
 alias python_server="python3 -m http.server"
 
-if command -v nvim >/dev/null 2>&1; then
-  alias vim='nvim'
-else
-  alias vim='vim'
-fi
+# if command -v nvim >/dev/null 2>&1; then
+#   alias vim='nvim'
+# else
+#   alias vim='vim'
+# fi

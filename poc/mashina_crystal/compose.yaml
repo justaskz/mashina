@@ -1,0 +1,9 @@
+---
+services:
+  app:
+    container_name: mashina_poc
+    image: mashina_poc
+    hostname: mashina
+    build: .
+    volumes:
+      - ./:/mashina
