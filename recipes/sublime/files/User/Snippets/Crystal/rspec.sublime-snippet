@@ -1,18 +1,14 @@
 <snippet>
   <content><![CDATA[
-describe ${1:Class} do
-  subject(:${2:tool}) { described_class.new }
+Spectator.describe ${1:Class}, ".for" do
+  subject { described_class.for(${3:params}) }
 
-  describe "#${3:run}" do
-    subject { ${2:tool}.${3:run} }
-
-    it do
-      expect(subject).to eq(${4:[]})
-    end
+  specify do
+    expect(${4:subject}).to eq(${5:result})
   end
 end
 
 ]]></content>
-  <tabTrigger>qspec</tabTrigger>
+  <tabTrigger>qrspec</tabTrigger>
   <scope>source.crystal</scope>
 </snippet>

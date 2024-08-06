@@ -6,4 +6,5 @@ end
 ]]></content>
   <tabTrigger>qspecify</tabTrigger>
   <scope>source.ruby</scope>
+  <description>rspec specify block</description>
 </snippet>

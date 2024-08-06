@@ -48,7 +48,7 @@
     },
     "crystal": {
       "enabled": true,
-      "command": ["crystalline", "--stdio"],
+      "command": ["crystalline"],
       "selector": "source.crystal"
     },
     "lsp-ai": {

@@ -3,7 +3,8 @@ function run {
 }
 
 function install {
-  source /opt/mashina/recipes/mashina/lib/mashina_env.sh
+  # source /opt/mashina/recipes/mashina/lib/mashina_env.sh
+  source $HOME/repos/mashina/recipes/mashina/lib/mashina_env.sh
 
   mkdir -p "$MASHINA_CONFIG"
   mkdir -p "$MASHINA_BIN"

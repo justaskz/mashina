@@ -1,0 +1,9 @@
+---
+description: Description WIP
+type: object
+additionalProperties: false
+properties:
+  url:
+    type: String
+  bin:
+    type: string

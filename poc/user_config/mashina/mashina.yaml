@@ -1,5 +1,7 @@
 ---
-packages:
+env: []
+aliases: []
+packs:
   - name: helix
     version: 24.07
   - name: fzf
